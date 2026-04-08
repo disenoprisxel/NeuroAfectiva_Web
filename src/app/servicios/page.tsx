@@ -41,7 +41,7 @@ const especialidades = [
     img: '/images/serv-organizacional.jpg',
     title: 'Neuropsicología Organizacional',
     desc: 'Optimización del rendimiento cognitivo, manejo del estrés y bienestar mental en equipos de trabajo.',
-    href: '/servicios/neuropsicologia-organizacional',
+    href: '/servicios/organizacional',
     linkColor: 'text-[#fc66b5]',
   },
   {
@@ -59,7 +59,7 @@ const especialidades = [
     img: '/images/serv-expresamente.jpg',
     title: 'ExpresaMente Creativa',
     desc: 'Actividades artísticas y expresión creativa como herramientas de apoyo al bienestar cognitivo y emocional.',
-    href: '/servicios/expresamente-creativa',
+    href: '/servicios/expresamente',
     linkColor: 'text-[#32b8cc]',
   },
   {
@@ -68,7 +68,7 @@ const especialidades = [
     img: '/images/serv-capacitacion.jpg',
     title: 'Capacitación y Talleres',
     desc: 'Espacios de formación para docentes y familias en neuropsicología aplicada y manejo de dificultades de aprendizaje.',
-    href: '/servicios/capacitacion-talleres',
+    href: '/servicios/capacitacion',
     linkColor: 'text-[#fc66b5]',
   },
 ]

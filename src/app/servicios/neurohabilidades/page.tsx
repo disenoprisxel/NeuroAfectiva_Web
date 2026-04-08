@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, CircleCheck, TrendingUp, Smile, Users, MessageCircle, Calendar } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Neurohabilidades de Aprendizaje — NeuroAfectiva',
@@ -205,7 +204,6 @@ export default function NeurohabilidadesPage() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

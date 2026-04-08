@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Brain, Frown, Flame, Leaf, MessageCircle, Calendar } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Neurosalud Cognitiva y Emocional — NeuroAfectiva',
@@ -383,7 +382,6 @@ export default function NeurosaudPage() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

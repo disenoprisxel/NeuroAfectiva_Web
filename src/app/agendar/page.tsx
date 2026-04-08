@@ -6,7 +6,6 @@ import {
   MapPin, Phone, Mail, CalendarCheck, ArrowRight, ShieldCheck, Timer, CircleX,
   Video, Calendar, ChevronDown, Check,
 } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -514,7 +513,6 @@ export default function AgendarPage() {
         })}
       </section>
 
-      <Footer />
     </>
   )
 }

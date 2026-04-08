@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Palette, Sparkles, MessageCircle, ChevronRight } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'ExpresaMente Creativa — NeuroAfectiva',
@@ -385,7 +384,6 @@ export default function ExpresaMentePage() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

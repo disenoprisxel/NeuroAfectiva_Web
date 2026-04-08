@@ -4,7 +4,6 @@ import {
   Users, GraduationCap, Mic, Brain, HeartPulse, Palette, Briefcase,
   ChevronRight, School, Stethoscope, Building2, MessageCircle,
 } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Capacitación & Talleres — NeuroAfectiva',
@@ -473,7 +472,6 @@ export default function CapacitacionPage() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

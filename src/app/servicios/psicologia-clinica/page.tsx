@@ -4,7 +4,6 @@ import {
   Heart, ShieldCheck, CloudRain, Cloud, Flame, Users, Leaf,
   Scissors, Moon, Zap, Shield, MessageCircle, ChevronRight, Quote,
 } from 'lucide-react'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Línea de Psicología Clínica — NeuroAfectiva',
@@ -319,7 +318,6 @@ export default function PsicologiaClinicalPage() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }
