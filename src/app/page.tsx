@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Brain, ClipboardList, Zap, Puzzle, BookOpen, Sparkles } from 'lucide-react'
 
 /* ─── HERO ─────────────────────────────────────────────── */
 function HeroSection() {
@@ -168,32 +169,32 @@ function StatsBar() {
 /* ─── SERVICIOS ─────────────────────────────────────────── */
 const servicios = [
   {
-    icon: '🧠', bg: 'bg-[#F0EAFB]', iconColor: 'text-[#713ec1]',
+    icon: Brain, iconColor: '#713ec1', iconBg: '#713ec1', cardBg: '#F0EAFB',
     title: 'Neuropsicología Clínica',
     desc: 'Evaluación y tratamiento de funciones cognitivas para un desarrollo óptimo.',
   },
   {
-    icon: '📋', bg: 'bg-[#E8F9FD]', iconColor: 'text-[#32b8cc]',
+    icon: ClipboardList, iconColor: '#fc66b5', iconBg: '#fc66b5', cardBg: '#FFF0F9',
     title: 'Evaluación Neuropsicológica',
     desc: 'Diagnóstico preciso de fortalezas y áreas de mejora con pruebas estandarizadas.',
   },
   {
-    icon: '⚡', bg: 'bg-[#FFF0F9]', iconColor: 'text-[#fc66b5]',
+    icon: Zap, iconColor: '#32b8cc', iconBg: '#32b8cc', cardBg: '#E8F9FD',
     title: 'TDAH en Niños y Adultos',
     desc: 'Intervención especializada para el manejo del TDAH en todas las etapas de la vida.',
   },
   {
-    icon: '🌟', bg: 'bg-[#E8F9FD]', iconColor: 'text-[#32b8cc]',
+    icon: Puzzle, iconColor: '#32b8cc', iconBg: '#32b8cc', cardBg: '#E8F9FD',
     title: 'Autismo (TEA)',
     desc: 'Apoyo especializado para personas con trastorno del espectro autista y sus familias.',
   },
   {
-    icon: '📚', bg: 'bg-[#FFF0F9]', iconColor: 'text-[#fc66b5]',
+    icon: BookOpen, iconColor: '#713ec1', iconBg: '#713ec1', cardBg: '#F0EAFB',
     title: 'Dificultades de Aprendizaje',
     desc: 'Identificación y tratamiento de dislexia, discalculia y otras dificultades académicas.',
   },
   {
-    icon: '💡', bg: 'bg-[#F0EAFB]', iconColor: 'text-[#713ec1]',
+    icon: Sparkles, iconColor: '#fc66b5', iconBg: '#fc66b5', cardBg: '#FFF0F9',
     title: 'Neurohabilidades',
     desc: 'Entrenamiento cognitivo para potenciar memoria, atención, concentración y funciones ejecutivas.',
   },
@@ -204,8 +205,13 @@ function ServiciosSection() {
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestros Servicios</span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Cuidado integral para cada mente</h2>
+          <span
+            className="inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-3"
+            style={{ background: '#FFF0F9', color: '#fc66b5' }}
+          >
+            Nuestros Servicios
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Cuidado integral para cada mente</h2>
           <p className="mt-3 text-gray-500 max-w-xl mx-auto text-sm">
             Ofrecemos atención especializada en neuropsicología para niños, adolescentes y adultos,
             con un enfoque humano y basado en evidencia.
@@ -213,21 +219,28 @@ function ServiciosSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {servicios.map((s) => (
-            <div key={s.title} className="border border-gray-100 rounded-2xl p-7 hover:shadow-md transition-shadow">
-              <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 text-xl ${s.bg}`}>
-                {s.icon}
+          {servicios.map((s) => {
+            const Icon = s.icon
+            return (
+              <div key={s.title} className="rounded-2xl p-7 hover:shadow-md transition-shadow" style={{ background: s.cardBg }}>
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                  style={{ background: s.iconBg }}
+                >
+                  <Icon size={22} color="white" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         <div className="text-center">
           <Link
             href="/servicios"
-            className="inline-flex items-center gap-2 bg-[#713ec1] hover:bg-[#6B46C1] text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md text-sm"
+            className="inline-flex items-center gap-2 text-white font-bold px-8 py-3 rounded-full shadow-md text-sm hover:opacity-90 transition-opacity"
+            style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
           >
             Ver todos los servicios
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

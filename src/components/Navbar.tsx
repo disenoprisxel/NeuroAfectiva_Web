@@ -50,7 +50,8 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/agendar"
-              className="bg-[#713ec1] hover:bg-[#6B46C1] text-white text-sm font-bold px-6 py-2.5 rounded-full transition-colors shadow-md"
+              className="text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-md hover:opacity-90 transition-opacity"
+              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
             >
               Agendar Cita
             </Link>
@@ -85,7 +86,8 @@ export default function Navbar() {
             ))}
             <Link
               href="/agendar"
-              className="mt-4 bg-[#713ec1] text-white text-sm font-bold px-6 py-3 rounded-full text-center transition-colors"
+              className="mt-4 text-white text-sm font-bold px-6 py-3 rounded-full text-center hover:opacity-90 transition-opacity"
+              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
               onClick={() => setMenuOpen(false)}
             >
               Agendar Cita

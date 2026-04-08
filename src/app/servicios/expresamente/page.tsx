@@ -96,9 +96,9 @@ export default function ExpresaMentePage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="w-full flex" style={{ height: 'auto', minHeight: '580px' }}>
+      <section className="w-full flex" style={{ height: 'auto', minHeight: '320px' }}>
         {/* Left content */}
-        <div className="flex flex-col justify-center gap-8 px-5 md:px-[80px] py-[60px] w-full md:w-[680px] shrink-0 bg-white">
+        <div className="flex flex-col justify-center gap-4 px-5 md:px-[60px] py-[32px] w-full md:w-[560px] shrink-0 bg-white">
           {/* Breadcrumb */}
           <nav className="hidden md:flex items-center gap-2">
             <Link href="/" className="text-[#AAAAAA] text-xs hover:text-[#713ec1]">Inicio</Link>
@@ -110,34 +110,34 @@ export default function ExpresaMentePage() {
 
           {/* Tag */}
           <div className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full" style={{ background: '#E8F9FD' }}>
-            <Palette size={15} style={{ color: '#32b8cc' }} />
-            <span className="text-[#1a9aad] text-[13px] font-semibold">Terapia a través de la expresión creativa</span>
+            <Palette size={13} style={{ color: '#32b8cc' }} />
+            <span className="text-[#1a9aad] text-[12px] font-semibold">Terapia a través de la expresión creativa</span>
           </div>
 
           {/* Title */}
           <h1
-            className="text-[56px] md:text-[80px] font-extrabold text-[#2D2D3A] leading-[0.95]"
-            style={{ letterSpacing: '-3px' }}
+            className="text-[40px] md:text-[52px] font-extrabold text-[#2D2D3A] leading-[0.95]"
+            style={{ letterSpacing: '-2px' }}
           >
-            Expresa.<br />Crea.<br />Sana.
+            Expresa. Crea. Sana.
           </h1>
 
-          <p className="text-[#737f80] text-sm md:text-[17px] leading-[1.7] max-w-[520px]">
+          <p className="text-[#737f80] text-sm leading-[1.6] max-w-[440px]">
             Un espacio terapéutico donde el arte, la música, el movimiento y la escritura se convierten en el lenguaje del alma.
           </p>
 
           {/* Buttons */}
-          <div className="flex items-center gap-3.5">
+          <div className="flex items-center gap-3">
             <Link
               href="/agendar"
-              className="inline-flex items-center px-7 py-3.5 rounded-full text-sm font-bold text-white"
+              className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-bold text-white"
               style={{ background: 'linear-gradient(90deg, #32b8cc 0%, #713ec1 100%)' }}
             >
               Reservar sesión
             </Link>
             <Link
               href="#modalidades"
-              className="inline-flex items-center px-7 py-3.5 rounded-full text-sm font-semibold text-[#713ec1] bg-white"
+              className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#713ec1] bg-white"
               style={{ border: '2px solid #E0E0EE' }}
             >
               Ver modalidades ↓
@@ -147,24 +147,20 @@ export default function ExpresaMentePage() {
 
         {/* Right: 2x2 image grid */}
         <div
-          className="hidden md:flex flex-col flex-1 p-1 gap-1"
+          className="hidden md:grid grid-cols-2 flex-1 p-1 gap-1"
           style={{ background: '#F0EAFB' }}
         >
-          <div className="flex gap-1 flex-1">
-            <div className="flex-1 overflow-hidden rounded-xl">
-              <img src={heroImages[0]} alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex-1 overflow-hidden rounded-xl">
-              <img src={heroImages[1]} alt="" className="w-full h-full object-cover" />
-            </div>
+          <div className="overflow-hidden rounded-xl">
+            <img src={heroImages[0]} alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="flex gap-1 flex-1">
-            <div className="flex-1 overflow-hidden rounded-xl">
-              <img src={heroImages[2]} alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex-1 overflow-hidden rounded-xl">
-              <img src={heroImages[3]} alt="" className="w-full h-full object-cover" />
-            </div>
+          <div className="overflow-hidden rounded-xl">
+            <img src={heroImages[1]} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden rounded-xl">
+            <img src={heroImages[2]} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden rounded-xl">
+            <img src={heroImages[3]} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>

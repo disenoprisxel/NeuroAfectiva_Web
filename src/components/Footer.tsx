@@ -84,11 +84,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Carrera 15 # 51-37 LC12<br />Edificio Lamprea</span>
+                <span>Carrera 25 # 51-37 Of.201<br />Edificio Lamprea</span>
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
-                <span>310 331 7235 · 310 310 4318</span>
+                <span>319 351 7239 · 312 310 4318</span>
               </li>
               <li className="flex gap-2">
                 <span>✉️</span>
@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2">
                 <span>🕐</span>
-                <span>Lun–Vie 8am–8pm<br />Sáb 8am–4pm</span>
+                <span>Lun–Vie 8am–6pm<br />Sáb 8am–4pm</span>
               </li>
             </ul>
           </div>

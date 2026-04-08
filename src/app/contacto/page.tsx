@@ -24,7 +24,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Dirección',
-    value: 'Carrera 25 # 51-37 – Of. 201\nEdificio Lamprea',
+    value: 'Carrera 25 # 51-37 Of.201\nEdificio Lamprea',
     color: 'text-[#713ec1] bg-[#F0EAFB]',
   },
   {
@@ -34,7 +34,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Teléfono / WhatsApp',
-    value: '310 331 7235 · 310 310 4318',
+    value: '319 351 7239 · 312 310 4318',
     color: 'text-[#fc66b5] bg-[#FFF0F9]',
   },
   {
