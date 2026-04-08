@@ -118,41 +118,58 @@ function HeroEquipo() {
 }
 
 /* ─── TARJETA DE ESPECIALISTA ───────────────────────────── */
+const waNumbers: Record<string, string> = {
+  viviana: '573193517239',
+  johanna: '573123104318',
+}
+
 function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: boolean }) {
+  const waNumber = waNumbers[esp.id] || '573193517239'
   return (
     <section className={`py-16 lg:py-20 ${reverse ? 'bg-[#F8F4FF]' : 'bg-white'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reverse ? 'lg:flex lg:flex-row-reverse' : ''}`}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
 
-          {/* Image */}
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-[#1A1035]">
+          {/* Image — order flips for reverse */}
+          <div className={`relative w-full lg:w-[42%] flex-shrink-0 ${reverse ? 'lg:order-2' : 'lg:order-1'}`}>
+            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-[#F0EAFB]">
               <img
                 src={esp.img}
                 alt={esp.imgAlt}
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            {/* Floating badge */}
-            <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
-              <div className="font-bold text-gray-900 text-xs">{esp.nombre.split(' ')[0]} {esp.nombre.split(' ')[1][0]}.</div>
-              <div className={`text-xs font-medium mt-0.5 ${esp.badgeColor.split(' ')[1]}`}>Neuropsicóloga</div>
-            </div>
+            {/* Top-left floating card (Johanna) */}
+            {!esp.formacion && (
+              <div className="absolute top-5 left-5 bg-white rounded-2xl px-4 py-3 shadow-xl">
+                <div className="font-extrabold text-[#fc66b5] text-sm leading-tight">{esp.badge}</div>
+                <div className="text-xs text-gray-400 mt-0.5">Especialista certificada</div>
+              </div>
+            )}
+            {/* Top-right floating card (Viviana) */}
             {esp.formacion && (
+              <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
+                <div className="font-bold text-gray-900 text-xs">{esp.nombre.split(' ')[0]}</div>
+                <div className="text-xs font-medium mt-0.5 text-[#713ec1]">Neuropsicóloga</div>
+              </div>
+            )}
+            {/* Bottom badge */}
+            {esp.formacion ? (
               <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700">
                 🎓 {esp.formacion}
               </div>
-            )}
-            {!esp.formacion && (
-              <div className="absolute bottom-5 right-5 bg-[#FFF0F9] rounded-xl px-4 py-2 shadow-lg">
-                <div className={`text-xs font-bold ${esp.badgeCardColor.split(' ')[1]}`}>{esp.badgeCard}</div>
-                <div className="text-xs text-gray-500">Especialista certificada</div>
+            ) : (
+              <div className="absolute bottom-5 right-5 bg-white rounded-xl px-4 py-2 shadow-lg flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#713ec1]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                </svg>
+                <span className="text-xs font-bold text-gray-700">Avalada internacionalmente</span>
               </div>
             )}
           </div>
 
           {/* Content */}
-          <div>
+          <div className={`w-full lg:flex-1 ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
             <span className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block mb-5 ${esp.badgeColor}`}>
               {esp.badge}
             </span>
@@ -173,7 +190,8 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/agendar"
-                className={`${esp.ctaColor} text-white font-bold px-7 py-3 rounded-full transition-colors shadow-md text-sm flex items-center gap-2`}
+                className="text-white font-bold px-7 py-3 rounded-full shadow-md text-sm flex items-center gap-2 hover:opacity-90 transition-opacity"
+                style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
@@ -181,7 +199,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
                 {esp.ctaLabel}
               </Link>
               <a
-                href="https://wa.me/573103317235"
+                href={`https://wa.me/${waNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm flex items-center gap-2"
@@ -243,7 +261,7 @@ function CTAEquipo() {
       {/* WhatsApp floating dot */}
       <div className="absolute right-6 bottom-6">
         <a
-          href="https://wa.me/573103317235"
+          href="https://wa.me/573193517239"
           className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg"
         >
           <svg className="w-6 h-6 fill-white" viewBox="0 0 24 24">
@@ -270,7 +288,7 @@ function CTAEquipo() {
             Agendar mi cita
           </Link>
           <a
-            href="https://wa.me/573103317235"
+            href="https://wa.me/573193517239"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-white/60 hover:border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-full transition-colors text-sm flex items-center gap-2"

@@ -82,6 +82,11 @@ function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    const subject = encodeURIComponent('Consulta desde NeuroAfectiva.com')
+    const body = encodeURIComponent(
+      `Nombre: ${form.nombre}\nEmail: ${form.email}\nTeléfono: ${form.telefono}\nServicio: ${form.servicio}\n\nMotivo:\n${form.motivo}`
+    )
+    window.open(`mailto:neuroafectiva@gmail.com?subject=${subject}&body=${body}`)
     setSent(true)
   }
 

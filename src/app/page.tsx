@@ -55,12 +55,13 @@ function HeroSection() {
           </div>
 
           {/* Right — image */}
-          <div className="relative">
+          <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
               <img
                 src="/images/hero.jpg"
                 alt="Sesión de neuropsicología en NeuroAfectiva"
                 className="w-full h-full object-cover"
+                data-parallax="0.1"
               />
             </div>
           </div>

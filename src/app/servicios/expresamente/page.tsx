@@ -96,7 +96,7 @@ export default function ExpresaMentePage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="w-full flex" style={{ height: 'auto', minHeight: '320px' }}>
+      <section className="w-full flex" style={{ height: '440px' }}>
         {/* Left content */}
         <div className="flex flex-col justify-center gap-4 px-5 md:px-[60px] py-[32px] w-full md:w-[560px] shrink-0 bg-white">
           {/* Breadcrumb */}
@@ -131,7 +131,7 @@ export default function ExpresaMentePage() {
             <Link
               href="/agendar"
               className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-bold text-white"
-              style={{ background: 'linear-gradient(90deg, #32b8cc 0%, #713ec1 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
             >
               Reservar sesión
             </Link>

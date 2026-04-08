@@ -88,6 +88,11 @@ export default function AgendarPage() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    const subject = encodeURIComponent('Solicitud de cita — NeuroAfectiva.com')
+    const body = encodeURIComponent(
+      `Nombre: ${form.nombre}\nEmail: ${form.email}\nTeléfono: ${form.telefono}\nEdad: ${form.edad}\nCiudad: ${form.ciudad}\nServicio: ${form.servicio}\nModalidad: ${form.modalidad}\nFecha preferida: ${form.fecha}\nHorario: ${form.horario}\n\nMotivo de consulta:\n${form.motivo}\n\nCómo nos conoció: ${form.como}`
+    )
+    window.open(`mailto:neuroafectiva@gmail.com?subject=${subject}&body=${body}`)
     setSubmitted(true)
   }
 

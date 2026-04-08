@@ -26,9 +26,9 @@ export default function Navbar() {
             <Image
               src="/logo-navbar.png"
               alt="NeuroAfectiva"
-              width={180}
-              height={48}
-              style={{ width: 'auto', height: '3rem' }}
+              width={270}
+              height={72}
+              className="w-auto h-12 lg:h-[4.5rem]"
               priority
             />
           </Link>
