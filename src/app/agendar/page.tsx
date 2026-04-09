@@ -106,7 +106,7 @@ export default function AgendarPage() {
         style={{ height: '200px', background: 'linear-gradient(180deg, #FDF5FF 0%, #FFFFFF 100%)' }}
       >
         <span className="px-5 py-1.5 rounded-full text-[#713ec1] text-[13px] font-semibold" style={{ background: '#F0E6FF' }}>
-          Primera consulta sin compromiso
+          Atención especializada · Tu bienestar en manos expertas
         </span>
         <h1 className="text-[36px] md:text-[52px] font-black text-[#1A1A2E]">Agenda tu cita</h1>
         <p className="text-[#737f80] text-sm md:text-base">

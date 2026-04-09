@@ -21,12 +21,13 @@ function HeroQuienesSomos() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left — image */}
-          <div className="relative order-2 lg:order-1">
+          <div className="relative order-2 lg:order-1 overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#1A1035]">
               <img
                 src="/images/clinic.jpg"
                 alt="Clínica NeuroAfectiva"
                 className="w-full h-full object-cover opacity-80"
+                data-parallax="0.13"
               />
             </div>
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700 flex items-center gap-1.5">
@@ -93,7 +94,7 @@ function MisionVisionValores() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           {/* Misión */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase mb-3 block">Misión</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestra Misión</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
@@ -103,7 +104,7 @@ function MisionVisionValores() {
           </div>
 
           {/* Visión */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-[#713ec1]">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#fc66b5] uppercase mb-3 block">Visión</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestra Visión</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
@@ -114,7 +115,7 @@ function MisionVisionValores() {
           </div>
 
           {/* Valores */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#32b8cc] uppercase mb-3 block">Valores</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestros Valores</h3>
             <ul className="space-y-2 text-sm text-gray-500">

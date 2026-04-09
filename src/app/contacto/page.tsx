@@ -276,7 +276,7 @@ export default function ContactoPage() {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/573103317235"
+                href="https://wa.me/573193517239"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-3.5 px-6 rounded-full flex items-center justify-center gap-2.5 transition-colors shadow-md text-sm mb-7"
