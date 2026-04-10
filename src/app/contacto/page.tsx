@@ -70,6 +70,8 @@ function ContactForm() {
     politica: false,
   })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     const { name, value } = e.target
@@ -80,14 +82,23 @@ function ContactForm() {
     setForm((prev) => ({ ...prev, politica: e.target.checked }))
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const subject = encodeURIComponent('Consulta desde NeuroAfectiva.com')
-    const body = encodeURIComponent(
-      `Nombre: ${form.nombre}\nEmail: ${form.email}\nTeléfono: ${form.telefono}\nServicio: ${form.servicio}\n\nMotivo:\n${form.motivo}`
-    )
-    window.open(`mailto:neuroafectiva@gmail.com?subject=${subject}&body=${body}`)
-    setSent(true)
+    setSending(true)
+    setError('')
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'contacto', ...form }),
+      })
+      if (!res.ok) throw new Error('Error al enviar')
+      setSent(true)
+    } catch {
+      setError('Hubo un problema al enviar. Por favor intenta de nuevo.')
+    } finally {
+      setSending(false)
+    }
   }
 
   if (sent) {
@@ -214,15 +225,33 @@ function ContactForm() {
         </span>
       </label>
 
+      {/* Error message */}
+      {error && (
+        <p className="text-sm text-red-500 text-center">{error}</p>
+      )}
+
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-r from-[#713ec1] to-[#fc66b5] hover:from-[#6B46C1] hover:to-[#f054a8] text-white font-bold py-4 rounded-full transition-all shadow-lg text-sm flex items-center justify-center gap-2"
+        disabled={sending}
+        className="w-full bg-gradient-to-r from-[#713ec1] to-[#fc66b5] hover:from-[#6B46C1] hover:to-[#f054a8] text-white font-bold py-4 rounded-full transition-all shadow-lg text-sm flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
       >
-        Enviar mensaje
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.269 20.876L5.999 12zm0 0h7.5" />
-        </svg>
+        {sending ? (
+          <>
+            <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+            </svg>
+            Enviando...
+          </>
+        ) : (
+          <>
+            Enviar mensaje
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.269 20.876L5.999 12zm0 0h7.5" />
+            </svg>
+          </>
+        )}
       </button>
     </form>
   )

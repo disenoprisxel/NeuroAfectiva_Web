@@ -81,19 +81,30 @@ export default function AgendarPage() {
     fecha: '', horario: 'tarde', motivo: '', como: '', privacidad: false,
   })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState('')
 
   function set(field: string, value: string | boolean) {
     setForm(prev => ({ ...prev, [field]: value }))
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const subject = encodeURIComponent('Solicitud de cita — NeuroAfectiva.com')
-    const body = encodeURIComponent(
-      `Nombre: ${form.nombre}\nEmail: ${form.email}\nTeléfono: ${form.telefono}\nEdad: ${form.edad}\nCiudad: ${form.ciudad}\nServicio: ${form.servicio}\nModalidad: ${form.modalidad}\nFecha preferida: ${form.fecha}\nHorario: ${form.horario}\n\nMotivo de consulta:\n${form.motivo}\n\nCómo nos conoció: ${form.como}`
-    )
-    window.open(`mailto:neuroafectiva@gmail.com?subject=${subject}&body=${body}`)
-    setSubmitted(true)
+    setSending(true)
+    setSendError('')
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'agendar', ...form }),
+      })
+      if (!res.ok) throw new Error('Error al enviar')
+      setSubmitted(true)
+    } catch {
+      setSendError('Hubo un problema al enviar. Por favor intenta de nuevo.')
+    } finally {
+      setSending(false)
+    }
   }
 
   const inputClass = "w-full h-12 px-4 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm text-[#1A1A2E] outline-none focus:border-[#713ec1] focus:ring-2 focus:ring-[#713ec1]/10 transition placeholder-[#9CA3AF]"
@@ -416,15 +427,33 @@ export default function AgendarPage() {
                   </label>
                 </div>
 
+                {/* Error */}
+                {sendError && (
+                  <p className="text-sm text-red-500 text-center">{sendError}</p>
+                )}
+
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-3 w-full h-14 rounded-[14px] text-white text-base font-bold transition hover:opacity-90"
+                  disabled={sending}
+                  className="flex items-center justify-center gap-3 w-full h-14 rounded-[14px] text-white text-base font-bold transition hover:opacity-90 disabled:opacity-70 disabled:cursor-not-allowed"
                   style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
                 >
-                  <CalendarCheck size={22} className="text-white" />
-                  Confirmar solicitud de cita
-                  <ArrowRight size={20} className="text-white/70" />
+                  {sending ? (
+                    <>
+                      <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                      </svg>
+                      Enviando solicitud...
+                    </>
+                  ) : (
+                    <>
+                      <CalendarCheck size={22} className="text-white" />
+                      Confirmar solicitud de cita
+                      <ArrowRight size={20} className="text-white/70" />
+                    </>
+                  )}
                 </button>
               </form>
             )}
