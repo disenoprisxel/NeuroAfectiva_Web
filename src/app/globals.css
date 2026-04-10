@@ -26,3 +26,193 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SCROLL-REVEAL — data-animate
+   ═══════════════════════════════════════════════════════════ */
+
+/* default: slide up */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-animate="left"] { transform: translateX(-36px); }
+[data-animate="right"] { transform: translateX(36px); }
+[data-animate="scale"] { transform: scale(0.88) translateY(12px); }
+[data-animate="fade"]  { transform: none; }
+
+/* Triggered state */
+[data-animate].na-in {
+  opacity: 1;
+  transform: none !important;
+}
+
+/* Stagger delays */
+[data-delay="1"] { transition-delay: 0.08s; }
+[data-delay="2"] { transition-delay: 0.16s; }
+[data-delay="3"] { transition-delay: 0.24s; }
+[data-delay="4"] { transition-delay: 0.32s; }
+[data-delay="5"] { transition-delay: 0.40s; }
+[data-delay="6"] { transition-delay: 0.48s; }
+
+/* ═══════════════════════════════════════════════════════════
+   KEYFRAME ANIMATIONS
+   ═══════════════════════════════════════════════════════════ */
+
+/* Gentle float — hero image & WhatsApp btn */
+@keyframes na-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.na-float {
+  animation: na-float 5s ease-in-out infinite;
+}
+
+/* Pulse glow — primary CTA buttons */
+@keyframes na-pulse-glow {
+  0%, 100% { box-shadow: 0 4px 24px 0 rgba(113, 62, 193, 0.25); }
+  50%       { box-shadow: 0 4px 40px 8px rgba(252, 102, 181, 0.35); }
+}
+.na-pulse-glow {
+  animation: na-pulse-glow 3s ease-in-out infinite;
+}
+
+/* Shimmer gradient — decorative elements */
+@keyframes na-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* Spin slow — loader / badge accent */
+@keyframes na-spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Bounce dot — WhatsApp online indicator */
+@keyframes na-bounce-dot {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.4); }
+}
+.na-bounce-dot {
+  animation: na-bounce-dot 1.6s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   HOVER MICRO-INTERACTIONS  (no JS needed)
+   ═══════════════════════════════════════════════════════════ */
+
+/* Cards: lift + stronger shadow */
+.na-card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+.na-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 40px -8px rgba(113, 62, 193, 0.18);
+}
+
+/* Icon containers: scale + color pop */
+.na-icon-box {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              filter 0.3s ease;
+}
+.na-card:hover .na-icon-box {
+  transform: scale(1.15) rotate(-4deg);
+  filter: brightness(1.1);
+}
+
+/* Buttons: scale + glow */
+.na-btn {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.2s ease,
+              opacity 0.2s ease;
+}
+.na-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px -4px rgba(113, 62, 193, 0.35);
+}
+.na-btn:active {
+  transform: scale(0.97);
+}
+
+/* Gradient button shimmer on hover */
+.na-btn-gradient {
+  background-size: 200% auto;
+  transition: background-position 0.4s ease,
+              transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.2s ease;
+}
+.na-btn-gradient:hover {
+  background-position: right center;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 28px -4px rgba(252, 102, 181, 0.4);
+}
+
+/* Image zoom on hover */
+.na-img-zoom {
+  overflow: hidden;
+}
+.na-img-zoom img {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.na-img-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* Link underline slide */
+.na-link {
+  position: relative;
+  text-decoration: none;
+}
+.na-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, #713ec1, #fc66b5);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.na-link:hover::after {
+  width: 100%;
+}
+
+/* Stat counter: color pulse on scroll-in */
+.na-stat.na-in .na-stat-value {
+  animation: na-stat-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes na-stat-pop {
+  0%   { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* Testimonial card tilt */
+.na-testimonial {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease;
+}
+.na-testimonial:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 0 16px 36px -8px rgba(113, 62, 193, 0.15);
+}
+
+/* Process step badge pulse */
+.na-step-badge {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.na-step:hover .na-step-badge {
+  transform: scale(1.25) rotate(6deg);
+}
+
+/* Badge pill pop */
+.na-badge {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.25s ease;
+}
+.na-badge:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 14px rgba(113, 62, 193, 0.25);
+}

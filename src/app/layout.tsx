@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import ParallaxInit from '@/components/ParallaxInit'
+import AnimateInit from '@/components/AnimateInit'
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <ParallaxInit />
+        <AnimateInit />
       </body>
     </html>
   )

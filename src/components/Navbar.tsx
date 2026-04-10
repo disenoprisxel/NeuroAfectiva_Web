@@ -39,7 +39,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold text-gray-700 hover:text-[#713ec1] transition-colors"
+                className="na-link text-sm font-semibold text-gray-700 hover:text-[#713ec1] transition-colors"
               >
                 {link.label}
               </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/agendar"
-              className="text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-md hover:opacity-90 transition-opacity"
+              className="na-btn na-btn-gradient text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-md"
               style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
             >
               Agendar Cita

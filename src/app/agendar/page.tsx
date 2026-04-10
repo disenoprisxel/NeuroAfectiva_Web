@@ -10,7 +10,7 @@ import {
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const services = [
-  { id: 'neurohabilidades', icon: Brain, label: 'Neurohabilidades' },
+  { id: 'neurohabilidades', icon: Brain, label: 'Neurohabilidades del Aprendizaje' },
   { id: 'neurosalud', icon: HeartPulse, label: 'Neurosalud Cognitiva' },
   { id: 'organizacional', icon: Building2, label: 'Psicología Organizacional' },
   { id: 'clinica', icon: User, label: 'Psicología Clínica' },
