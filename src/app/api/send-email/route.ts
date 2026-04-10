@@ -1,7 +1,13 @@
-import { Resend } from 'resend'
+import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
+})
 
 export async function POST(req: Request) {
   try {
@@ -12,7 +18,7 @@ export async function POST(req: Request) {
     let html = ''
 
     if (type === 'contacto') {
-      subject = `Nuevo mensaje de contacto — ${data.nombre}`
+      subject = `📬 Nuevo mensaje de contacto — ${data.nombre}`
       html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9f6ff; border-radius: 12px;">
           <h2 style="color: #713ec1; margin-bottom: 4px;">Nuevo mensaje de contacto</h2>
@@ -27,12 +33,13 @@ export async function POST(req: Request) {
           <hr style="border: none; border-top: 1px solid #e0d4f7; margin: 20px 0;" />
           <p style="font-weight: bold; font-size: 14px; color: #333; margin-bottom: 8px;">Motivo de consulta:</p>
           <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #713ec1;">${data.motivo || '—'}</p>
+          <p style="font-size: 12px; color: #aaa; margin-top: 20px;">Puedes responder directamente a este correo para contactar al remitente.</p>
         </div>
       `
     } else if (type === 'agendar') {
-      subject = `Solicitud de cita — ${data.nombre}`
+      subject = `📅 Nueva solicitud de cita — ${data.nombre}`
       html = `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9f6ff; border-radius: 12px;">
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #fff5fb; border-radius: 12px;">
           <h2 style="color: #fc66b5; margin-bottom: 4px;">Nueva solicitud de cita</h2>
           <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de Agendar Cita — NeuroAfectiva.com</p>
           <hr style="border: none; border-top: 1px solid #f5c0e0; margin: 20px 0;" />
@@ -51,28 +58,24 @@ export async function POST(req: Request) {
           <hr style="border: none; border-top: 1px solid #f5c0e0; margin: 20px 0;" />
           <p style="font-weight: bold; font-size: 14px; color: #333; margin-bottom: 8px;">Motivo de consulta:</p>
           <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #fc66b5;">${data.motivo || '—'}</p>
+          <p style="font-size: 12px; color: #aaa; margin-top: 20px;">Puedes responder directamente a este correo para contactar al solicitante.</p>
         </div>
       `
     } else {
       return NextResponse.json({ error: 'Tipo de formulario inválido' }, { status: 400 })
     }
 
-    const { error } = await resend.emails.send({
-      from: 'NeuroAfectiva <onboarding@resend.dev>',
-      to: ['neuroafectiva@gmail.com'],
+    await transporter.sendMail({
+      from: `"NeuroAfectiva Web" <${process.env.GMAIL_USER}>`,
+      to: 'neuroafectiva@gmail.com',
       replyTo: data.email,
       subject,
       html,
     })
 
-    if (error) {
-      console.error('Resend error:', error)
-      return NextResponse.json({ error: error.message }, { status: 500 })
-    }
-
     return NextResponse.json({ ok: true })
   } catch (err) {
-    console.error('API error:', err)
+    console.error('Email send error:', err)
     return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 })
   }
 }
