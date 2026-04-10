@@ -168,14 +168,14 @@ function StatsDark() {
 const especialistas = [
   {
     nombre: 'Viviana M. Trujillo',
-    especialidad: 'Neuropsicología Educativa',
+    especialidad: 'Neuropsicóloga Educativa',
     formacion: 'Especialista Universidad de La Rioja',
     exp: '',
     badge: { label: 'Educativa', color: 'bg-[#F0EAFB] text-[#713ec1]' },
   },
   {
     nombre: 'Johanna Castro',
-    especialidad: 'Neuropsicología Clínica',
+    especialidad: 'Neuropsicóloga Clínica',
     formacion: 'Capacitación internacional',
     exp: '',
     badge: { label: 'Clínica', color: 'bg-[#E8F9FD] text-[#32b8cc]' },

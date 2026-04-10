@@ -136,23 +136,23 @@ export default function OrganizacionalPage() {
           </nav>
 
           {/* Badge */}
-          <div className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full"
+          <div data-animate className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full na-badge"
             style={{ background: 'rgba(255,255,255,0.125)', border: '1px solid rgba(50,184,204,0.3)' }}>
             <Building2 size={15} style={{ color: '#32b8cc' }} />
             <span className="text-[#32b8cc] text-[13px] font-semibold">Empresas · Líderes · Equipos de trabajo</span>
           </div>
 
           {/* Title */}
-          <h1 className="text-[40px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-[1.1]" style={{ letterSpacing: '-1px' }}>
+          <h1 data-animate data-delay="1" className="text-[40px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-[1.1]" style={{ letterSpacing: '-1px' }}>
             Neuropsicología<br />Organizacional
           </h1>
 
-          <p className="text-[#737f80] text-sm md:text-base leading-[1.7] max-w-[520px]">
+          <p data-animate data-delay="2" className="text-[#737f80] text-sm md:text-base leading-[1.7] max-w-[520px]">
             Optimizamos el rendimiento cognitivo, reducimos el burnout y fortalecemos la salud mental de los equipos para crear organizaciones más humanas y productivas.
           </p>
 
           {/* Buttons */}
-          <div className="flex items-center gap-3.5">
+          <div data-animate data-delay="3" className="flex items-center gap-3.5">
             <Link
               href="/agendar"
               className="inline-flex items-center px-7 py-3.5 rounded-full text-sm font-bold text-white"
@@ -171,7 +171,7 @@ export default function OrganizacionalPage() {
         </div>
 
         {/* Right image */}
-        <div className="hidden md:block flex-1 overflow-hidden">
+        <div data-animate="right" className="hidden md:block flex-1 overflow-hidden na-img-zoom">
           <img
             src="https://images.unsplash.com/photo-1758873268394-443e1ac80032?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
             alt="Neuropsicología Organizacional"
@@ -198,7 +198,7 @@ export default function OrganizacionalPage() {
       {/* ── Qué es ───────────────────────────────────────────────────────── */}
       <section id="que-es" className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         {/* Header */}
-        <div className="flex flex-col items-center gap-4 text-center">
+        <div data-animate="scale" className="flex flex-col items-center gap-4 text-center">
           <span className="px-4 py-1.5 rounded-full text-[13px] font-semibold text-[#1a9aad]" style={{ background: '#E8F9FD' }}>
             El programa
           </span>
@@ -212,12 +212,14 @@ export default function OrganizacionalPage() {
 
         {/* Modules */}
         <div className="flex flex-col gap-4">
-          {modules.map((m) => {
+          {modules.map((m, i) => {
             const Icon = m.icon
             return (
               <div
                 key={m.title}
-                className="flex items-center rounded-2xl overflow-hidden"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex items-center rounded-2xl overflow-hidden"
                 style={{ background: m.rowBg, height: '120px' }}
               >
                 {/* Icon strip */}
@@ -249,18 +251,20 @@ export default function OrganizacionalPage() {
 
       {/* ── Para quién ───────────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#E8F9FD' }}>
-        <div className="flex flex-col items-center gap-2.5 text-center">
+        <div data-animate="scale" className="flex flex-col items-center gap-2.5 text-center">
           <span className="text-[#1a9aad] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">¿Para quién?</span>
           <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2D2D3A]">Diseñado para cada nivel de la organización</h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 w-full">
-          {paraQuienCols.map((col) => {
+          {paraQuienCols.map((col, i) => {
             const Icon = col.icon
             return (
               <div
                 key={col.title}
-                className="flex flex-col gap-5 rounded-[20px] bg-white p-8 flex-1"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col gap-5 rounded-[20px] bg-white p-8 flex-1"
                 style={{ boxShadow: col.shadow }}
               >
                 <div className="flex items-center gap-4">
@@ -293,7 +297,7 @@ export default function OrganizacionalPage() {
       {/* ── Proceso ──────────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div data-animate className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-2">
             <span className="text-[#713ec1] text-[11px] font-extrabold tracking-[3px] uppercase">Cómo trabajamos</span>
             <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#2D2D3A] leading-[1.2]">
@@ -308,7 +312,7 @@ export default function OrganizacionalPage() {
         {/* Steps */}
         <div className="flex flex-col md:flex-row gap-0 w-full">
           {steps.map((step, i) => (
-            <div key={step.num} className="flex md:flex-row items-start flex-1">
+            <div key={step.num} data-animate data-delay={String(i + 1)} className="flex md:flex-row items-start flex-1">
               <div className="flex flex-col gap-4 flex-1 pr-0 md:pr-6">
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center"
@@ -333,16 +337,16 @@ export default function OrganizacionalPage() {
       <section className="w-full bg-[#1A1A2E] flex flex-col md:flex-row items-stretch" style={{ minHeight: '320px' }}>
         {/* Left */}
         <div className="flex flex-col justify-center gap-5 px-5 md:px-[80px] py-[60px] flex-1">
-          <span className="text-[#32b8cc] text-[11px] font-extrabold tracking-[2px] uppercase">
+          <span data-animate className="text-[#32b8cc] text-[11px] font-extrabold tracking-[2px] uppercase">
             ¿Listo para transformar tu organización?
           </span>
-          <h2 className="text-white text-[26px] md:text-[36px] font-extrabold leading-[1.2] max-w-[600px]">
+          <h2 data-animate data-delay="1" className="text-white text-[26px] md:text-[36px] font-extrabold leading-[1.2] max-w-[600px]">
             Construyamos juntos<br />un equipo más sano y productivo
           </h2>
-          <p className="text-white/50 text-sm md:text-base leading-[1.6] max-w-[560px]">
+          <p data-animate data-delay="2" className="text-white/50 text-sm md:text-base leading-[1.6] max-w-[560px]">
             Agenda una sesión informativa sin costo y descubre cómo la neurociencia puede transformar tu empresa.
           </p>
-          <div className="flex flex-col md:flex-row items-start gap-4 mt-2">
+          <div data-animate data-delay="3" className="flex flex-col md:flex-row items-start gap-4 mt-2">
             <Link
               href="/agendar"
               className="inline-flex items-center px-8 py-3.5 rounded-full text-[15px] font-bold text-white"

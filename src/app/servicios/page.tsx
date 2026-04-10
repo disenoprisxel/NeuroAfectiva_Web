@@ -166,10 +166,14 @@ function ServiceCard({ service, delay }: { service: typeof especialidades[0]; de
         <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.desc}</p>
         <Link
           href={service.href}
-          className={`na-link text-sm font-bold inline-flex items-center gap-1.5 ${service.linkColor} hover:gap-3 transition-all`}
+          className="na-btn group inline-flex items-center gap-2 mt-1 px-5 py-2.5 rounded-full text-sm font-bold text-white shadow-md transition-all"
+          style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
         >
           Conocer más
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <svg
+            className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
         </Link>

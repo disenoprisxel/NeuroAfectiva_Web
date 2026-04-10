@@ -176,20 +176,22 @@ export default function CapacitacionPage() {
 
         <div className="relative z-10 flex flex-col items-center gap-6 px-5 text-center w-full max-w-[800px]">
           <div
-            className="inline-flex items-center px-6 py-2 rounded-full text-[#32b8cc] text-[13px] font-semibold"
+            data-animate
+            className="inline-flex items-center px-6 py-2 rounded-full text-[#32b8cc] text-[13px] font-semibold na-badge"
             style={{ background: 'rgba(50,184,204,0.251)', border: '1px solid #32b8cc' }}
           >
             Formación y Desarrollo
           </div>
           <h1
+            data-animate data-delay="1"
             className="text-[48px] md:text-[72px] font-black text-white leading-[1.1]"
           >
             Capacitación<br />&amp; Talleres
           </h1>
-          <p className="text-white/80 text-sm md:text-lg leading-[1.5] max-w-[640px]">
+          <p data-animate data-delay="2" className="text-white/80 text-sm md:text-lg leading-[1.5] max-w-[640px]">
             Programas formativos vivenciales para equipos, instituciones y personas que quieren aprender diferente.
           </p>
-          <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto mt-2">
+          <div data-animate data-delay="3" className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto mt-2">
             <Link
               href="#formatos"
               className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold text-white w-full md:w-auto"
@@ -226,7 +228,7 @@ export default function CapacitacionPage() {
 
       {/* ── Formatos ─────────────────────────────────────────────────────── */}
       <section id="formatos" className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div data-animate="scale" className="flex flex-col items-center gap-3 text-center">
           <span className="px-4 py-1.5 rounded-full text-[#32b8cc] text-[13px] font-semibold" style={{ background: '#EDF9FC' }}>
             Formatos disponibles
           </span>
@@ -239,12 +241,14 @@ export default function CapacitacionPage() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
-          {formats.map((f) => {
+          {formats.map((f, i) => {
             const Icon = f.icon
             return (
               <div
                 key={f.title}
-                className="flex flex-col gap-5 rounded-[20px] p-10 flex-1"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col gap-5 rounded-[20px] p-10 flex-1"
                 style={{ background: f.cardBg, border: `1px solid ${f.cardBorder}` }}
               >
                 <div
@@ -269,7 +273,7 @@ export default function CapacitacionPage() {
 
       {/* ── Temas ────────────────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col gap-12" style={{ background: '#1A0A2E' }}>
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div data-animate className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-3">
             <span className="px-4 py-1.5 self-start rounded-full text-[#B99FE0] text-[13px] font-semibold" style={{ background: 'rgba(113,62,193,0.4)' }}>
               Catálogo temático
@@ -286,12 +290,14 @@ export default function CapacitacionPage() {
         {/* 2×2 grid */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-col md:flex-row gap-6">
-            {topics.slice(0, 2).map((topic) => {
+            {topics.slice(0, 2).map((topic, i) => {
               const Icon = topic.icon
               return (
                 <div
                   key={topic.title}
-                  className="flex flex-col rounded-2xl overflow-hidden flex-1"
+                  data-animate
+                  data-delay={String(i + 1)}
+                  className="na-card flex flex-col rounded-2xl overflow-hidden flex-1"
                   style={{ background: '#1E1040' }}
                 >
                   {/* Color bar */}
@@ -325,12 +331,14 @@ export default function CapacitacionPage() {
             })}
           </div>
           <div className="flex flex-col md:flex-row gap-6">
-            {topics.slice(2).map((topic) => {
+            {topics.slice(2).map((topic, i) => {
               const Icon = topic.icon
               return (
                 <div
                   key={topic.title}
-                  className="flex flex-col rounded-2xl overflow-hidden flex-1"
+                  data-animate
+                  data-delay={String(i + 1)}
+                  className="na-card flex flex-col rounded-2xl overflow-hidden flex-1"
                   style={{ background: '#1E1040' }}
                 >
                   <div className="h-1.5 w-full rounded-t-[8px]" style={{ background: topic.barColor }} />
@@ -365,7 +373,7 @@ export default function CapacitacionPage() {
 
       {/* ── Proceso ──────────────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-14" style={{ background: '#F5F3FF' }}>
-        <div className="flex flex-col items-center gap-3 text-center w-full">
+        <div data-animate="scale" className="flex flex-col items-center gap-3 text-center w-full">
           <span className="px-4 py-1.5 self-center rounded-full text-[#713ec1] text-[13px] font-semibold" style={{ background: '#EDE8FF' }}>
             Cómo trabajamos
           </span>
@@ -374,7 +382,7 @@ export default function CapacitacionPage() {
 
         <div className="flex flex-col md:flex-row gap-0 w-full">
           {processSteps.map((step, i) => (
-            <div key={step.num} className="flex md:flex-row items-start flex-1">
+            <div key={step.num} data-animate data-delay={String(i + 1)} className="flex md:flex-row items-start flex-1">
               <div
                 className="flex flex-col items-center gap-5 flex-1 px-6 md:px-12 py-10"
               >
@@ -399,7 +407,7 @@ export default function CapacitacionPage() {
 
       {/* ── Para quién ───────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div data-animate="scale" className="flex flex-col items-center gap-3 text-center">
           <span className="px-4 py-1.5 self-center rounded-full text-[#fc66b5] text-[13px] font-semibold" style={{ background: '#FFF0F9' }}>
             ¿Para quién?
           </span>
@@ -407,12 +415,14 @@ export default function CapacitacionPage() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
-          {pqCards.map((card) => {
+          {pqCards.map((card, i) => {
             const Icon = card.icon
             return (
               <div
                 key={card.accent}
-                className="flex flex-col rounded-[20px] overflow-hidden flex-1"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col rounded-[20px] overflow-hidden flex-1"
                 style={{ background: '#1A0A2E', height: '380px' }}
               >
                 {/* Image */}
@@ -443,7 +453,7 @@ export default function CapacitacionPage() {
         className="w-full flex flex-col items-center justify-center gap-8 px-5 md:px-[120px] py-[80px] text-center"
         style={{ background: 'linear-gradient(135deg, #1A0A2E 0%, #713ec1 50%, #32b8cc 100%)', minHeight: '480px' }}
       >
-        <div className="flex flex-col items-center gap-4 max-w-[740px]">
+        <div data-animate="scale" className="flex flex-col items-center gap-4 max-w-[740px]">
           <span className="px-6 py-2 rounded-full text-white text-[13px] font-semibold" style={{ background: 'rgba(255,255,255,0.149)' }}>
             ¿Listo para empezar?
           </span>
@@ -454,7 +464,7 @@ export default function CapacitacionPage() {
             Cuéntanos tu contexto y construimos una propuesta formativa a la medida de tu equipo o institución.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
+        <div data-animate data-delay="1" className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
           <Link
             href="/contacto"
             className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold w-full md:w-auto"

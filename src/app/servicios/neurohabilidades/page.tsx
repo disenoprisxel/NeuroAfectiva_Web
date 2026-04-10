@@ -65,34 +65,34 @@ export default function NeurohabilidadesPage() {
             </nav>
 
             {/* Pill */}
-            <span className="inline-flex self-start items-center px-4 py-2 rounded-full text-xs font-semibold text-[#743fc1] bg-[#f8f4ff]">
+            <span data-animate className="na-badge inline-flex self-start items-center px-4 py-2 rounded-full text-xs font-semibold text-[#743fc1] bg-[#f8f4ff]">
               Niños, adolescentes y familias
             </span>
 
             {/* Title */}
-            <h1 className="text-[28px] md:text-[48px] font-bold text-[#1A1A1A] leading-[1.15]">
+            <h1 data-animate data-delay="1" className="text-[28px] md:text-[48px] font-bold text-[#1A1A1A] leading-[1.15]">
               Neurohabilidades de Aprendizaje
             </h1>
 
             {/* Subtitle */}
-            <p className="text-[#6B6B6B] text-sm md:text-base leading-[1.7] max-w-[520px]">
+            <p data-animate data-delay="2" className="text-[#6B6B6B] text-sm md:text-base leading-[1.7] max-w-[520px]">
               Diagnóstico e intervención especializada en dificultades del aprendizaje: Dislexia, Disgrafía, Discalculia y TDAH. Acompañamos a niños, adolescentes, familias y colegios.
             </p>
 
             {/* CTA */}
-            <Link
-              href="/agendar"
-              className="inline-flex self-start items-center px-8 py-4 rounded-full text-sm md:text-[15px] font-semibold text-white"
-              style={{ background: 'linear-gradient(160deg, #fc66b5 0%, #713ec1 100%)' }}
-            >
-              Agendar evaluación
-            </Link>
+            <div data-animate data-delay="3">
+              <Link
+                href="/agendar"
+                className="na-btn na-btn-gradient inline-flex self-start items-center px-8 py-4 rounded-full text-sm md:text-[15px] font-semibold text-white"
+                style={{ background: 'linear-gradient(160deg, #fc66b5 0%, #713ec1 100%)' }}
+              >
+                Agendar evaluación
+              </Link>
+            </div>
           </div>
 
           {/* Hero image */}
-          <div
-            className="w-full md:flex-1 h-[240px] md:h-[420px] rounded-[24px] md:rounded-[48px] overflow-hidden shrink-0"
-          >
+          <div data-animate="right" className="na-img-zoom w-full md:flex-1 h-[240px] md:h-[420px] rounded-[24px] md:rounded-[48px] overflow-hidden shrink-0">
             <img
               src="https://images.unsplash.com/photo-1758612898114-4b1504db79a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
               alt="Neurohabilidades de Aprendizaje"
@@ -107,7 +107,7 @@ export default function NeurohabilidadesPage() {
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full">
           {/* Left: description + audience */}
           <div className="flex flex-col gap-5 flex-1 min-w-0">
-            <h2 className="text-[22px] md:text-[32px] font-bold text-[#1A1A1A]">
+            <h2 data-animate className="text-[22px] md:text-[32px] font-bold text-[#1A1A1A]">
               ¿Qué es este servicio?
             </h2>
             <p className="text-[#3D3D3D] text-sm md:text-[15px] leading-[1.8]">
@@ -117,10 +117,10 @@ export default function NeurohabilidadesPage() {
               Nuestro equipo de psicopedagogos y neuropsicólogos trabaja de manera coordinada con las familias y los colegios para diseñar estrategias de intervención que se implementan tanto en el entorno clínico como escolar y familiar.
             </p>
 
-            <h3 className="text-[20px] md:text-2xl font-bold text-[#1A1A1A] mt-2">
+            <h3 data-animate data-delay="1" className="text-[20px] md:text-2xl font-bold text-[#1A1A1A] mt-2">
               ¿A quién va dirigido?
             </h3>
-            <div className="flex flex-col gap-3">
+            <div data-animate data-delay="2" className="flex flex-col gap-3">
               {audienceItems.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="mt-[6px] shrink-0 w-2 h-2 rounded-full bg-[#fc66b5]" />
@@ -131,7 +131,7 @@ export default function NeurohabilidadesPage() {
           </div>
 
           {/* Right: includes card */}
-          <div className="w-full md:w-[360px] shrink-0">
+          <div data-animate="right" className="w-full md:w-[360px] shrink-0">
             <div className="flex flex-col gap-4 rounded-[20px] bg-[#713ec1] p-7">
               <h3 className="text-white text-xl font-bold">¿Qué incluye?</h3>
               {includesItems.map((item) => (
@@ -148,19 +148,21 @@ export default function NeurohabilidadesPage() {
       {/* ── Benefits ─────────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] py-[48px] md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
         {/* Header */}
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div data-animate="scale" className="flex flex-col items-center gap-3 text-center">
           <p className="text-[#713ec1] text-[11px] md:text-xs font-bold tracking-[2px] uppercase">Beneficios</p>
           <h2 className="text-[24px] md:text-[36px] font-bold text-[#1A1A1A]">¿Qué puede lograr tu hijo?</h2>
         </div>
 
         {/* Cards */}
         <div className="flex flex-col md:flex-row gap-6 w-full">
-          {benefits.map((b) => {
+          {benefits.map((b, i) => {
             const Icon = b.icon
             return (
               <div
                 key={b.title}
-                className="flex flex-col gap-3 rounded-2xl bg-white p-7 flex-1"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col gap-3 rounded-2xl bg-white p-7 flex-1"
                 style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.031), 0 12px 32px rgba(0,0,0,0.059)' }}
               >
                 <Icon size={32} style={{ color: b.color }} />
@@ -177,13 +179,13 @@ export default function NeurohabilidadesPage() {
         className="w-full flex flex-col items-center gap-5 px-5 md:px-[120px] py-[80px] text-center"
         style={{ background: 'linear-gradient(135deg, #713ec1 0%, #fc66b5 100%)' }}
       >
-        <h2 className="text-white text-[24px] md:text-[40px] font-bold max-w-[700px] leading-[1.2]">
+        <h2 data-animate="scale" className="text-white text-[24px] md:text-[40px] font-bold max-w-[700px] leading-[1.2]">
           ¿Quieres saber más sobre este servicio?
         </h2>
-        <p className="text-white/90 text-sm md:text-base max-w-[480px] leading-relaxed">
+        <p data-animate data-delay="1" className="text-white/90 text-sm md:text-base max-w-[480px] leading-relaxed">
           Agenda una consulta inicial y te orientamos sin compromiso.
         </p>
-        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
+        <div data-animate data-delay="2" className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
           <Link
             href="/agendar"
             className="flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"

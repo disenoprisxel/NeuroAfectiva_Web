@@ -86,7 +86,9 @@ export default function NeurosaudPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] pt-[60px] pb-0 flex flex-col items-center gap-7">
         {/* Badge */}
-        <div className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/[0.08] md:bg-[#FFFFFF15] border border-white/10 md:border-transparent"
+        <div
+          data-animate
+          className="na-badge flex items-center gap-2 px-5 py-2 rounded-full"
           style={{ background: 'rgba(113,62,193,0.06)' }}
         >
           <Brain size={15} style={{ color: '#32b8cc' }} />
@@ -97,6 +99,7 @@ export default function NeurosaudPage() {
 
         {/* Title */}
         <h1
+          data-animate data-delay="1"
           className="text-[32px] md:text-[68px] font-bold text-[#1a1a1a] text-center leading-[1.1]"
           style={{ letterSpacing: '-1px' }}
         >
@@ -104,23 +107,25 @@ export default function NeurosaudPage() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-[#1a1a1a] text-sm md:text-lg text-center leading-[1.65] max-w-[680px]">
+        <p data-animate data-delay="2" className="text-[#1a1a1a] text-sm md:text-lg text-center leading-[1.65] max-w-[680px]">
           Evaluación e intervención neuropsicológica para optimizar tus funciones cognitivas y fortalecer tu bienestar emocional.
         </p>
 
         {/* CTA */}
-        <Link
-          href="/agendar"
-          className="inline-flex items-center px-9 py-4 rounded-full text-[15px] md:text-base font-bold text-white"
-          style={{ background: '#713ec1' }}
-        >
-          Agendar Consulta
-        </Link>
+        <div data-animate data-delay="3">
+          <Link
+            href="/agendar"
+            className="na-btn na-btn-gradient inline-flex items-center px-9 py-4 rounded-full text-[15px] md:text-base font-bold text-white"
+            style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
+          >
+            Agendar Consulta
+          </Link>
+        </div>
 
         {/* Hero image strip */}
-        <div className="w-full flex justify-center">
+        <div data-animate="scale" data-delay="4" className="w-full flex justify-center">
           <div
-            className="w-full md:w-[760px] h-[200px] md:h-[220px] overflow-hidden"
+            className="na-img-zoom w-full md:w-[760px] h-[200px] md:h-[220px] overflow-hidden"
             style={{ borderRadius: '24px 24px 0 0' }}
           >
             <img
@@ -211,12 +216,14 @@ export default function NeurosaudPage() {
 
         {/* 2×2 Grid */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full">
-          {audienceCards.map((card) => {
+          {audienceCards.map((card, i) => {
             const Icon = card.icon
             return (
               <div
                 key={card.title}
-                className="flex flex-col gap-4 p-7 rounded-[20px]"
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col gap-4 p-7 rounded-[20px]"
                 style={{
                   background: 'rgba(255,255,255,0.051)',
                   border: '1px solid rgba(255,255,255,0.082)',
@@ -257,9 +264,11 @@ export default function NeurosaudPage() {
 
         {/* Benefit rows — desktop: horizontal strips; mobile: cards */}
         <div className="flex flex-col gap-0.5">
-          {benefitRows.map((row) => (
+          {benefitRows.map((row, i) => (
             <div
               key={row.num}
+              data-animate
+              data-delay={String(i + 1)}
               className={`w-full ${row.cornerRadius}`}
               style={{ background: row.rowBg }}
             >
@@ -351,16 +360,16 @@ export default function NeurosaudPage() {
         className="w-full flex flex-col items-center gap-5 md:gap-6 px-5 md:px-[120px] py-14 md:py-[80px] text-center"
         style={{ background: 'linear-gradient(150deg, #713ec1 0%, #fc66b5 100%)' }}
       >
-        <h2 className="text-white text-[24px] md:text-[38px] font-extrabold max-w-[700px] leading-[1.2]">
+        <h2 data-animate="scale" className="text-white text-[24px] md:text-[38px] font-extrabold max-w-[700px] leading-[1.2]">
           ¿Listo para transformar tu bienestar?
         </h2>
-        <p className="text-white/80 text-sm md:text-[17px] max-w-[520px] leading-[1.5]">
+        <p data-animate data-delay="1" className="text-white/80 text-sm md:text-[17px] max-w-[520px] leading-[1.5]">
           Tu cerebro tiene la capacidad de cambiar. Nosotros te acompañamos en ese proceso.
         </p>
-        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
+        <div data-animate data-delay="2" className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
           <Link
             href="/agendar"
-            className="flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"
+            className="na-btn flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"
             style={{ color: '#713ec1' }}
           >
             <Calendar size={18} style={{ color: '#713ec1' }} />

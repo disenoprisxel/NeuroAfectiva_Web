@@ -109,25 +109,26 @@ export default function ExpresaMentePage() {
           </nav>
 
           {/* Tag */}
-          <div className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full" style={{ background: '#E8F9FD' }}>
+          <div data-animate className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full na-badge" style={{ background: '#E8F9FD' }}>
             <Palette size={13} style={{ color: '#32b8cc' }} />
             <span className="text-[#1a9aad] text-[12px] font-semibold">Terapia a través de la expresión creativa</span>
           </div>
 
           {/* Title */}
           <h1
+            data-animate data-delay="1"
             className="text-[40px] md:text-[52px] font-extrabold text-[#2D2D3A] leading-[0.95]"
             style={{ letterSpacing: '-2px' }}
           >
             Expresa. Crea. Sana.
           </h1>
 
-          <p className="text-[#737f80] text-sm leading-[1.6] max-w-[440px]">
+          <p data-animate data-delay="2" className="text-[#737f80] text-sm leading-[1.6] max-w-[440px]">
             Un espacio terapéutico donde el arte, la música, el movimiento y la escritura se convierten en el lenguaje del alma.
           </p>
 
           {/* Buttons */}
-          <div className="flex items-center gap-3">
+          <div data-animate data-delay="3" className="flex items-center gap-3">
             <Link
               href="/agendar"
               className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-bold text-white"
@@ -181,7 +182,7 @@ export default function ExpresaMentePage() {
       {/* ── Qué es ───────────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12">
         {/* Header */}
-        <div className="flex flex-col items-center gap-4 text-center w-full">
+        <div data-animate="scale" className="flex flex-col items-center gap-4 text-center w-full">
           <div className="flex items-center gap-4">
             <div className="flex-1 h-px" style={{ background: '#32b8cc' }} />
             <span className="text-[#32b8cc] text-[12px] font-extrabold tracking-[3px] uppercase">El programa</span>
@@ -221,16 +222,17 @@ export default function ExpresaMentePage() {
 
       {/* ── Modalidades ──────────────────────────────────────────────────── */}
       <section id="modalidades" className="w-full" style={{ background: '#FAFAFA' }}>
-        <div className="px-5 md:px-[120px] py-[64px] pb-10 flex flex-col gap-2.5">
+        <div data-animate className="px-5 md:px-[120px] py-[64px] pb-10 flex flex-col gap-2.5">
           <span className="text-[#713ec1] text-[11px] font-extrabold tracking-[3px] uppercase">Las modalidades</span>
           <h2 className="text-[26px] md:text-[38px] font-extrabold text-[#2D2D3A]">Cuatro caminos hacia la expresión</h2>
         </div>
 
         {/* Modality rows */}
         <div className="flex flex-col">
-          {modalities.map((mod) => (
+          {modalities.map((mod, i) => (
             <div
               key={mod.num}
+              data-animate={i % 2 === 0 ? 'left' : 'right'}
               className="flex flex-col md:flex-row"
               style={{ height: 'auto', minHeight: '260px' }}
             >
@@ -298,6 +300,7 @@ export default function ExpresaMentePage() {
           </div>
           {/* Right dark content */}
           <div
+            data-animate="right"
             className="flex flex-col justify-center gap-8 flex-1 px-5 md:px-[80px] py-[60px]"
             style={{ background: '#100A22' }}
           >
@@ -351,7 +354,7 @@ export default function ExpresaMentePage() {
         className="w-full flex flex-col items-center justify-center gap-8 px-5 md:px-[120px] py-[80px] text-center"
         style={{ background: 'linear-gradient(135deg, #fc66b5 0%, #713ec1 50%, #32b8cc 100%)', minHeight: '480px' }}
       >
-        <div className="flex flex-col items-center gap-4 w-full max-w-[780px]">
+        <div data-animate="scale" className="flex flex-col items-center gap-4 w-full max-w-[780px]">
           <span className="px-6 py-2 rounded-full text-white text-[13px] font-semibold" style={{ background: 'rgba(255,255,255,0.2)' }}>
             Empieza hoy
           </span>
@@ -362,7 +365,7 @@ export default function ExpresaMentePage() {
             Sesiones individuales y grupales disponibles. Primera consulta sin compromiso.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
+        <div data-animate data-delay="1" className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
           <Link
             href="/agendar"
             className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold w-full md:w-auto"
