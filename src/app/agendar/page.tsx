@@ -116,11 +116,11 @@ export default function AgendarPage() {
         className="w-full flex flex-col items-center justify-center gap-3.5 px-5 text-center"
         style={{ height: '200px', background: 'linear-gradient(180deg, #FDF5FF 0%, #FFFFFF 100%)' }}
       >
-        <span className="px-5 py-1.5 rounded-full text-[#713ec1] text-[13px] font-semibold" style={{ background: '#F0E6FF' }}>
+        <span data-animate className="na-badge px-5 py-1.5 rounded-full text-[#713ec1] text-[13px] font-semibold" style={{ background: '#F0E6FF' }}>
           Atención especializada · Tu bienestar en manos expertas
         </span>
-        <h1 className="text-[36px] md:text-[52px] font-black text-[#1A1A2E]">Agenda tu cita</h1>
-        <p className="text-[#737f80] text-sm md:text-base">
+        <h1 data-animate data-delay="1" className="text-[36px] md:text-[52px] font-black text-[#1A1A2E]">Agenda tu cita</h1>
+        <p data-animate data-delay="2" className="text-[#737f80] text-sm md:text-base">
           Reserva tu sesión en minutos. Confirmaremos tu cita en menos de 24 horas.
         </p>
       </section>
@@ -463,7 +463,7 @@ export default function AgendarPage() {
           <div className="flex flex-col gap-6 w-full md:w-[380px] shrink-0">
 
             {/* Cómo funciona */}
-            <div className="flex flex-col gap-6 rounded-[20px] p-8" style={{ background: '#1A0A2E' }}>
+            <div data-animate="right" className="flex flex-col gap-6 rounded-[20px] p-8" style={{ background: '#1A0A2E' }}>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-white text-[18px] font-bold">¿Cómo funciona?</h3>
                 <p className="text-[#9988C0] text-[14px]">Reservar tu cita es fácil y rápido.</p>
@@ -486,6 +486,8 @@ export default function AgendarPage() {
 
             {/* Contacto */}
             <div
+              data-animate="right"
+              data-delay="1"
               className="flex flex-col gap-5 rounded-[20px] p-7"
               style={{ background: '#F8F5FF', border: '1px solid #E8E0FF' }}
             >
@@ -511,6 +513,8 @@ export default function AgendarPage() {
 
             {/* Horarios */}
             <div
+              data-animate="right"
+              data-delay="2"
               className="flex flex-col gap-4 rounded-[20px] p-7"
               style={{ background: '#F0FAFB', border: '1px solid #C8EDF5' }}
             >
@@ -536,10 +540,10 @@ export default function AgendarPage() {
         className="w-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 px-5 md:px-[120px] py-7"
         style={{ background: '#F5F3FF' }}
       >
-        {reassure.map(r => {
+        {reassure.map((r, i) => {
           const Icon = r.icon
           return (
-            <div key={r.text} className="flex items-center gap-2.5">
+            <div key={r.text} data-animate="scale" data-delay={String(i + 1)} className="flex items-center gap-2.5">
               <Icon size={20} style={{ color: r.color }} />
               <span className="text-[#374151] text-[14px]">{r.text}</span>
             </div>

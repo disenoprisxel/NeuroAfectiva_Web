@@ -176,21 +176,21 @@ function HeroComoTrabajamos() {
   return (
     <section className="bg-white py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-block bg-[#FFF0F9] text-[#fc66b5] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+        <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#fc66b5] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
           Nuestro Proceso
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5">
+        <h1 data-animate data-delay="1" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5">
           Nuestro proceso de<br className="hidden sm:block" /> acompañamiento
         </h1>
-        <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto mb-10">
+        <p data-animate data-delay="2" className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto mb-10">
           Cada persona merece un camino terapéutico diseñado a su medida. Así es como trabajamos juntos.
         </p>
         {/* Step pills */}
-        <div className="flex flex-wrap justify-center gap-2">
+        <div data-animate data-delay="3" className="flex flex-wrap justify-center gap-2">
           {stepPills.map((p) => (
             <span
               key={p.num}
-              className="bg-[#713ec1] text-white text-xs font-bold px-4 py-2 rounded-full"
+              className="na-badge bg-[#713ec1] text-white text-xs font-bold px-4 py-2 rounded-full"
             >
               {p.num} · {p.label}
             </span>
@@ -209,9 +209,9 @@ function PasoStep({ paso }: { paso: typeof pasos[0] }) {
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${paso.reverse ? 'lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1' : ''}`}>
 
           {/* Text side */}
-          <div>
+          <div data-animate={paso.reverse ? 'right' : 'left'}>
             <div className="flex items-center gap-3 mb-5">
-              <span className={`w-10 h-10 rounded-full ${paso.numColor} text-white font-extrabold text-base flex items-center justify-center flex-shrink-0`}>
+              <span className={`na-step-badge w-10 h-10 rounded-full ${paso.numColor} text-white font-extrabold text-base flex items-center justify-center flex-shrink-0`}>
                 {paso.num}
               </span>
               <span className={`w-10 h-10 rounded-xl flex items-center justify-center ${paso.iconColor}`}>
@@ -229,7 +229,7 @@ function PasoStep({ paso }: { paso: typeof pasos[0] }) {
           </div>
 
           {/* Image side */}
-          <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
+          <div data-animate={paso.reverse ? 'left' : 'right'} data-delay="1" className="na-img-zoom rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
             <img
               src={paso.img}
               alt={paso.title}
@@ -248,22 +248,24 @@ function ModalidadesSection() {
     <section className="bg-[#1A1035] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-bold tracking-widest text-[#fc66b5] uppercase mb-4 block">
+          <span data-animate className="text-xs font-bold tracking-widest text-[#fc66b5] uppercase mb-4 block">
             Modalidades de Atención
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          <h2 data-animate data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Elige cómo quieres ser atendido
           </h2>
-          <p className="text-gray-400 text-sm max-w-xl mx-auto">
+          <p data-animate data-delay="2" className="text-gray-400 text-sm max-w-xl mx-auto">
             Nos adaptamos a tu realidad y disponibilidad para que el acompañamiento sea posible desde donde estés.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {modalidades.map((m) => (
+          {modalidades.map((m, i) => (
             <div
               key={m.title}
-              className={`rounded-2xl p-8 bg-gradient-to-br ${m.gradient} text-white flex flex-col`}
+              data-animate
+              data-delay={String(i + 1)}
+              className={`na-card rounded-2xl p-8 bg-gradient-to-br ${m.gradient} text-white flex flex-col`}
             >
               <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-5">
                 {m.icon}
@@ -289,16 +291,16 @@ function CTAComoTrabajamos() {
       style={{ background: 'linear-gradient(135deg, #713ec1 0%, #a855f7 50%, #fc66b5 100%)' }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
+        <h2 data-animate="scale" className="text-3xl sm:text-4xl font-extrabold mb-4">
           ¿Listo para dar el primer paso?
         </h2>
-        <p className="text-white/80 text-base mb-10 max-w-xl mx-auto">
+        <p data-animate data-delay="1" className="text-white/80 text-base mb-10 max-w-xl mx-auto">
           Agenda tu primera consulta y comienza el camino hacia el bienestar neuropsicológico de tu familia.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div data-animate data-delay="2" className="flex flex-wrap justify-center gap-4">
           <Link
             href="/agendar"
-            className="bg-white text-[#713ec1] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm flex items-center gap-2"
+            className="na-btn bg-white text-[#713ec1] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />

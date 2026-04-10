@@ -264,11 +264,11 @@ export default function ContactoPage() {
       {/* Hero */}
       <section className="bg-[#F8F4FF] py-14 lg:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block bg-[#FFF0F9] text-[#fc66b5] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
+          <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#fc66b5] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
             Contáctanos
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">¿Hablamos?</h1>
-          <p className="text-gray-500 text-base">
+          <h1 data-animate data-delay="1" className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">¿Hablamos?</h1>
+          <p data-animate data-delay="2" className="text-gray-500 text-base">
             Estamos aquí para orientarte. Escríbenos o agenda tu cita.
           </p>
         </div>
@@ -280,18 +280,18 @@ export default function ContactoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
 
             {/* Form — 3/5 */}
-            <div className="lg:col-span-3">
+            <div data-animate="left" className="lg:col-span-3">
               <h2 className="text-2xl font-extrabold text-gray-900 mb-7">Envíanos un mensaje</h2>
               <ContactForm />
             </div>
 
             {/* Info — 2/5 */}
-            <div className="lg:col-span-2">
+            <div data-animate="right" className="lg:col-span-2">
               <h2 className="text-2xl font-extrabold text-gray-900 mb-7">Información de contacto</h2>
 
               <div className="space-y-4 mb-8">
-                {contactInfo.map((item) => (
-                  <div key={item.label} className="flex gap-4 items-start">
+                {contactInfo.map((item, i) => (
+                  <div key={item.label} data-animate="right" data-delay={String(i + 1)} className="flex gap-4 items-start">
                     <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${item.color}`}>
                       {item.icon}
                     </div>
