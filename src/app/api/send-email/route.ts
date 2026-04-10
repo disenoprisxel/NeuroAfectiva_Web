@@ -2,7 +2,9 @@ import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_APP_PASSWORD,
@@ -74,8 +76,9 @@ export async function POST(req: Request) {
     })
 
     return NextResponse.json({ ok: true })
-  } catch (err) {
-    console.error('Email send error:', err)
-    return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 })
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err)
+    console.error('Email send error:', message)
+    return NextResponse.json({ error: 'Error interno del servidor', detail: message }, { status: 500 })
   }
 }
