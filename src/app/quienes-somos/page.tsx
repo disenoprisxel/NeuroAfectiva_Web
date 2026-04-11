@@ -27,7 +27,7 @@ function HeroQuienesSomos() {
                 src="/images/clinic.jpg"
                 alt="Clínica NeuroAfectiva"
                 className="w-full h-full object-cover opacity-80"
-                data-parallax="0.13"
+                data-parallax="0.078"
               />
             </div>
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700 flex items-center gap-1.5">

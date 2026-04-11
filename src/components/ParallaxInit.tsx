@@ -14,7 +14,7 @@ export default function ParallaxInit() {
         'main section img, main section [data-parallax]'
       ).forEach(el => {
         if (!el.dataset.parallax) {
-          el.dataset.parallax = '0.12'
+          el.dataset.parallax = '0.072'
         }
       })
 
@@ -23,7 +23,7 @@ export default function ParallaxInit() {
         'section[style*="gradient"], section[style*="linear-gradient"]'
       ).forEach(el => {
         if (!el.dataset.parallax) {
-          el.dataset.parallax = '0.06'
+          el.dataset.parallax = '0.036'
         }
       })
     }
@@ -32,7 +32,7 @@ export default function ParallaxInit() {
       const scrollY = window.scrollY
 
       document.querySelectorAll<HTMLElement>('[data-parallax]').forEach(el => {
-        const speed = parseFloat(el.dataset.parallax ?? '0.12')
+        const speed = parseFloat(el.dataset.parallax ?? '0.072')
         const rect = el.getBoundingClientRect()
 
         // Skip elements far outside viewport

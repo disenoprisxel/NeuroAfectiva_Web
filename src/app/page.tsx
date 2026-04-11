@@ -74,7 +74,7 @@ function HeroSection() {
                 src="/images/hero.jpg"
                 alt="Sesión de neuropsicología en NeuroAfectiva"
                 className="w-full h-full object-cover"
-                data-parallax="0.1"
+                data-parallax="0.06"
               />
             </div>
           </div>
@@ -313,7 +313,7 @@ function BienestarSection() {
                 src="/images/team.jpg"
                 alt="Equipo NeuroAfectiva"
                 className="w-full h-full object-cover"
-                data-parallax="0.14"
+                data-parallax="0.084"
               />
             </div>
             <div className="absolute bottom-5 left-5 bg-white rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700">
@@ -476,7 +476,7 @@ function CTASection() {
     <section
       className="py-20 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #713ec1 0%, #a855f7 50%, #fc66b5 100%)' }}
-      data-parallax="0.06"
+      data-parallax="0.036"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h2 data-animate="scale" className="text-3xl sm:text-4xl font-extrabold mb-4">¿Listo para dar el primer paso?</h2>
