@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tasklist)",
+      "Bash(powershell \"Get-Process | Where-Object {$_me -like ''''*pencil*''''} | Select-Object Name, Id, CPU\")",
+      "Read(//c/Users/Christian/AppData/Roaming/Pencil/**)",
+      "Read(//c/Users/Christian/AppData/Local/**)",
+      "Read(//c/Users/Christian/AppData/**)",
+      "Bash(cat C:/Users/Christian/AppData/Roaming/Pencil/logs/*.log)",
+      "Bash(find C:/Users/Christian/AppData/Local/Temp -name *pencil* -o -name *mcp-port*)",
+      "Bash(find C:/Users/Christian/AppData/Roaming/Pencil -name *.json)",
+      "Bash(find C:/Users/Christian/AppData/Local/Temp/pencil* -type f)",
+      "Bash(\"C:/Program Files/Pencil/resources/app.asar.unpacked/out/mcp-server-windows-x64.exe\" --app desktop)",
+      "Bash(printf '{\"\"\"\"jsonrpc\"\"\"\":\"\"\"\"2.0\"\"\"\",\"\"\"\"id\"\"\"\":1,\"\"\"\"method\"\"\"\":\"\"\"\"initialize\"\"\"\",\"\"\"\"params\"\"\"\":{\"\"\"\"protocolVersion\"\"\"\":\"\"\"\"2024-11-05\"\"\"\",\"\"\"\"capabilities\"\"\"\":{},\"\"\"\"clientInfo\"\"\"\":{\"\"\"\"name\"\"\"\":\"\"\"\"test\"\"\"\",\"\"\"\"version\"\"\"\":\"\"\"\"1.0\"\"\"\"}}}\\\\n{\"\"\"\"jsonrpc\"\"\"\":\"\"\"\"2.0\"\"\"\",\"\"\"\"id\"\"\"\":2,\"\"\"\"method\"\"\"\":\"\"\"\"tools/call\"\"\"\",\"\"\"\"params\"\"\"\":{\"\"\"\"name\"\"\"\":\"\"\"\"get_editor_state\"\"\"\",\"\"\"\"arguments\"\"\"\":{}}}\\\\n')",
+      "Bash(find C:/Users/Christian/AppData -name *pencil* -newer C:/Users/Christian/AppData/Roaming/Pencil/config.json)",
+      "Bash(powershell \"netstat -ano | findstr ''54372 54199''\")",
+      "Bash(powershell \"Get-Process -Id 22612 | Select-Object Name, Id, MainWindowTitle, Path\")",
+      "Bash(powershell \"Invoke-WebRequest -Uri ''''http://[::1]:54372'''' -TimeoutSec 3\")",
+      "Bash(powershell \"Get-ChildItem -Path ''$env:TEMP'' -Recurse -File -ErrorAction SilentlyContinue | Where-Object {$_LastWriteTime -gt \\(Get-Date\\).AddHours\\(-3\\) -and $_Name -notlike ''claude*''} | Select-Object FullName, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 20\")",
+      "Bash(powershell \"Get-ChildItem -Path ''''$env:LOCALAPPDATA'''' -Recurse -File -ErrorAction SilentlyContinue -Filter ''''*pencil*port*''''\")",
+      "Bash(powershell \"Get-ChildItem -Path ''''$env:LOCALAPPDATA\\\\Pencil'''' -Recurse -File -ErrorAction SilentlyContinue | Select-Object FullName\")",
+      "Bash(powershell \"Select-String -Path ''C:\\\\Program Files\\\\Pencil\\\\resources\\\\app.asar.unpacked\\\\out\\\\mcp-server-windows-x64.exe'' -Pattern ''port|socket|AppData|pencil|ws://'' -SimpleMatch 2>/dev/null | Select-Object -First 20\")",
+      "Bash(powershell \"& ''''C:\\\\Program Files\\\\Pencil\\\\resources\\\\app.asar.unpacked\\\\out\\\\mcp-server-windows-x64.exe'''' --help 2>&1\")",
+      "Bash(\"C:/Program Files/Pencil/resources/app.asar.unpacked/out/mcp-server-windows-x64.exe\" --help)",
+      "Bash(echo $HOME)",
+      "Read(//c/Users/Christian/.claude/**)",
+      "Bash(git -C \"D:/Trabajos/NeuroAfectiva/Diseño_Web/Neuroafectiva_Web_Site/\" status)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx next:*)",
+      "Bash(node -e \"const l = require\\('./node_modules/lucide-react/dist/cjs/lucide-react.js'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('insta'\\) || k.toLowerCase\\(\\).includes\\('facebook'\\) || k.toLowerCase\\(\\).includes\\('social'\\) || k.toLowerCase\\(\\).includes\\('share'\\)\\)\\)\")",
+      "Read(//d/Trabajos/NeuroAfectiva/Diseño_Web/Neuroafectiva_Web_Site/**)",
+      "Bash(node -e \"const l = require\\('./node_modules/lucide-react/dist/cjs/lucide-react.js'\\); console.log\\(Object.keys\\(l\\).filter\\(k => /insta|facebook|social|share|twitter|linkedin/i.test\\(k\\)\\)\\)\")"
+    ]
+  }
+}
