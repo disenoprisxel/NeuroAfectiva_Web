@@ -99,7 +99,7 @@ const pasos = [
     desc: 'Diseñamos una ruta terapéutica y/o educativa personalizada con objetivos claros, cronograma y estrategias específicas para cada contexto: hogar, colegio y trabajo.',
     feature: 'Objetivos claros · Hogar, colegio y trabajo',
     featureColor: 'text-[#713ec1] bg-[#F0EAFB]',
-    img: 'https://images.unsplash.com/photo-p9gHH2UN-kc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    img: '/images/paso-05-plan.jpg',
     sectionBg: 'bg-white',
     reverse: false,
   },
