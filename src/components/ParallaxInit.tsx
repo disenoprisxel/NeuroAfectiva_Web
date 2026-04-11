@@ -15,6 +15,12 @@ export default function ParallaxInit() {
       ).forEach(el => {
         if (!el.dataset.parallax) {
           el.dataset.parallax = '0.072'
+          // Expand images so parallax movement never reveals container background
+          if (el.tagName === 'IMG') {
+            el.style.height = '120%'
+            el.style.marginTop = '-10%'
+            el.style.objectFit = 'cover'
+          }
         }
       })
 
@@ -25,6 +31,14 @@ export default function ParallaxInit() {
         if (!el.dataset.parallax) {
           el.dataset.parallax = '0.036'
         }
+      })
+
+      // Expand ALL parallax images (auto-tagged + explicit) so movement
+      // never reveals the container background behind them
+      document.querySelectorAll<HTMLElement>('img[data-parallax]').forEach(el => {
+        el.style.height = '120%'
+        el.style.marginTop = '-10%'
+        el.style.objectFit = 'cover'
       })
     }
 
