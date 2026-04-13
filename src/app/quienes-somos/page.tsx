@@ -167,18 +167,20 @@ function StatsDark() {
 /* ─── EQUIPO DE ESPECIALISTAS ───────────────────────────── */
 const especialistas = [
   {
-    nombre: 'Viviana M. Trujillo',
-    especialidad: 'Neuropsicóloga Educativa',
-    formacion: 'Especialista Universidad de La Rioja',
-    exp: '',
-    badge: { label: 'Educativa', color: 'bg-[#F0EAFB] text-[#713ec1]' },
-  },
-  {
     nombre: 'Johanna Castro',
     especialidad: 'Neuropsicóloga Clínica',
     formacion: 'Capacitación internacional',
     exp: '',
     badge: { label: 'Clínica', color: 'bg-[#E8F9FD] text-[#32b8cc]' },
+    img: '/images/johanna-quienes.jpg',
+  },
+  {
+    nombre: 'Viviana M. Trujillo',
+    especialidad: 'Neuropsicóloga Educativa',
+    formacion: 'Especialista Universidad de La Rioja',
+    exp: '',
+    badge: { label: 'Educativa', color: 'bg-[#F0EAFB] text-[#713ec1]' },
+    img: '/images/viviana-quienes.jpg',
   },
 ]
 
@@ -237,7 +239,7 @@ function EquipoSection() {
               >
                 <div className="na-img-zoom w-16 h-16 rounded-2xl bg-[#F0EAFB] flex-shrink-0 overflow-hidden">
                   <img
-                    src={`/images/${e.nombre.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '')}.jpg`}
+                    src={e.img}
                     alt={e.nombre}
                     className="w-full h-full object-cover"
                   />
