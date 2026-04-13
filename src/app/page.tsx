@@ -310,8 +310,8 @@ function BienestarSection() {
           <div data-animate="left" className="relative na-img-zoom overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
               <img
-                src="/images/team.jpg"
-                alt="Equipo NeuroAfectiva"
+                src="/images/bienestar.jpg"
+                alt="Tu bienestar es nuestra prioridad"
                 className="w-full h-full object-cover"
                 data-parallax="0.084"
               />
