@@ -99,7 +99,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <span>© {new Date().getFullYear()} NeuroAfectiva. Todos los derechos reservados.</span>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <span className="text-gray-400">Hecho por PRISXEL con ❤️</span>
             <Link href="/privacidad" className="hover:text-gray-300 transition-colors">Política de Privacidad</Link>
             <Link href="/terminos" className="hover:text-gray-300 transition-colors">Términos de Uso</Link>
           </div>
