@@ -70,7 +70,7 @@ export default function PrivacidadPage() {
           <Article num="1" title="Identificación del Responsable del Tratamiento">
             <p>
               En cumplimiento del artículo 17 de la Ley 1581 de 2012, el responsable del tratamiento de los datos
-              personales recopilados a través del sitio web <strong>https://neuro-afectiva-web.vercel.app</strong> y
+              personales recopilados a través del sitio web <strong>www.neuroafectiva.com</strong> y
               de los demás canales de atención es:
             </p>
             <table>
@@ -80,7 +80,7 @@ export default function PrivacidadPage() {
                 <Row label="Domicilio principal" value="Bogotá D.C., Colombia" />
                 <Row label="Correo electrónico" value="neuroafectiva.bog@gmail.com" />
                 <Row label="Teléfono" value="+57 319 351 7239" />
-                <Row label="Sitio web" value="https://neuro-afectiva-web.vercel.app" />
+                <Row label="Sitio web" value="www.neuroafectiva.com" />
               </tbody>
             </table>
           </Article>
