@@ -34,8 +34,10 @@ export default function ParallaxInit() {
       })
 
       // Expand ALL parallax images (auto-tagged + explicit) so movement
-      // never reveals the container background behind them
+      // never reveals the container background behind them.
+      // Skip images opted-out with data-parallax="0"
       document.querySelectorAll<HTMLElement>('img[data-parallax]').forEach(el => {
+        if (el.dataset.parallax === '0') return
         el.style.height = '120%'
         el.style.marginTop = '-10%'
         el.style.objectFit = 'cover'
