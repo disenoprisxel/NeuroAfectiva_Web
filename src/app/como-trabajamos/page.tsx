@@ -77,7 +77,7 @@ const pasos = [
     ),
     iconColor: 'text-[#fc66b5] bg-[#FFF0F9]',
     title: 'Diagnóstico e informe',
-    desc: 'Entregamos un informe claro, accesible y orientador con los resultados. Te lo explicamos en detalle para que tú y tu familia lo entiendan completamente.',
+    desc: 'Entregamos un informe claro, accesible y orientador con los resultados. Te lo explicamos en detalle para que el paciente y la familia (según el caso) lo entiendan completamente.',
     feature: 'Explicado paso a paso · Para toda la familia',
     featureColor: 'text-[#fc66b5] bg-[#FFF0F9]',
     img: '/images/paso-04-diagnostico.jpg',
