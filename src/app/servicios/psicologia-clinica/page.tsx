@@ -85,8 +85,7 @@ export default function PsicologiaClinicalPage() {
 
           {/* Badge */}
           <div
-            data-animate
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full na-badge"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full"
             style={{ background: 'rgba(252,102,181,0.082)', border: '1px solid rgba(252,102,181,0.314)' }}
           >
             <Heart size={15} style={{ color: '#fc66b5' }} />
@@ -95,19 +94,18 @@ export default function PsicologiaClinicalPage() {
 
           {/* Title */}
           <h1
-            data-animate data-delay="1"
             className="text-[40px] md:text-[64px] font-extrabold text-white leading-[1.1] max-w-[860px]"
             style={{ letterSpacing: '-2px' }}
           >
             Línea de<br />Psicología Clínica
           </h1>
 
-          <p data-animate data-delay="2" className="text-white/80 text-sm md:text-lg leading-[1.65] max-w-[660px]">
+          <p className="text-white/80 text-sm md:text-lg leading-[1.65] max-w-[660px]">
             Acompañamiento psicológico individual, de pareja y familiar para sanar, crecer y recuperar el bienestar emocional que mereces.
           </p>
 
           {/* Buttons */}
-          <div data-animate data-delay="3" className="flex flex-col md:flex-row items-center gap-4 mt-2">
+          <div className="flex flex-col md:flex-row items-center gap-4 mt-2">
             <Link
               href="/agendar"
               className="flex items-center justify-center px-8 py-3.5 rounded-full text-[15px] font-bold text-white w-full md:w-auto"
@@ -130,7 +128,7 @@ export default function PsicologiaClinicalPage() {
       <section className="w-full bg-white px-5 md:px-[120px] py-[80px]">
         <div className="flex flex-col md:flex-row items-center gap-16 md:gap-20 w-full">
           {/* Image */}
-          <div data-animate="left" className="relative w-full md:w-[520px] h-[360px] md:h-[520px] shrink-0 rounded-[24px] overflow-hidden na-img-zoom">
+          <div className="relative w-full md:w-[520px] h-[360px] md:h-[520px] shrink-0 rounded-[24px] overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1758691462743-f9fc9e430d39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
               alt="Psicología Clínica"
@@ -149,13 +147,13 @@ export default function PsicologiaClinicalPage() {
               className="absolute bottom-11 right-0 flex flex-col gap-0.5 px-5 py-3.5 rounded-xl"
               style={{ background: '#fc66b5' }}
             >
-              <span className="text-white text-[22px] font-extrabold">+500</span>
-              <span className="text-white text-[11px] font-semibold">pacientes</span>
+              <span className="text-white text-[22px] font-extrabold">+80</span>
+              <span className="text-white text-[11px] font-semibold">evaluaciones</span>
             </div>
           </div>
 
           {/* Content */}
-          <div data-animate="right" className="flex flex-col gap-6 flex-1 min-w-0">
+          <div className="flex flex-col gap-6 flex-1 min-w-0">
             <span className="px-4 py-1.5 self-start rounded-full text-[13px] font-semibold text-[#fc66b5]" style={{ background: '#FFF0F9' }}>
               Sobre este servicio
             </span>
@@ -190,7 +188,7 @@ export default function PsicologiaClinicalPage() {
 
       {/* ── Especialidades ───────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#FFF0F9' }}>
-        <div data-animate="scale" className="flex flex-col items-center gap-3 text-center">
+        <div className="flex flex-col items-center gap-3 text-center">
           <span className="text-[#fc66b5] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Áreas de atención</span>
           <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2D2D3A]">Condiciones que tratamos</h2>
           <p className="text-[#737f80] text-sm md:text-base leading-[1.6] max-w-[640px]">
@@ -198,7 +196,7 @@ export default function PsicologiaClinicalPage() {
           </p>
         </div>
 
-        <div data-animate data-delay="1" className="flex flex-col gap-3 w-full">
+        <div className="flex flex-col gap-3 w-full">
           {/* Row 1 */}
           <div className="flex flex-wrap justify-center gap-3">
             {specialties.slice(0, 5).map((s) => {
@@ -240,7 +238,7 @@ export default function PsicologiaClinicalPage() {
       {/* ── Proceso ──────────────────────────────────────────────────────── */}
       <section id="proceso" className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         {/* Header */}
-        <div data-animate className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-2.5">
             <span className="text-[#fc66b5] text-[11px] font-extrabold tracking-[3px] uppercase">El proceso terapéutico</span>
             <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#2D2D3A] leading-[1.2]">
@@ -255,7 +253,7 @@ export default function PsicologiaClinicalPage() {
         {/* Timeline */}
         <div className="flex flex-col gap-0">
           {processSteps.map((step, i) => (
-            <div key={step.num} data-animate data-delay={String(i + 1)} className="flex gap-0 w-full">
+            <div key={step.num} className="flex gap-0 w-full">
               {/* Left column: dot + line */}
               <div className="flex flex-col items-center w-[80px] shrink-0">
                 <div
@@ -288,17 +286,17 @@ export default function PsicologiaClinicalPage() {
       >
         <div className="flex flex-col items-center gap-6 px-5 md:px-[120px] w-full max-w-[860px]">
           {/* Quote pill */}
-          <div data-animate className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-[20px]" style={{ background: 'rgba(255,255,255,0.125)' }}>
+          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-[20px]" style={{ background: 'rgba(255,255,255,0.125)' }}>
             <Quote size={16} className="text-white" />
             <span className="text-white text-sm italic font-medium">"El primer paso es el más valiente."</span>
           </div>
-          <h2 data-animate data-delay="1" className="text-white text-[28px] md:text-[40px] font-extrabold leading-[1.2] max-w-[760px]">
+          <h2 className="text-white text-[28px] md:text-[40px] font-extrabold leading-[1.2] max-w-[760px]">
             Empieza hoy tu proceso terapéutico
           </h2>
-          <p data-animate data-delay="2" className="text-white/80 text-sm md:text-[17px] max-w-[520px]">
+          <p className="text-white/80 text-sm md:text-[17px] max-w-[520px]">
             Sin listas de espera largas. Primera consulta disponible esta semana.
           </p>
-          <div data-animate data-delay="3" className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
+          <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-2">
             <Link
               href="/agendar"
               className="flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"

@@ -10,52 +10,39 @@ function HeroSection() {
 
           {/* Left — copy */}
           <div>
-            <span
-              data-animate data-delay="1"
-              className="na-badge inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide"
-            >
+            <span className="inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
               Centro de Neuropsicología en Bogotá
             </span>
 
-            <h1
-              data-animate data-delay="2"
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-3"
-            >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-3">
               Acompañamos tu<br />camino hacia el<br />bienestar
             </h1>
-            <h2
-              data-animate data-delay="3"
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#713ec1] mb-6"
-            >
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#713ec1] mb-6">
               Neuropsicológico
             </h2>
 
-            <p
-              data-animate data-delay="4"
-              className="text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-lg"
-            >
+            <p className="text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
               Especialistas en evaluación, diagnóstico e intervención para TDAH, Autismo,
               Dislexia y más. Atención clínica y educativa. Con atención presencial y virtual.
             </p>
 
-            <div data-animate data-delay="5" className="flex flex-wrap gap-3 mb-7">
+            <div className="flex flex-wrap gap-3 mb-7">
               <Link
                 href="/agendar"
-                className="na-btn na-btn-gradient text-white font-bold px-7 py-3 rounded-full shadow-md text-sm na-pulse-glow"
-                style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
+                className="bg-[#713ec1] hover:bg-[#6B46C1] text-white font-bold px-7 py-3 rounded-full transition-colors shadow-md text-sm"
               >
                 Agendar mi cita
               </Link>
               <Link
                 href="/servicios"
-                className="na-btn border-2 border-[#713ec1] text-[#713ec1] hover:bg-[#F0EAFB] font-bold px-7 py-3 rounded-full text-sm"
+                className="border-2 border-[#713ec1] text-[#713ec1] hover:bg-[#F0EAFB] font-bold px-7 py-3 rounded-full transition-colors text-sm"
               >
                 Conocer servicios
               </Link>
             </div>
 
             {/* Rating */}
-            <div data-animate data-delay="6" className="flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-4 h-4 text-[#713ec1]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -63,12 +50,12 @@ function HeroSection() {
                   </svg>
                 ))}
               </div>
-              <span className="text-sm text-gray-500">+500 familias nos recomiendan</span>
+              <span className="text-sm text-gray-500">+80 familias nos recomiendan</span>
             </div>
           </div>
 
           {/* Right — image */}
-          <div data-animate="scale" className="relative na-img-zoom overflow-hidden rounded-3xl">
+          <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
               <img
                 src="/images/hero.jpg"
@@ -134,20 +121,15 @@ function DiferenciaSection() {
     <section className="bg-[#F8F4FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span data-animate className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestra Diferencia</span>
-          <h2 data-animate data-delay="1" className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">¿Por qué NeuroAfectiva?</h2>
-          <p data-animate data-delay="2" className="mt-3 text-gray-500 max-w-xl mx-auto">Un equipo comprometido con tu bienestar desde el primer momento.</p>
+          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestra Diferencia</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">¿Por qué NeuroAfectiva?</h2>
+          <p className="mt-3 text-gray-500 max-w-xl mx-auto">Un equipo comprometido con tu bienestar desde el primer momento.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {diferencias.map((d, i) => (
-            <div
-              key={d.title}
-              data-animate
-              data-delay={String(i + 1)}
-              className="na-card bg-white rounded-2xl p-7 shadow-sm"
-            >
-              <div className={`na-icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${d.color}`}>
+          {diferencias.map((d) => (
+            <div key={d.title} className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow">
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${d.color}`}>
                 {d.icon}
               </div>
               <h3 className="font-bold text-gray-900 text-base mb-2">{d.title}</h3>
@@ -162,10 +144,10 @@ function DiferenciaSection() {
 
 /* ─── STATS BAR ─────────────────────────────────────────── */
 const stats = [
-  { value: '+500', label: 'Familias atendidas' },
+  { value: '+80', label: 'Evaluaciones realizadas' },
   { value: '98%', label: 'Satisfacción familiar' },
-  { value: '10+', label: 'Años de experiencia' },
-  { value: '8+', label: 'Especialidades clínicas' },
+  { value: '3+', label: 'Años de experiencia' },
+  { value: '2', label: 'Especialidades clínicas' },
 ]
 
 function StatsBar() {
@@ -174,13 +156,8 @@ function StatsBar() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
           {stats.map((s, i) => (
-            <div
-              key={s.label}
-              data-animate="scale"
-              data-delay={String(i + 1)}
-              className={`na-stat ${i < stats.length - 1 ? 'lg:border-r lg:border-white/20' : ''} px-4`}
-            >
-              <div className="na-stat-value text-3xl sm:text-4xl font-extrabold mb-1">{s.value}</div>
+            <div key={s.label} className={`${i < stats.length - 1 ? 'lg:border-r lg:border-white/20' : ''} px-4`}>
+              <div className="text-3xl sm:text-4xl font-extrabold mb-1">{s.value}</div>
               <div className="text-sm text-white/80">{s.label}</div>
             </div>
           ))}
@@ -230,32 +207,25 @@ function ServiciosSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span
-            data-animate
-            className="na-badge inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-3"
+            className="inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-3"
             style={{ background: '#FFF0F9', color: '#fc66b5' }}
           >
             Nuestros Servicios
           </span>
-          <h2 data-animate data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-gray-900">Cuidado integral para cada mente</h2>
-          <p data-animate data-delay="2" className="mt-3 text-gray-500 max-w-xl mx-auto text-sm">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Cuidado integral para cada mente</h2>
+          <p className="mt-3 text-gray-500 max-w-xl mx-auto text-sm">
             Ofrecemos atención especializada en neuropsicología para niños, adolescentes y adultos,
             con un enfoque humano y basado en evidencia.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {servicios.map((s, i) => {
+          {servicios.map((s) => {
             const Icon = s.icon
             return (
-              <div
-                key={s.title}
-                data-animate
-                data-delay={String((i % 3) + 1)}
-                className="na-card rounded-2xl p-7"
-                style={{ background: s.cardBg }}
-              >
+              <div key={s.title} className="rounded-2xl p-7 hover:shadow-md transition-shadow" style={{ background: s.cardBg }}>
                 <div
-                  className="na-icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
                   style={{ background: s.iconBg }}
                 >
                   <Icon size={22} color="white" />
@@ -267,10 +237,10 @@ function ServiciosSection() {
           })}
         </div>
 
-        <div data-animate className="text-center">
+        <div className="text-center">
           <Link
             href="/servicios"
-            className="na-btn na-btn-gradient inline-flex items-center gap-2 text-white font-bold px-8 py-3 rounded-full shadow-md text-sm"
+            className="inline-flex items-center gap-2 text-white font-bold px-8 py-3 rounded-full shadow-md text-sm hover:opacity-90 transition-opacity"
             style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
           >
             Ver todos los servicios
@@ -307,7 +277,7 @@ function BienestarSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left — image */}
-          <div data-animate="left" className="relative na-img-zoom overflow-hidden rounded-3xl">
+          <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
               <img
                 src="/images/bienestar.jpg"
@@ -323,15 +293,15 @@ function BienestarSection() {
 
           {/* Right — copy */}
           <div>
-            <span data-animate="right" className="inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-wide">
+            <span className="inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-wide">
               ¿Por qué elegirnos?
             </span>
-            <h2 data-animate="right" data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
               Tu bienestar es nuestra prioridad
             </h2>
             <ul className="space-y-5">
               {razones.map((r, i) => (
-                <li key={i} data-animate="right" data-delay={String(i + 2)} className="flex gap-4 items-start">
+                <li key={i} className="flex gap-4 items-start">
                   <span className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${r.color}`}>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -377,14 +347,14 @@ function ProcesoSection() {
     <section className="bg-[#F8F4FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span data-animate className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestro Proceso</span>
-          <h2 data-animate data-delay="1" className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Tu camino hacia el bienestar</h2>
-          <p data-animate data-delay="2" className="mt-3 text-gray-500 text-sm">Un proceso claro y acompañado en cada paso del camino.</p>
+          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestro Proceso</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Tu camino hacia el bienestar</h2>
+          <p className="mt-3 text-gray-500 text-sm">Un proceso claro y acompañado en cada paso del camino.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {pasos.map((p, i) => (
-            <div key={p.num} data-animate data-delay={String(i + 1)} className="na-step relative">
+            <div key={p.num} className="relative">
               {/* Arrow connector (desktop only) */}
               {i < pasos.length - 1 && (
                 <div className="hidden lg:flex absolute top-8 -right-3 z-10 items-center">
@@ -393,8 +363,8 @@ function ProcesoSection() {
                   </svg>
                 </div>
               )}
-              <div className="na-card bg-white rounded-2xl p-7 shadow-sm h-full">
-                <div className={`na-step-badge w-10 h-10 rounded-full ${p.color} text-white font-extrabold text-lg flex items-center justify-center mb-5`}>
+              <div className="bg-white rounded-2xl p-7 shadow-sm h-full">
+                <div className={`w-10 h-10 rounded-full ${p.color} text-white font-extrabold text-lg flex items-center justify-center mb-5`}>
                   {p.num}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{p.title}</h3>
@@ -432,18 +402,13 @@ function TestimoniosSection() {
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span data-animate className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Testimonios</span>
-          <h2 data-animate data-delay="1" className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Lo que dicen nuestras familias</h2>
+          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Testimonios</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Lo que dicen nuestras familias</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonios.map((t, i) => (
-            <div
-              key={t.name}
-              data-animate
-              data-delay={String(i + 1)}
-              className="na-testimonial bg-[#F8F4FF] rounded-2xl p-8 flex flex-col"
-            >
+          {testimonios.map((t) => (
+            <div key={t.name} className="bg-[#F8F4FF] rounded-2xl p-8 flex flex-col">
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -479,15 +444,15 @@ function CTASection() {
       data-parallax="0.036"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h2 data-animate="scale" className="text-3xl sm:text-4xl font-extrabold mb-4">¿Listo para dar el primer paso?</h2>
-        <p data-animate data-delay="1" className="text-white/80 text-base mb-10 max-w-xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">¿Listo para dar el primer paso?</h2>
+        <p className="text-white/80 text-base mb-10 max-w-xl mx-auto">
           Agenda una consulta inicial hoy y descubre cómo podemos acompañar el desarrollo de tu familia.
         </p>
 
-        <div data-animate data-delay="2" className="flex flex-wrap justify-center gap-4 mb-10">
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
           <Link
             href="/agendar"
-            className="na-btn bg-white text-[#713ec1] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
+            className="bg-white text-[#713ec1] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
@@ -498,7 +463,7 @@ function CTASection() {
             href="https://wa.me/573193517239"
             target="_blank"
             rel="noopener noreferrer"
-            className="na-btn border-2 border-white/60 hover:border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-full text-sm flex items-center gap-2"
+            className="border-2 border-white/60 hover:border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-full transition-colors text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -508,7 +473,7 @@ function CTASection() {
         </div>
 
         {/* Trust badges */}
-        <div data-animate data-delay="3" className="flex flex-wrap justify-center gap-6 text-xs text-white/70">
+        <div className="flex flex-wrap justify-center gap-6 text-xs text-white/70">
           <span className="flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
