@@ -39,12 +39,33 @@ const equipo = [
     img: '/images/viviana-trujillo.jpg',
     imgAlt: 'Viviana Marcela Trujillo',
     imgSide: 'right' as const,
-    bio: 'Viviana es una profesional apasionada por transformar la vida de niños y adolescentes a través de la neuropsicología educativa. Su enfoque científico y profundamente empático le permite identificar y trabajar las barreras cognitivas que impiden el pleno desarrollo académico y personal. Con más de 8 años acompañando familias en Colombia y España, ha desarrollado un método propio que combina evaluación rigurosa con intervención lúdica y significativa, generando cambios reales y medibles en el rendimiento escolar y la calidad de vida.',
+    bio: (
+      <>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4">
+          Viviana es una profesional apasionada por transformar la vida de niños y adolescentes a través de la neuropsicología educativa. Su enfoque científico y profundamente empático le permite identificar y trabajar las barreras cognitivas que impiden el pleno desarrollo académico y personal. Con más de 8 años acompañando familias, ha desarrollado un método propio que combina evaluación rigurosa con intervención lúdica y significativa, generando cambios reales y medibles en el rendimiento escolar y la calidad de vida.
+        </p>
+        <p className="text-gray-700 text-sm font-bold mb-3">Herramientas complementarias profesionales:</p>
+        <ul className="space-y-3 text-gray-500 text-sm">
+          <li className="flex items-start gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#713ec1] flex-shrink-0 mt-1.5" />
+            <span><strong className="text-gray-700">Certificación Infanto-Juvenil:</strong> A través de sus diplomados en psicología clínica y educativa, ofrece un acompañamiento integral que conecta la salud emocional con el éxito escolar.</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#fc66b5] flex-shrink-0 mt-1.5" />
+            <span><strong className="text-gray-700">Innovación Creativa:</strong> Cuenta con certificación en Arte Terapia, lo que le permite diseñar intervenciones lúdicas y significativas que potencian la neuroplasticidad y la expresión emocional.</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#32b8cc] flex-shrink-0 mt-1.5" />
+            <span>Complementariamente, Viviana extiende su conocimiento del comportamiento humano al sector corporativo. Cuenta con formación en la aplicación de la Batería de Riesgo Psicosocial del Ministerio de Trabajo, ofreciendo consultoría técnica a empresas interesadas en la evaluación y prevención de factores de riesgo en el clima laboral.</span>
+          </li>
+        </ul>
+      </>
+    ),
     tags: ['Dificultades de Aprendizaje', 'Funciones Ejecutivas', 'TDAH'],
     tagColors: ['bg-[#F0EAFB] text-[#713ec1]', 'bg-[#FFF0F9] text-[#fc66b5]', 'bg-[#E8F9FD] text-[#32b8cc]'],
     ctaLabel: 'Agendar con Viviana',
     ctaColor: 'bg-[#713ec1] hover:bg-[#6B46C1]',
-    formacion: 'Univ. de La Rioja · España',
+    formacion: 'Fund. Univ. Internacional de la Rioja',
   },
 ]
 
@@ -180,7 +201,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             </span>
             <h2 data-animate={contentAnimate} data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">{esp.nombre}</h2>
             <p className={`text-sm font-semibold mb-6 ${esp.badgeColor.split(' ')[1]}`}>{esp.cargo}</p>
-            <p data-animate={contentAnimate} data-delay="2" className="text-gray-500 text-sm leading-relaxed mb-7">{esp.bio}</p>
+            <div data-animate={contentAnimate} data-delay="2" className="text-gray-500 text-sm leading-relaxed mb-7">{esp.bio}</div>
 
             {/* Tags */}
             <div data-animate={contentAnimate} data-delay="3" className="flex flex-wrap gap-2 mb-8">

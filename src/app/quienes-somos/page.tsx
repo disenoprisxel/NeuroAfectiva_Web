@@ -162,7 +162,7 @@ const especialistas = [
   {
     nombre: 'Johanna Castro',
     especialidad: 'Neuropsicología Clínica',
-    formacion: 'Capacitación internacional',
+    formacion: 'Universidad de San Buenaventura',
     exp: '',
     badge: { label: 'Clínica', color: 'bg-[#E8F9FD] text-[#32b8cc]' },
     img: '/images/johanna-quienes.jpg',
@@ -170,7 +170,7 @@ const especialistas = [
   {
     nombre: 'Viviana M. Trujillo',
     especialidad: 'Neuropsicología Pediátrica',
-    formacion: 'Universidad de La Rioja',
+    formacion: 'Fundación Universitaria Internacional de la Rioja',
     exp: '8+ años',
     badge: { label: 'Juvenil', color: 'bg-[#F0EAFB] text-[#713ec1]' },
     img: '/images/viviana-quienes.jpg',
@@ -190,15 +190,15 @@ function EquipoSection() {
               Especialistas apasionados<br />por la neurociencia
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed mb-7">
-              Contamos con psicólogas especializadas en neuropsicología educativa y clínica, formadas
-              en universidades de España y Colombia en instituciones de prestigio internacional y con
-              amplia experiencia en evaluación e intervención neuropsicológica.
+              Nuestro equipo está conformado por psicólogas especialistas en neuropsicología clínica y
+              educativa, con títulos nacionales otorgados por instituciones de amplio reconocimiento y
+              metodología internacional. Contamos con una vasta experiencia en procesos de evaluación e
+              intervención, garantizando un abordaje clínico y pedagógico de excelencia.
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                'Formación en universidades de España y Colombia',
+                'Títulos profesionales otorgados por instituciones de amplio reconocimiento en Colombia, con modelos académicos y convenios de formación Española.',
                 'Más de 8 años de experiencia clínica',
-                'Certificadas internacionalmente en neuropsicología',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-gray-600">
                   <span className="w-5 h-5 rounded-full bg-[#F0EAFB] flex items-center justify-center flex-shrink-0 mt-0.5">
