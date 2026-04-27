@@ -44,15 +44,14 @@ function HeroQuienesSomos() {
               Somos NeuroAfectiva
             </h1>
             <p className="text-gray-500 text-base leading-relaxed mb-4">
-              En NeuroAfectiva creemos que cada cerebro es único y merece una atención personalizada.
-              Somos una clínica especializada en neuropsicología ubicada en el corazón de Bogotá, donde
-              ciencia y empatía se unen para ofrecer procesos de evaluación, intervención y acompañamiento
-              que transforman vidas.
+              Somos un equipo de profesionales apasionados por el estudio y la intervención del comportamiento
+              humano desde una perspectiva integral. Nuestro proyecto nace de la necesidad de unir el rigor
+              científico de la neuropsicología clínica y educativa con un enfoque profundamente humano y creativo.
             </p>
             <p className="text-gray-500 text-base leading-relaxed mb-8">
-              Nuestra metodología combina los más recientes avances en neurociencias con un enfoque humano
-              y cercano, porque entendemos que detrás de cada diagnóstico hay una historia, una familia y
-              un futuro por construir.
+              Entendemos que cada individuo posee un perfil neurocognitivo único. Por ello, nuestro servicio
+              combina los más recientes avances en neurociencias con un enfoque humano y cercano, porque
+              entendemos que detrás de cada diagnóstico hay una historia, una familia y un futuro por construir.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
