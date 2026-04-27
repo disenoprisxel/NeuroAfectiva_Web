@@ -172,7 +172,7 @@ const especialistas = [
     especialidad: 'Neuropsicología Pediátrica',
     formacion: 'Fundación Universitaria Internacional de la Rioja',
     exp: '',
-    badge: { label: 'Juvenil', color: 'bg-[#F0EAFB] text-[#713ec1]' },
+    badge: { label: 'Educativa', color: 'bg-[#F0EAFB] text-[#713ec1]' },
     img: '/images/viviana-quienes.jpg',
   },
 ]
