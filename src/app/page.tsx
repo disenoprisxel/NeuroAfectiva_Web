@@ -258,11 +258,11 @@ function ServiciosSection() {
 const razones = [
   {
     color: 'text-[#713ec1] bg-[#F0EAFB]',
-    text: 'Enfoque humano y personalizado — Cada plan es único, diseñado para las necesidades específicas de tu familia.',
+    text: 'Enfoque humano y personalizado — Cada plan es único, diseñado para las necesidades específicas de cada paciente y su contexto.',
   },
   {
     color: 'text-[#32b8cc] bg-[#E8F9FD]',
-    text: 'Basados en evidencia científica — Usamos las mejores herramientas diagnósticas y terapéuticas avanzadas internacionalmente.',
+    text: 'Basados en evidencia científica — Usamos las mejores herramientas diagnósticas y terapéuticas desde los avances neuropsicológicos.',
   },
   {
     color: 'text-[#fc66b5] bg-[#FFF0F9]',
