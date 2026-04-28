@@ -169,7 +169,7 @@ const especialistas = [
   },
   {
     nombre: 'Viviana M. Trujillo',
-    especialidad: 'Neuropsicología Pediátrica',
+    especialidad: 'Neuropsicología Educativa',
     formacion: 'Fundación Universitaria Internacional de la Rioja',
     exp: '',
     badge: { label: 'Educativa', color: 'bg-[#F0EAFB] text-[#713ec1]' },
