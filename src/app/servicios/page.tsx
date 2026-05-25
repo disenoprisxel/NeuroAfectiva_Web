@@ -215,7 +215,7 @@ function CTAServicios() {
             Agendar consulta
           </Link>
           <a
-            href="https://wa.me/573103317235"
+            href="https://wa.me/573193517239"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-white/60 hover:border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-full transition-colors text-sm flex items-center gap-2"

@@ -141,7 +141,7 @@ function HeroEquipo() {
 /* ─── TARJETA DE ESPECIALISTA ───────────────────────────── */
 const waNumbers: Record<string, string> = {
   viviana: '573193517239',
-  johanna: '573123104318',
+  johanna: '573193517239',
 }
 
 function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: boolean }) {
