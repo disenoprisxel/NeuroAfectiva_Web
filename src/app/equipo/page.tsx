@@ -2,31 +2,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Nuestro Equipo — NeuroAfectiva',
+  title: 'Nuestro Equipo — CognyVita',
   description: 'Especialistas apasionadas por tu bienestar. Psicólogas especializadas en neuropsicología con formación de alto nivel y un profundo compromiso humano.',
 }
 
 /* ─── DATOS ─────────────────────────────────────────────── */
 const equipo = [
-  {
-    id: 'johanna',
-    nombre: 'Johanna Castro',
-    cargo: 'Psicóloga · Especialista en Neuropsicología Clínica',
-    badge: 'Neuropsicología Clínica',
-    badgeColor: 'bg-[#E8F9FD] text-[#32b8cc]',
-    badgeCard: 'Especialista certificada',
-    badgeCardColor: 'bg-[#FFF0F9] text-[#fc66b5]',
-    floatingBadge: 'Avalada internacionalmente',
-    img: '/images/johanna-castro.jpg',
-    imgAlt: 'Johanna Castro',
-    imgSide: 'left' as const,
-    bio: 'Johanna es una neuropsicóloga clínica con un profundo compromiso por el bienestar cognitivo y emocional de cada uno de sus pacientes. Su formación especializada le permite realizar evaluaciones y tratamientos de alto nivel para niños, adolescentes y adultos con condiciones neurológicas, del neurodesarrollo y trastornos cognitivos. Caracterizada por su calidez humana y rigor científico, guía a cada paciente y su familia a través de un proceso transformador que brinda herramientas concretas y resultados medibles.',
-    tags: ['Neurología Clínica', 'Neurodesarrollo', 'Evaluación Cognitiva'],
-    tagColors: ['bg-[#F0EAFB] text-[#713ec1]', 'bg-[#E8F9FD] text-[#32b8cc]', 'bg-[#FFF0F9] text-[#fc66b5]'],
-    ctaLabel: 'Agendar con Johanna',
-    ctaColor: 'bg-[#fc66b5] hover:bg-[#f054a8]',
-    formacion: null,
-  },
   {
     id: 'viviana',
     nombre: 'Viviana Marcela Trujillo',
@@ -123,7 +104,7 @@ function HeroEquipo() {
         {/* Badges */}
         <div data-animate data-delay="3" className="flex flex-wrap justify-center gap-3">
           {[
-            { icon: '👩‍⚕️', text: '2 Especialistas certificadas' },
+            { icon: '👩‍⚕️', text: '1 Especialista certificada' },
             { icon: '⏱️', text: '8+ años de experiencia' },
             { icon: '📍', text: 'Bogotá, Colombia' },
           ].map((b) => (
@@ -141,7 +122,6 @@ function HeroEquipo() {
 /* ─── TARJETA DE ESPECIALISTA ───────────────────────────── */
 const waNumbers: Record<string, string> = {
   viviana: '573193517239',
-  johanna: '573193517239',
 }
 
 function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: boolean }) {
@@ -165,7 +145,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            {/* Top-left floating card (Johanna) */}
+            {/* Top-left floating card */}
             {!esp.formacion && (
               <div className="absolute top-5 left-5 bg-white rounded-2xl px-4 py-3 shadow-xl">
                 <div className="font-extrabold text-[#fc66b5] text-sm leading-tight">{esp.badge}</div>
@@ -251,7 +231,7 @@ function FilosofiaSection() {
             Ciencia, calidez y compromiso
           </h2>
           <p data-animate data-delay="2" className="text-gray-400 text-sm max-w-xl mx-auto">
-            Cada integrante de NeuroAfectiva comparte los mismos valores fundamentales que guían cada sesión, cada diagnóstico y cada acompañamiento.
+            Cada integrante de CognyVita comparte los mismos valores fundamentales que guían cada sesión, cada diagnóstico y cada acompañamiento.
           </p>
         </div>
 
@@ -288,7 +268,7 @@ function CTAEquipo() {
           ¿Lista para conocer a nuestro equipo en persona?
         </h2>
         <p data-animate data-delay="1" className="text-white/80 text-base mb-10 max-w-xl mx-auto">
-          Agenda una consulta inicial y descubre cómo Viviana o Johanna pueden acompañar el bienestar de tu familia.
+          Agenda una consulta inicial y descubre cómo Viviana puede acompañar el bienestar de tu familia.
         </p>
         <div data-animate data-delay="2" className="flex flex-wrap justify-center gap-4">
           <Link

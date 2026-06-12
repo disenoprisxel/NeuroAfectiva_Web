@@ -50,13 +50,13 @@ const contactInfo = [
     icon: Phone,
     iconColor: '#32b8cc', iconBg: '#D8F5F9',
     label: 'WhatsApp',
-    value: '319 351 7239 - 312 310 4318',
+    value: '319 351 7239',
   },
   {
     icon: Mail,
     iconColor: '#fc66b5', iconBg: '#FFE8F5',
     label: 'Correo',
-    value: 'neuroafectiva@gmail.com',
+    value: 'cognyvita@gmail.com',
   },
 ]
 
@@ -422,7 +422,7 @@ export default function AgendarPage() {
                       {form.privacidad && <Check size={12} className="text-white" />}
                     </div>
                     <span className="text-[#6B7280] text-[13px] leading-[1.5]">
-                      Acepto el tratamiento de mis datos personales conforme a la Política de Privacidad de NeuroAfectiva.
+                      Acepto el tratamiento de mis datos personales conforme a la Política de Privacidad de CognyVita.
                     </span>
                   </label>
                 </div>

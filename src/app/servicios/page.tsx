@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Servicios — NeuroAfectiva',
+  title: 'Servicios — CognyVita',
   description: 'Un servicio para cada necesidad. Desde la evaluación hasta la intervención, nuestro equipo multidisciplinar te acompaña en cada etapa del camino.',
 }
 

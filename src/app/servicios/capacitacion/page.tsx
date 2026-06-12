@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Capacitación & Talleres — NeuroAfectiva',
+  title: 'Capacitación & Talleres — CognyVita',
   description: 'Programas formativos vivenciales para equipos, instituciones y personas que quieren aprender diferente.',
 }
 

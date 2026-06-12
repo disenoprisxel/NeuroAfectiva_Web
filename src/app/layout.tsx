@@ -20,7 +20,7 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: 'NeuroAfectiva — Neuropsicología Clínica y Educativa en Bogotá',
+  title: 'CognyVita — Neuropsicología Clínica y Educativa en Bogotá',
   description: 'Centro especializado en neuropsicología clínica y educativa. Evaluación, diagnóstico e intervención para TDAH, Autismo, Dislexia y más. Bogotá, Colombia.',
   icons: {
     icon: [

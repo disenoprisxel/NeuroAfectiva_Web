@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Image
               src="/logo-footer.png"
-              alt="NeuroAfectiva"
+              alt="CognyVita"
               width={240}
               height={66}
               className="h-[66px] w-auto mb-3"
@@ -82,11 +82,11 @@ export default function Footer() {
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
-                <span>319 351 7239 · 312 310 4318</span>
+                <span>319 351 7239</span>
               </li>
               <li className="flex gap-2">
                 <span>✉️</span>
-                <span>neuroafectiva@gmail.com</span>
+                <span>cognyvita@gmail.com</span>
               </li>
               <li className="flex gap-2">
                 <span>🕐</span>
@@ -98,7 +98,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
-          <span>© {new Date().getFullYear()} NeuroAfectiva. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} CognyVita. Todos los derechos reservados.</span>
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <span className="text-gray-400">Hecho por PRISXEL con ❤️</span>
             <Link href="/privacidad" className="hover:text-gray-300 transition-colors">Política de Privacidad</Link>

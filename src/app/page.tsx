@@ -59,7 +59,7 @@ function HeroSection() {
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
               <img
                 src="/images/hero.jpg"
-                alt="Sesión de neuropsicología en NeuroAfectiva"
+                alt="Sesión de neuropsicología en CognyVita"
                 className="w-full h-full object-cover"
                 data-parallax="0.06"
               />
@@ -122,7 +122,7 @@ function DiferenciaSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestra Diferencia</span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">¿Por qué NeuroAfectiva?</h2>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">¿Por qué CognyVita?</h2>
           <p className="mt-3 text-gray-500 max-w-xl mx-auto">Un equipo comprometido con tu bienestar desde el primer momento.</p>
         </div>
 
@@ -381,7 +381,7 @@ function ProcesoSection() {
 /* ─── TESTIMONIOS ───────────────────────────────────────── */
 const testimonios = [
   {
-    quote: '"Gracias a NeuroAfectiva, mi hijo finalmente tiene el diagnóstico que necesitaba. El equipo es increíblemente profesional y empático. Lo recomiendo con el corazón."',
+    quote: '"Gracias a CognyVita, mi hijo finalmente tiene el diagnóstico que necesitaba. El equipo es increíblemente profesional y empático. Lo recomiendo con el corazón."',
     name: 'Carolina Martínez',
     role: 'Mamá de Sebastián, 9 años',
   },
@@ -391,7 +391,7 @@ const testimonios = [
     role: 'Papá de Valeria, 11 años',
   },
   {
-    quote: '"Como adulto con TDAH nunca diagnosticado, encontrar NeuroAfectiva cambió mi vida. Su enfoque empático y científico me dio las herramientas que siempre necesité."',
+    quote: '"Como adulto con TDAH nunca diagnosticado, encontrar CognyVita cambió mi vida. Su enfoque empático y científico me dio las herramientas que siempre necesité."',
     name: 'Laura Cifuentes',
     role: 'Paciente adulta, 34 años',
   },

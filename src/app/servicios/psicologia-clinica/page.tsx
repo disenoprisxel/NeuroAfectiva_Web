@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Línea de Psicología Clínica — NeuroAfectiva',
+  title: 'Línea de Psicología Clínica — CognyVita',
   description: 'Acompañamiento psicológico individual, de pareja y familiar para sanar, crecer y recuperar el bienestar emocional que mereces.',
 }
 

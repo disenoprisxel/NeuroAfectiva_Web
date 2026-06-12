@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Brain, Frown, Flame, Leaf, MessageCircle, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Neurosalud Cognitiva y Emocional — NeuroAfectiva',
+  title: 'Neurosalud Cognitiva y Emocional — CognyVita',
   description: 'Evaluación e intervención neuropsicológica para optimizar tus funciones cognitivas y fortalecer tu bienestar emocional. Bogotá, virtual y presencial.',
 }
 

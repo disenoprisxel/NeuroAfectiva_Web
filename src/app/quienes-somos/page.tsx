@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Quiénes Somos — NeuroAfectiva',
+  title: 'Quiénes Somos — CognyVita',
   description: 'Somos una clínica especializada en neuropsicología ubicada en el corazón de Bogotá. Conoce nuestra misión, visión, valores y equipo de especialistas.',
 }
 
@@ -25,7 +25,7 @@ function HeroQuienesSomos() {
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#1A1035]">
               <img
                 src="/images/clinic.jpg"
-                alt="Clínica NeuroAfectiva"
+                alt="Clínica CognyVita"
                 className="w-full h-full object-cover opacity-80"
                 data-parallax="0.078"
               />
@@ -41,7 +41,7 @@ function HeroQuienesSomos() {
               Nuestra misión
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
-              Somos NeuroAfectiva
+              Somos CognyVita
             </h1>
             <p className="text-gray-500 text-base leading-relaxed mb-4">
               Somos un equipo de profesionales apasionados por el estudio y la intervención del comportamiento
@@ -159,14 +159,6 @@ function StatsDark() {
 
 /* ─── EQUIPO DE ESPECIALISTAS ───────────────────────────── */
 const especialistas = [
-  {
-    nombre: 'Johanna Castro',
-    especialidad: 'Neuropsicología Clínica',
-    formacion: 'Universidad de San Buenaventura',
-    exp: '',
-    badge: { label: 'Clínica', color: 'bg-[#E8F9FD] text-[#32b8cc]' },
-    img: '/images/johanna-quienes.jpg',
-  },
   {
     nombre: 'Viviana M. Trujillo',
     especialidad: 'Neuropsicología Educativa',

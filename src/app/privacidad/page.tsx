@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad y Tratamiento de Datos Personales — NeuroAfectiva',
+  title: 'Política de Privacidad y Tratamiento de Datos Personales — CognyVita',
   description:
-    'Política de privacidad y tratamiento de datos personales de NeuroAfectiva, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.',
+    'Política de privacidad y tratamiento de datos personales de CognyVita, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.',
 }
 
 const FECHA_ACTUALIZACION = '18 de abril de 2026'
@@ -75,7 +75,7 @@ export default function PrivacidadPage() {
             </p>
             <table>
               <tbody>
-                <Row label="Razón social" value="NeuroAfectiva" />
+                <Row label="Razón social" value="CognyVita" />
                 <Row label="NIT / Identificación" value="En proceso de registro ante la SIC" />
                 <Row label="Domicilio principal" value="Bogotá D.C., Colombia" />
                 <Row label="Correo electrónico" value="neuroafectiva.bog@gmail.com" />
@@ -108,7 +108,7 @@ export default function PrivacidadPage() {
               <li><strong>Dato personal:</strong> Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables.</li>
               <li><strong>Dato sensible:</strong> Datos que afectan la intimidad del Titular o cuyo uso indebido puede generar discriminación (origen racial, orientación política, convicciones religiosas, datos de salud, vida sexual, datos biométricos, entre otros).</li>
               <li><strong>Encargado del tratamiento:</strong> Persona natural o jurídica que realiza el tratamiento de datos por cuenta del Responsable.</li>
-              <li><strong>Responsable del tratamiento:</strong> Persona natural o jurídica que decide sobre la base de datos y/o el tratamiento. En el presente caso: NeuroAfectiva.</li>
+              <li><strong>Responsable del tratamiento:</strong> Persona natural o jurídica que decide sobre la base de datos y/o el tratamiento. En el presente caso: CognyVita.</li>
               <li><strong>Titular:</strong> Persona natural cuyos datos personales son objeto de tratamiento.</li>
               <li><strong>Tratamiento:</strong> Cualquier operación sobre datos personales: recolección, almacenamiento, uso, circulación, supresión, transferencia, transmisión o cualquier otra.</li>
             </ul>
@@ -116,7 +116,7 @@ export default function PrivacidadPage() {
 
           {/* 4 */}
           <Article num="4" title="Datos personales que recopilamos">
-            <p>NeuroAfectiva recopila, según el caso, las siguientes categorías de datos personales:</p>
+            <p>CognyVita recopila, según el caso, las siguientes categorías de datos personales:</p>
             <h3>4.1 Datos de identificación</h3>
             <ul>
               <li>Nombres y apellidos completos</li>
@@ -154,14 +154,14 @@ export default function PrivacidadPage() {
 
           {/* 5 */}
           <Article num="5" title="Finalidades del tratamiento">
-            <p>Los datos personales recopilados por NeuroAfectiva serán utilizados para las siguientes finalidades:</p>
+            <p>Los datos personales recopilados por CognyVita serán utilizados para las siguientes finalidades:</p>
             <ol>
               <li>Prestar los servicios de neuropsicología clínica y educativa contratados o solicitados por el Titular.</li>
               <li>Gestionar citas, agendamiento y seguimiento de procesos terapéuticos.</li>
               <li>Elaborar, gestionar y custodiar historias clínicas conforme a la Resolución 1995 de 1999 del Ministerio de Salud.</li>
               <li>Elaborar informes neuropsicológicos, diagnósticos y planes de intervención.</li>
               <li>Enviar comunicaciones relacionadas con la prestación del servicio, recordatorios de citas y resultados.</li>
-              <li>Remitir información de interés sobre servicios, programas o actividades de NeuroAfectiva, previo consentimiento del Titular.</li>
+              <li>Remitir información de interés sobre servicios, programas o actividades de CognyVita, previo consentimiento del Titular.</li>
               <li>Cumplir obligaciones legales, contables, tributarias y administrativas.</li>
               <li>Atender peticiones, quejas, reclamos y sugerencias (PQRS).</li>
               <li>Mejorar la calidad de los servicios mediante análisis estadísticos anonimizados.</li>
@@ -190,11 +190,11 @@ export default function PrivacidadPage() {
               siguientes derechos, que podrá ejercer en cualquier momento de forma gratuita:
             </p>
             <ul>
-              <li><strong>Derecho de acceso o consulta:</strong> Conocer los datos personales que NeuroAfectiva tiene sobre usted, su origen, uso y tratamiento.</li>
+              <li><strong>Derecho de acceso o consulta:</strong> Conocer los datos personales que CognyVita tiene sobre usted, su origen, uso y tratamiento.</li>
               <li><strong>Derecho de rectificación:</strong> Solicitar la actualización, corrección o modificación de datos inexactos, incompletos o desactualizados.</li>
               <li><strong>Derecho de supresión (derecho al olvido):</strong> Pedir la eliminación de sus datos cuando no sean necesarios para la finalidad que justificó su recolección, salvo que exista obligación legal de conservarlos.</li>
               <li><strong>Derecho de revocación:</strong> Revocar la autorización otorgada para el tratamiento, sin efectos retroactivos, salvo en los casos previstos en el artículo 10 de la Ley 1581.</li>
-              <li><strong>Derecho de queja:</strong> Presentar ante la Superintendencia de Industria y Comercio (SIC) quejas por infracciones a la Ley 1581 de 2012, una vez agotado el trámite de consulta o reclamo ante NeuroAfectiva.</li>
+              <li><strong>Derecho de queja:</strong> Presentar ante la Superintendencia de Industria y Comercio (SIC) quejas por infracciones a la Ley 1581 de 2012, una vez agotado el trámite de consulta o reclamo ante CognyVita.</li>
               <li><strong>Derecho a solicitar prueba de la autorización:</strong> Obtener copia de la autorización otorgada.</li>
               <li><strong>Derecho a ser informado:</strong> Recibir información sobre el uso dado a sus datos a solicitud del Titular.</li>
             </ul>
@@ -204,7 +204,7 @@ export default function PrivacidadPage() {
           <Article num="8" title="Procedimiento para ejercer sus derechos">
             <p>
               Para ejercer cualquiera de los derechos descritos en la sección anterior, el Titular o su representante
-              legal podrá dirigirse a NeuroAfectiva por los siguientes canales:
+              legal podrá dirigirse a CognyVita por los siguientes canales:
             </p>
             <ul>
               <li><strong>Correo electrónico:</strong> neuroafectiva.bog@gmail.com</li>
@@ -212,7 +212,7 @@ export default function PrivacidadPage() {
             </ul>
             <h3>Solicitudes de consulta</h3>
             <p>
-              NeuroAfectiva atenderá las consultas en un término máximo de <strong>diez (10) días hábiles</strong> contados
+              CognyVita atenderá las consultas en un término máximo de <strong>diez (10) días hábiles</strong> contados
               a partir de la fecha de recepción. Cuando no fuere posible atender la consulta dentro de dicho término,
               se informará al Titular antes del vencimiento, indicando la fecha en que se atenderá la consulta, la cual
               no podrá superar los <strong>cinco (5) días hábiles</strong> siguientes al vencimiento del primer término
@@ -227,7 +227,7 @@ export default function PrivacidadPage() {
               vencimiento del primer término (art. 15, Ley 1581 de 2012).
             </p>
             <p>
-              Si el reclamo resulta incompleto, NeuroAfectiva requerirá al interesado dentro de los cinco (5) días
+              Si el reclamo resulta incompleto, CognyVita requerirá al interesado dentro de los cinco (5) días
               hábiles siguientes a su recepción para que subsane las fallas. Transcurridos dos (2) meses desde la fecha
               de requerimiento sin que el solicitante subsane, se entenderá que ha desistido del reclamo.
             </p>
@@ -242,7 +242,7 @@ export default function PrivacidadPage() {
           {/* 9 */}
           <Article num="9" title="Transferencia y transmisión de datos personales">
             <p>
-              NeuroAfectiva podrá compartir datos personales con terceros únicamente en los siguientes supuestos y
+              CognyVita podrá compartir datos personales con terceros únicamente en los siguientes supuestos y
               con las garantías exigidas por los artículos 17 y 25 del Decreto 1377 de 2013:
             </p>
             <ul>
@@ -252,7 +252,7 @@ export default function PrivacidadPage() {
               <li><strong>EPS o aseguradoras:</strong> Cuando el Titular solicite el reconocimiento de prestaciones o reembolsos.</li>
             </ul>
             <p>
-              En ningún caso NeuroAfectiva venderá, cederá ni compartirá datos personales con fines comerciales sin
+              En ningún caso CognyVita venderá, cederá ni compartirá datos personales con fines comerciales sin
               la autorización expresa del Titular.
             </p>
             <p>
@@ -265,7 +265,7 @@ export default function PrivacidadPage() {
           {/* 10 */}
           <Article num="10" title="Medidas de seguridad">
             <p>
-              En cumplimiento del artículo 17, literal d) de la Ley 1581 de 2012, NeuroAfectiva implementa las
+              En cumplimiento del artículo 17, literal d) de la Ley 1581 de 2012, CognyVita implementa las
               siguientes medidas técnicas, humanas y administrativas para proteger los datos personales contra pérdida,
               acceso no autorizado, uso indebido, alteración o divulgación:
             </p>
@@ -279,7 +279,7 @@ export default function PrivacidadPage() {
               <li>Procedimiento de notificación de incidentes de seguridad conforme a la Circular 002 de 2015 de la SIC.</li>
             </ul>
             <p>
-              En caso de que ocurra una violación de seguridad que pueda afectar los derechos del Titular, NeuroAfectiva
+              En caso de que ocurra una violación de seguridad que pueda afectar los derechos del Titular, CognyVita
               notificará a la SIC y a los Titulares afectados en los términos establecidos por la normativa vigente.
             </p>
           </Article>
@@ -287,7 +287,7 @@ export default function PrivacidadPage() {
           {/* 11 */}
           <Article num="11" title="Datos sensibles">
             <p>
-              Los datos de salud recopilados en el ejercicio de la actividad clínica de NeuroAfectiva constituyen
+              Los datos de salud recopilados en el ejercicio de la actividad clínica de CognyVita constituyen
               <strong> datos sensibles</strong> en los términos del artículo 5 de la Ley 1581 de 2012. Su tratamiento
               estará sujeto a las siguientes condiciones adicionales:
             </p>
@@ -303,7 +303,7 @@ export default function PrivacidadPage() {
           {/* 12 */}
           <Article num="12" title="Datos de menores de edad">
             <p>
-              NeuroAfectiva atiende con frecuencia a niños, niñas y adolescentes. En estos casos:
+              CognyVita atiende con frecuencia a niños, niñas y adolescentes. En estos casos:
             </p>
             <ul>
               <li>
@@ -316,7 +316,7 @@ export default function PrivacidadPage() {
                 derechos fundamentales.
               </li>
               <li>
-                NeuroAfectiva verificará la identidad del representante legal y su relación con el menor antes de
+                CognyVita verificará la identidad del representante legal y su relación con el menor antes de
                 iniciar cualquier tratamiento de datos.
               </li>
               <li>
@@ -329,7 +329,7 @@ export default function PrivacidadPage() {
           {/* 13 */}
           <Article num="13" title="Uso de cookies y tecnologías similares">
             <p>
-              El sitio web de NeuroAfectiva puede utilizar cookies y tecnologías similares para mejorar la experiencia
+              El sitio web de CognyVita puede utilizar cookies y tecnologías similares para mejorar la experiencia
               de navegación y analizar el uso del sitio. Las cookies utilizadas son:
             </p>
             <ul>
@@ -347,7 +347,7 @@ export default function PrivacidadPage() {
           <Article num="14" title="Vigencia de la política y de las bases de datos">
             <p>
               La presente política entrará en vigor el <strong>{FECHA_VIGENCIA}</strong> y tendrá vigencia indefinida,
-              hasta tanto sea modificada o derogada por NeuroAfectiva.
+              hasta tanto sea modificada o derogada por CognyVita.
             </p>
             <p>
               Las bases de datos que contienen información de pacientes y usuarios se conservarán por los períodos
@@ -359,7 +359,7 @@ export default function PrivacidadPage() {
               <li><strong>Datos de contacto y comunicaciones:</strong> Mientras dure la relación contractual o comercial y hasta por 5 años adicionales para efectos de PQRS y evidencias legales.</li>
             </ul>
             <p>
-              Vencidos los términos de conservación, NeuroAfectiva procederá a la supresión segura e irreversible de
+              Vencidos los términos de conservación, CognyVita procederá a la supresión segura e irreversible de
               los datos.
             </p>
           </Article>
@@ -367,7 +367,7 @@ export default function PrivacidadPage() {
           {/* 15 */}
           <Article num="15" title="Modificaciones a la política">
             <p>
-              NeuroAfectiva se reserva el derecho de modificar la presente política en cualquier momento para adaptarla
+              CognyVita se reserva el derecho de modificar la presente política en cualquier momento para adaptarla
               a cambios normativos, jurisprudenciales o de sus prácticas internas. Cualquier modificación será:
             </p>
             <ul>
@@ -375,7 +375,7 @@ export default function PrivacidadPage() {
               <li>Notificada a los Titulares que hayan suministrado correo electrónico, cuando los cambios sean sustanciales.</li>
             </ul>
             <p>
-              La continuación en el uso de los servicios de NeuroAfectiva tras la publicación de cambios sustanciales
+              La continuación en el uso de los servicios de CognyVita tras la publicación de cambios sustanciales
               implicará la aceptación de la nueva versión de la política, salvo que el Titular manifieste lo contrario
               dentro del período de preaviso.
             </p>

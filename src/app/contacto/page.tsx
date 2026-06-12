@@ -34,7 +34,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Teléfono / WhatsApp',
-    value: '319 351 7239 · 312 310 4318',
+    value: '319 351 7239',
     color: 'text-[#fc66b5] bg-[#FFF0F9]',
   },
   {
@@ -44,7 +44,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Email',
-    value: 'neuroafectiva@gmail.com',
+    value: 'cognyvita@gmail.com',
     color: 'text-[#32b8cc] bg-[#E8F9FD]',
   },
   {
@@ -335,7 +335,7 @@ export default function ContactoPage() {
       {/* Footer dark bar */}
       <section className="bg-[#1A1035] py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
-          <span>© {new Date().getFullYear()} NeuroAfectiva. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} CognyVita. Todos los derechos reservados.</span>
           <div className="flex gap-4">
             <Link href="/privacidad" className="hover:text-gray-300 transition-colors">Política de Privacidad</Link>
             <Link href="/terminos" className="hover:text-gray-300 transition-colors">Términos de Uso</Link>

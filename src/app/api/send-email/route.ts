@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9f6ff; border-radius: 12px;">
           <h2 style="color: #713ec1; margin-bottom: 4px;">Nuevo mensaje de contacto</h2>
-          <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de NeuroAfectiva.com</p>
+          <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de CognyVita.com</p>
           <hr style="border: none; border-top: 1px solid #e0d4f7; margin: 20px 0;" />
           <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #333;">
             <tr><td style="padding: 8px 0; font-weight: bold; width: 140px;">Nombre:</td><td>${data.nombre}</td></tr>
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
       html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #fff5fb; border-radius: 12px;">
           <h2 style="color: #fc66b5; margin-bottom: 4px;">Nueva solicitud de cita</h2>
-          <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de Agendar Cita — NeuroAfectiva.com</p>
+          <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de Agendar Cita — CognyVita.com</p>
           <hr style="border: none; border-top: 1px solid #f5c0e0; margin: 20px 0;" />
           <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #333;">
             <tr><td style="padding: 8px 0; font-weight: bold; width: 160px;">Nombre:</td><td>${data.nombre}</td></tr>
@@ -68,8 +68,8 @@ export async function POST(req: Request) {
     }
 
     await transporter.sendMail({
-      from: `"NeuroAfectiva Web" <${process.env.GMAIL_USER}>`,
-      to: 'neuroafectiva@gmail.com',
+      from: `"CognyVita Web" <${process.env.GMAIL_USER}>`,
+      to: 'cognyvita@gmail.com',
       replyTo: data.email,
       subject,
       html,

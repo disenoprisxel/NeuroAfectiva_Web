@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo-navbar.png"
-              alt="NeuroAfectiva"
+              alt="CognyVita"
               width={338}
               height={90}
               className="w-auto h-[3.75rem] lg:h-[5.625rem]"

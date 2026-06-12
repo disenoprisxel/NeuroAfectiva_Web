@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ChevronRight, CircleCheck, TrendingUp, Smile, Users, MessageCircle, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Neurohabilidades de Aprendizaje — NeuroAfectiva',
+  title: 'Neurohabilidades de Aprendizaje — CognyVita',
   description: 'Diagnóstico e intervención especializada en dificultades del aprendizaje: Dislexia, Disgrafía, Discalculia y TDAH. Acompañamos a niños, adolescentes, familias y colegios en Bogotá.',
 }
 
