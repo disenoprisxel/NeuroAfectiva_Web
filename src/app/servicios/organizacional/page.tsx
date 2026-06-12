@@ -334,7 +334,7 @@ export default function OrganizacionalPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="w-full bg-[#0E234F] flex flex-col md:flex-row items-stretch" style={{ minHeight: '320px' }}>
+      <section className="w-full flex flex-col md:flex-row items-stretch" style={{ minHeight: '320px', background: 'linear-gradient(135deg, #3b0f8c 0%, #8537D8 55%, #F545B4 100%)' }}>
         {/* Left */}
         <div className="flex flex-col justify-center gap-5 px-5 md:px-[80px] py-[60px] flex-1">
           <span data-animate className="text-[#4585FF] text-[11px] font-extrabold tracking-[2px] uppercase">
