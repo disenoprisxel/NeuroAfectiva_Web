@@ -10,114 +10,114 @@ export const metadata: Metadata = {
 const pasos = [
   {
     num: '01',
-    numColor: 'bg-[#FF4DA6]',
+    numColor: 'bg-[#F545B4]',
     badge: 'Primer contacto',
-    badgeColor: 'bg-[#FFF0F9] text-[#FF4DA6]',
+    badgeColor: 'bg-[#FFF0F9] text-[#F545B4]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
       </svg>
     ),
-    iconColor: 'text-[#FF4DA6] bg-[#FFF0F9]',
+    iconColor: 'text-[#F545B4] bg-[#FFF0F9]',
     title: 'Primer contacto',
     desc: 'Nos escribes o llamas para contarnos brevemente tu situación. En esta primera conversación te orientamos sin compromiso y resolvemos tus dudas iniciales.',
     feature: 'Sin compromiso · Respuesta en menos de 24h',
-    featureColor: 'text-[#FF4DA6] bg-[#FFF0F9]',
+    featureColor: 'text-[#F545B4] bg-[#FFF0F9]',
     img: '/images/paso-01-contacto.jpg',
     sectionBg: 'bg-white',
     reverse: false,
   },
   {
     num: '02',
-    numColor: 'bg-[#7C4EC8]',
+    numColor: 'bg-[#8537D8]',
     badge: 'Paso a paso',
-    badgeColor: 'bg-[#EEE8FF] text-[#7C4EC8]',
+    badgeColor: 'bg-[#EDE5FF] text-[#8537D8]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
       </svg>
     ),
-    iconColor: 'text-[#7C4EC8] bg-[#EEE8FF]',
+    iconColor: 'text-[#8537D8] bg-[#EDE5FF]',
     title: 'Entrevista inicial',
     desc: 'Realizamos una sesión de escucha activa con el paciente y/o su familia. Entendemos el contexto, la historia y las necesidades específicas desde una perspectiva empática y holística.',
     feature: 'Sesión para toda la familia · Enfoque holístico',
-    featureColor: 'text-[#7C4EC8] bg-[#EEE8FF]',
+    featureColor: 'text-[#8537D8] bg-[#EDE5FF]',
     img: '/images/paso-02-entrevista.jpg',
     sectionBg: 'bg-[#F6F2FF]',
     reverse: true,
   },
   {
     num: '03',
-    numColor: 'bg-[#4D7EFF]',
+    numColor: 'bg-[#4585FF]',
     badge: 'Evaluación',
-    badgeColor: 'bg-[#E8EEFF] text-[#4D7EFF]',
+    badgeColor: 'bg-[#E5EDFF] text-[#4585FF]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
       </svg>
     ),
-    iconColor: 'text-[#4D7EFF] bg-[#E8EEFF]',
+    iconColor: 'text-[#4585FF] bg-[#E5EDFF]',
     title: 'Evaluación neuropsicológica',
     desc: 'Aplicamos baterías de pruebas neuropsicológicas estandarizadas y validadas para Colombia. La evaluación es rigurosa, lúdica y respetuosa del ritmo de cada persona.',
     feature: 'Pruebas validadas para Colombia · Lúdica y respetuosa',
-    featureColor: 'text-[#4D7EFF] bg-[#E8EEFF]',
+    featureColor: 'text-[#4585FF] bg-[#E5EDFF]',
     img: 'https://images.unsplash.com/photo-1723473160725-20d9a18ebce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQ5NjgzODZ8&ixlib=rb-4.1.0&q=80&w=1080',
     sectionBg: 'bg-white',
     reverse: false,
   },
   {
     num: '04',
-    numColor: 'bg-[#FF4DA6]',
+    numColor: 'bg-[#F545B4]',
     badge: 'Diagnóstico',
-    badgeColor: 'bg-[#FFF0F9] text-[#FF4DA6]',
+    badgeColor: 'bg-[#FFF0F9] text-[#F545B4]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
       </svg>
     ),
-    iconColor: 'text-[#FF4DA6] bg-[#FFF0F9]',
+    iconColor: 'text-[#F545B4] bg-[#FFF0F9]',
     title: 'Diagnóstico e informe',
     desc: 'Entregamos un informe claro, accesible y orientador con los resultados. Te lo explicamos en detalle para que el paciente y la familia (según el caso) lo entiendan completamente.',
     feature: 'Explicado paso a paso · Para toda la familia',
-    featureColor: 'text-[#FF4DA6] bg-[#FFF0F9]',
+    featureColor: 'text-[#F545B4] bg-[#FFF0F9]',
     img: '/images/paso-04-diagnostico.jpg',
     sectionBg: 'bg-[#F6F2FF]',
     reverse: true,
   },
   {
     num: '05',
-    numColor: 'bg-[#7C4EC8]',
+    numColor: 'bg-[#8537D8]',
     badge: 'Plan',
-    badgeColor: 'bg-[#EEE8FF] text-[#7C4EC8]',
+    badgeColor: 'bg-[#EDE5FF] text-[#8537D8]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
       </svg>
     ),
-    iconColor: 'text-[#7C4EC8] bg-[#EEE8FF]',
+    iconColor: 'text-[#8537D8] bg-[#EDE5FF]',
     title: 'Plan de intervención',
     desc: 'Diseñamos una ruta terapéutica y/o educativa personalizada con objetivos claros, cronograma y estrategias específicas para cada contexto: hogar, colegio y trabajo.',
     feature: 'Objetivos claros · Hogar, colegio y trabajo',
-    featureColor: 'text-[#7C4EC8] bg-[#EEE8FF]',
+    featureColor: 'text-[#8537D8] bg-[#EDE5FF]',
     img: '/images/paso-05-plan.jpg',
     sectionBg: 'bg-white',
     reverse: false,
   },
   {
     num: '06',
-    numColor: 'bg-[#4D7EFF]',
+    numColor: 'bg-[#4585FF]',
     badge: 'Seguimiento',
-    badgeColor: 'bg-[#E8EEFF] text-[#4D7EFF]',
+    badgeColor: 'bg-[#E5EDFF] text-[#4585FF]',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
       </svg>
     ),
-    iconColor: 'text-[#4D7EFF] bg-[#E8EEFF]',
+    iconColor: 'text-[#4585FF] bg-[#E5EDFF]',
     title: 'Seguimiento continuo',
     desc: 'Monitoreamos el progreso con sesiones periódicas de revisión. Ajustamos el plan según la evolución, manteniendo comunicación constante con el paciente y su familia.',
     feature: 'Ajuste continuo · Comunicación constante',
-    featureColor: 'text-[#4D7EFF] bg-[#E8EEFF]',
+    featureColor: 'text-[#4585FF] bg-[#E5EDFF]',
     img: '/images/paso-06-seguimiento.jpg',
     sectionBg: 'bg-[#F6F2FF]',
     reverse: true,
@@ -134,7 +134,7 @@ const modalidades = [
     title: 'Presencial',
     desc: 'Nuestras instalaciones en Bogotá, diseñadas para brindar comodidad y privacidad.',
     tag: '📍 Bogotá, Colombia',
-    gradient: 'from-[#7C4EC8] to-[#FF4DA6]',
+    gradient: 'from-[#8537D8] to-[#F545B4]',
     tagBg: 'bg-white/20 text-white',
   },
   {
@@ -146,7 +146,7 @@ const modalidades = [
     title: 'Virtual',
     desc: 'Atención por videollamada para todo Colombia con la misma calidad y calidez.',
     tag: '🌎 Todo Colombia',
-    gradient: 'from-[#4D7EFF] to-[#4D7EFF]',
+    gradient: 'from-[#4585FF] to-[#4585FF]',
     tagBg: 'bg-white/20 text-white',
   },
   {
@@ -158,7 +158,7 @@ const modalidades = [
     title: 'Mixta',
     desc: 'Combinamos sesiones presenciales y virtuales según tus necesidades y disponibilidad.',
     tag: '🔄 Flexible y adaptada a ti',
-    gradient: 'from-[#2A3048] to-[#3d3d52]',
+    gradient: 'from-[#162845] to-[#3d3d52]',
     tagBg: 'bg-white/10 text-gray-300',
   },
 ]
@@ -176,7 +176,7 @@ function HeroComoTrabajamos() {
   return (
     <section className="bg-white py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#FF4DA6] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+        <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#F545B4] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
           Nuestro Proceso
         </span>
         <h1 data-animate data-delay="1" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5">
@@ -190,7 +190,7 @@ function HeroComoTrabajamos() {
           {stepPills.map((p) => (
             <span
               key={p.num}
-              className="na-badge bg-[#7C4EC8] text-white text-xs font-bold px-4 py-2 rounded-full"
+              className="na-badge bg-[#8537D8] text-white text-xs font-bold px-4 py-2 rounded-full"
             >
               {p.num} · {p.label}
             </span>
@@ -229,7 +229,7 @@ function PasoStep({ paso }: { paso: typeof pasos[0] }) {
           </div>
 
           {/* Image side */}
-          <div data-animate={paso.reverse ? 'left' : 'right'} data-delay="1" className="na-img-zoom rounded-3xl overflow-hidden aspect-[4/3] bg-[#EEE8FF]">
+          <div data-animate={paso.reverse ? 'left' : 'right'} data-delay="1" className="na-img-zoom rounded-3xl overflow-hidden aspect-[4/3] bg-[#EDE5FF]">
             <img
               src={paso.img}
               alt={paso.title}
@@ -245,10 +245,10 @@ function PasoStep({ paso }: { paso: typeof pasos[0] }) {
 /* ─── MODALIDADES ───────────────────────────────────────── */
 function ModalidadesSection() {
   return (
-    <section className="bg-[#182038] py-20">
+    <section className="bg-[#0E234F] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span data-animate className="text-xs font-bold tracking-widest text-[#FF4DA6] uppercase mb-4 block">
+          <span data-animate className="text-xs font-bold tracking-widest text-[#F545B4] uppercase mb-4 block">
             Modalidades de Atención
           </span>
           <h2 data-animate data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
@@ -288,7 +288,7 @@ function CTAComoTrabajamos() {
   return (
     <section
       className="py-16"
-      style={{ background: 'linear-gradient(135deg, #7C4EC8 0%, #8C5ED4 50%, #FF4DA6 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #8537D8 0%, #9040DC 50%, #F545B4 100%)' }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h2 data-animate="scale" className="text-3xl sm:text-4xl font-extrabold mb-4">
@@ -300,7 +300,7 @@ function CTAComoTrabajamos() {
         <div data-animate data-delay="2" className="flex flex-wrap justify-center gap-4">
           <Link
             href="/agendar"
-            className="na-btn bg-white text-[#7C4EC8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
+            className="na-btn bg-white text-[#8537D8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />

@@ -17,7 +17,7 @@ export default function PrivacidadPage() {
       {/* ── Hero ── */}
       <section className="bg-[#F6F2FF] py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block bg-[#EEE8FF] text-[#7C4EC8] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
+          <span className="inline-block bg-[#EDE5FF] text-[#8537D8] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
             Legal · Privacidad
           </span>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
@@ -41,7 +41,7 @@ export default function PrivacidadPage() {
 
           {/* Índice */}
           <div className="bg-[#F6F2FF] rounded-2xl p-6 mb-10 not-prose">
-            <h2 className="text-sm font-bold text-[#7C4EC8] uppercase tracking-widest mb-4">Tabla de contenido</h2>
+            <h2 className="text-sm font-bold text-[#8537D8] uppercase tracking-widest mb-4">Tabla de contenido</h2>
             <ol className="space-y-1.5 text-sm text-gray-600 list-decimal list-inside">
               {[
                 'Identificación del Responsable del Tratamiento',
@@ -145,8 +145,8 @@ export default function PrivacidadPage() {
               <li>Páginas visitadas y duración de la visita</li>
               <li>Cookies y datos de analítica web (ver sección 13)</li>
             </ul>
-            <p className="text-sm bg-[#FFF0F9] border border-[#FF4DA6]/30 rounded-xl p-4 not-prose mt-4">
-              <strong className="text-[#FF4DA6]">Nota importante:</strong> Los datos de salud son datos sensibles y
+            <p className="text-sm bg-[#FFF0F9] border border-[#F545B4]/30 rounded-xl p-4 not-prose mt-4">
+              <strong className="text-[#F545B4]">Nota importante:</strong> Los datos de salud son datos sensibles y
               su tratamiento requiere autorización expresa del Titular, o de su representante legal cuando se trate
               de menores de edad, conforme al artículo 6 de la Ley 1581 de 2012.
             </p>
@@ -413,7 +413,7 @@ export default function PrivacidadPage() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 bg-[#7C4EC8] hover:bg-[#6E44BE] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors shadow-md"
+              className="inline-flex items-center gap-2 bg-[#8537D8] hover:bg-[#7530C5] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors shadow-md"
             >
               ← Volver al inicio
             </Link>
@@ -431,7 +431,7 @@ function Article({ num, title, children }: { num: string; title: string; childre
   return (
     <article className="mb-10">
       <h2 className="text-xl font-extrabold text-gray-900 mb-4 flex items-center gap-3">
-        <span className="w-8 h-8 rounded-full bg-[#7C4EC8] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+        <span className="w-8 h-8 rounded-full bg-[#8537D8] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
           {num}
         </span>
         {title}
@@ -457,7 +457,7 @@ function ContactItem({ icon, label, value }: { icon: string; label: string; valu
     <div className="flex items-start gap-3">
       <span className="text-lg">{icon}</span>
       <div>
-        <div className="text-xs font-bold text-[#7C4EC8] uppercase tracking-wide">{label}</div>
+        <div className="text-xs font-bold text-[#8537D8] uppercase tracking-wide">{label}</div>
         <div className="text-sm text-gray-700 font-medium">{value}</div>
       </div>
     </div>

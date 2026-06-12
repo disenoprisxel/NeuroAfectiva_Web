@@ -8,39 +8,39 @@ export const metadata: Metadata = {
 }
 
 const kpis = [
-  { value: '30%', label: 'reducción de burnout', color: '#4D7EFF' },
+  { value: '30%', label: 'reducción de burnout', color: '#4585FF' },
   { value: '+200', label: 'colaboradores intervenidos', color: '#FFFFFF' },
-  { value: '98%', label: 'satisfacción empresarial', color: '#FF4DA6' },
+  { value: '98%', label: 'satisfacción empresarial', color: '#F545B4' },
   { value: '12', label: 'sectores empresariales', color: '#FFFFFF' },
 ]
 
 const modules = [
   {
     icon: Search,
-    gradient: 'linear-gradient(135deg, #7C4EC8 0%, #9060D0 100%)',
+    gradient: 'linear-gradient(135deg, #8537D8 0%, #9045D8 100%)',
     rowBg: '#F6F2FF',
-    tagBg: '#EEE8FF',
-    tagColor: '#7C4EC8',
+    tagBg: '#EDE5FF',
+    tagColor: '#8537D8',
     tagText: 'Fase 1',
     title: 'Diagnóstico organizacional neuropsicológico',
     desc: 'Evaluamos el estado cognitivo y emocional del equipo: niveles de estrés, atención, memoria de trabajo y funciones ejecutivas colectivas.',
   },
   {
     icon: Users,
-    gradient: 'linear-gradient(135deg, #4D7EFF 0%, #3D6AE0 100%)',
-    rowBg: '#E8EEFF',
+    gradient: 'linear-gradient(135deg, #4585FF 0%, #3A75E8 100%)',
+    rowBg: '#E5EDFF',
     tagBg: '#CCF1F7',
-    tagColor: '#3D6AE0',
+    tagColor: '#3A75E8',
     tagText: 'Fase 2',
     title: 'Talleres de neurohabilidades para equipos',
     desc: 'Programas vivenciales de regulación emocional, gestión del estrés, comunicación asertiva y liderazgo neurocientífico para equipos de trabajo.',
   },
   {
     icon: TrendingUp,
-    gradient: 'linear-gradient(135deg, #FF4DA6 0%, #E83D96 100%)',
+    gradient: 'linear-gradient(135deg, #F545B4 0%, #DC3AA8 100%)',
     rowBg: '#FFF0F9',
     tagBg: '#FFD6EC',
-    tagColor: '#FF4DA6',
+    tagColor: '#F545B4',
     tagText: 'Fase 3',
     title: 'Acompañamiento individual a líderes',
     desc: 'Coaching neuropsicológico personalizado para directivos y líderes de equipo: gestión de la presión, toma de decisiones y bienestar ejecutivo.',
@@ -50,41 +50,41 @@ const modules = [
 const paraQuienCols = [
   {
     icon: Crown,
-    iconGradient: 'linear-gradient(135deg, #7C4EC8 0%, #9060D0 100%)',
+    iconGradient: 'linear-gradient(135deg, #8537D8 0%, #9045D8 100%)',
     shadow: '0 4px 20px rgba(50,184,204,0.082)',
     title: 'Líderes y directivos',
     subtitle: 'C-Level · Gerentes · Jefes de área',
-    subtitleColor: '#7C4EC8',
+    subtitleColor: '#8537D8',
     desc: 'Directores, gerentes y líderes que buscan gestionar mejor la presión, mejorar su toma de decisiones bajo estrés y fortalecer sus habilidades de liderazgo desde la neurociencia.',
     items: [
-      { color: '#7C4EC8', text: 'Coaching neuropsicológico ejecutivo' },
-      { color: '#7C4EC8', text: 'Manejo del estrés y burnout directivo' },
+      { color: '#8537D8', text: 'Coaching neuropsicológico ejecutivo' },
+      { color: '#8537D8', text: 'Manejo del estrés y burnout directivo' },
     ],
   },
   {
     icon: Users,
-    iconGradient: 'linear-gradient(135deg, #4D7EFF 0%, #3D6AE0 100%)',
+    iconGradient: 'linear-gradient(135deg, #4585FF 0%, #3A75E8 100%)',
     shadow: '0 4px 20px rgba(50,184,204,0.082)',
     title: 'Equipos de trabajo',
     subtitle: 'Todos los niveles · Áreas · Proyectos',
-    subtitleColor: '#3D6AE0',
+    subtitleColor: '#3A75E8',
     desc: 'Equipos que necesitan mejorar su cohesión, comunicación y rendimiento colectivo a través de talleres de neurohabilidades y regulación emocional grupal.',
     items: [
-      { color: '#4D7EFF', text: 'Talleres grupales de neurohabilidades' },
-      { color: '#4D7EFF', text: 'Comunicación efectiva y trabajo en equipo' },
+      { color: '#4585FF', text: 'Talleres grupales de neurohabilidades' },
+      { color: '#4585FF', text: 'Comunicación efectiva y trabajo en equipo' },
     ],
   },
   {
     icon: HeartHandshake,
-    iconGradient: 'linear-gradient(135deg, #FF4DA6 0%, #E83D96 100%)',
+    iconGradient: 'linear-gradient(135deg, #F545B4 0%, #DC3AA8 100%)',
     shadow: '0 4px 20px rgba(50,184,204,0.082)',
     title: 'Áreas de Talento Humano',
     subtitle: 'HR · Bienestar · Cultura organizacional',
-    subtitleColor: '#FF4DA6',
+    subtitleColor: '#F545B4',
     desc: 'Departamentos de RRHH que buscan implementar programas de bienestar mental basados en evidencia, reducir la rotación y mejorar el clima organizacional.',
     items: [
-      { color: '#FF4DA6', text: 'Programas de bienestar corporativo' },
-      { color: '#FF4DA6', text: 'Reducción de ausentismo y rotación' },
+      { color: '#F545B4', text: 'Programas de bienestar corporativo' },
+      { color: '#F545B4', text: 'Reducción de ausentismo y rotación' },
     ],
   },
 ]
@@ -92,25 +92,25 @@ const paraQuienCols = [
 const steps = [
   {
     num: '01',
-    gradient: 'linear-gradient(135deg, #7C4EC8 0%, #9060D0 100%)',
+    gradient: 'linear-gradient(135deg, #8537D8 0%, #9045D8 100%)',
     title: 'Diagnóstico inicial',
     desc: 'Evaluamos el estado cognitivo y emocional de la organización mediante instrumentos neuropsicológicos validados.',
   },
   {
     num: '02',
-    gradient: 'linear-gradient(135deg, #4D7EFF 0%, #3D6AE0 100%)',
+    gradient: 'linear-gradient(135deg, #4585FF 0%, #3A75E8 100%)',
     title: 'Plan personalizado',
     desc: 'Diseñamos un programa a medida según los hallazgos del diagnóstico, las metas de la empresa y el perfil del equipo.',
   },
   {
     num: '03',
-    gradient: 'linear-gradient(135deg, #FF4DA6 0%, #E83D96 100%)',
+    gradient: 'linear-gradient(135deg, #F545B4 0%, #DC3AA8 100%)',
     title: 'Intervención y talleres',
     desc: 'Implementamos los talleres, sesiones y acompañamientos definidos, con seguimiento continuo de indicadores de bienestar.',
   },
   {
     num: '04',
-    gradient: 'linear-gradient(135deg, #2A3048 0%, #4a4a6a 100%)',
+    gradient: 'linear-gradient(135deg, #162845 0%, #4a4a6a 100%)',
     title: 'Medición de impacto',
     desc: 'Entregamos un informe de resultados con métricas de bienestar, productividad y recomendaciones para la sostenibilidad del cambio.',
   },
@@ -128,18 +128,18 @@ export default function OrganizacionalPage() {
         >
           {/* Breadcrumb */}
           <nav className="hidden md:flex items-center gap-2">
-            <Link href="/" className="text-[#737f80] text-xs hover:text-[#7C4EC8]">Inicio</Link>
-            <ChevronRight size={11} className="text-[#FF4DA6]" />
-            <Link href="/servicios" className="text-[#737f80] text-xs hover:text-[#7C4EC8]">Servicios</Link>
-            <ChevronRight size={11} className="text-[#FF4DA6]" />
-            <span className="text-[#4D7EFF] text-xs font-semibold">Neuropsicología Organizacional</span>
+            <Link href="/" className="text-[#737f80] text-xs hover:text-[#8537D8]">Inicio</Link>
+            <ChevronRight size={11} className="text-[#F545B4]" />
+            <Link href="/servicios" className="text-[#737f80] text-xs hover:text-[#8537D8]">Servicios</Link>
+            <ChevronRight size={11} className="text-[#F545B4]" />
+            <span className="text-[#4585FF] text-xs font-semibold">Neuropsicología Organizacional</span>
           </nav>
 
           {/* Badge */}
           <div data-animate className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full na-badge"
             style={{ background: 'rgba(255,255,255,0.125)', border: '1px solid rgba(50,184,204,0.3)' }}>
-            <Building2 size={15} style={{ color: '#4D7EFF' }} />
-            <span className="text-[#4D7EFF] text-[13px] font-semibold">Empresas · Líderes · Equipos de trabajo</span>
+            <Building2 size={15} style={{ color: '#4585FF' }} />
+            <span className="text-[#4585FF] text-[13px] font-semibold">Empresas · Líderes · Equipos de trabajo</span>
           </div>
 
           {/* Title */}
@@ -181,7 +181,7 @@ export default function OrganizacionalPage() {
       </section>
 
       {/* ── KPI Bar ──────────────────────────────────────────────────────── */}
-      <section className="w-full bg-[#182038] flex items-center justify-center px-5 md:px-[120px]" style={{ height: '140px' }}>
+      <section className="w-full bg-[#0E234F] flex items-center justify-center px-5 md:px-[120px]" style={{ height: '140px' }}>
         <div className="flex w-full">
           {kpis.map((k, i) => (
             <div key={k.label} className="flex flex-1 items-center">
@@ -199,10 +199,10 @@ export default function OrganizacionalPage() {
       <section id="que-es" className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         {/* Header */}
         <div data-animate="scale" className="flex flex-col items-center gap-4 text-center">
-          <span className="px-4 py-1.5 rounded-full text-[13px] font-semibold text-[#3D6AE0]" style={{ background: '#E8EEFF' }}>
+          <span className="px-4 py-1.5 rounded-full text-[13px] font-semibold text-[#3A75E8]" style={{ background: '#E5EDFF' }}>
             El programa
           </span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2A3048] leading-[1.2] max-w-[800px]">
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845] leading-[1.2] max-w-[800px]">
             ¿Qué es la Neuropsicología Organizacional?
           </h2>
           <p className="text-[#737f80] text-sm md:text-base leading-[1.7] max-w-[820px]">
@@ -231,7 +231,7 @@ export default function OrganizacionalPage() {
                 </div>
                 {/* Content */}
                 <div className="flex flex-col gap-1.5 flex-1 px-6 md:px-8 py-4">
-                  <h3 className="text-[#2A3048] text-base md:text-[19px] font-bold">{m.title}</h3>
+                  <h3 className="text-[#162845] text-base md:text-[19px] font-bold">{m.title}</h3>
                   <p className="text-[#737f80] text-[13px] md:text-sm leading-[1.6] line-clamp-2">{m.desc}</p>
                 </div>
                 {/* Tag */}
@@ -250,10 +250,10 @@ export default function OrganizacionalPage() {
       </section>
 
       {/* ── Para quién ───────────────────────────────────────────────────── */}
-      <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#E8EEFF' }}>
+      <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#E5EDFF' }}>
         <div data-animate="scale" className="flex flex-col items-center gap-2.5 text-center">
-          <span className="text-[#3D6AE0] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">¿Para quién?</span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2A3048]">Diseñado para cada nivel de la organización</h2>
+          <span className="text-[#3A75E8] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">¿Para quién?</span>
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Diseñado para cada nivel de la organización</h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 w-full">
@@ -275,7 +275,7 @@ export default function OrganizacionalPage() {
                     <Icon size={28} className="text-white" />
                   </div>
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-[#2A3048] text-[18px] font-bold">{col.title}</span>
+                    <span className="text-[#162845] text-[18px] font-bold">{col.title}</span>
                     <span className="text-[12px] font-semibold" style={{ color: col.subtitleColor }}>{col.subtitle}</span>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function OrganizacionalPage() {
                   {col.items.map((item) => (
                     <div key={item.text} className="flex items-center gap-2.5">
                       <CircleCheck size={16} style={{ color: item.color }} className="shrink-0" />
-                      <span className="text-[#2A3048] text-[13px]">{item.text}</span>
+                      <span className="text-[#162845] text-[13px]">{item.text}</span>
                     </div>
                   ))}
                 </div>
@@ -299,8 +299,8 @@ export default function OrganizacionalPage() {
         {/* Header */}
         <div data-animate className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-2">
-            <span className="text-[#7C4EC8] text-[11px] font-extrabold tracking-[3px] uppercase">Cómo trabajamos</span>
-            <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#2A3048] leading-[1.2]">
+            <span className="text-[#8537D8] text-[11px] font-extrabold tracking-[3px] uppercase">Cómo trabajamos</span>
+            <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#162845] leading-[1.2]">
               Nuestro proceso<br />con tu organización
             </h2>
           </div>
@@ -320,7 +320,7 @@ export default function OrganizacionalPage() {
                 >
                   <span className="text-white text-base font-extrabold">{step.num}</span>
                 </div>
-                <h3 className="text-[#2A3048] text-[18px] font-bold">{step.title}</h3>
+                <h3 className="text-[#162845] text-[18px] font-bold">{step.title}</h3>
                 <p className="text-[#737f80] text-sm leading-[1.6]">{step.desc}</p>
               </div>
               {i < steps.length - 1 && (
@@ -334,10 +334,10 @@ export default function OrganizacionalPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="w-full bg-[#182038] flex flex-col md:flex-row items-stretch" style={{ minHeight: '320px' }}>
+      <section className="w-full bg-[#0E234F] flex flex-col md:flex-row items-stretch" style={{ minHeight: '320px' }}>
         {/* Left */}
         <div className="flex flex-col justify-center gap-5 px-5 md:px-[80px] py-[60px] flex-1">
-          <span data-animate className="text-[#4D7EFF] text-[11px] font-extrabold tracking-[2px] uppercase">
+          <span data-animate className="text-[#4585FF] text-[11px] font-extrabold tracking-[2px] uppercase">
             ¿Listo para transformar tu organización?
           </span>
           <h2 data-animate data-delay="1" className="text-white text-[26px] md:text-[36px] font-extrabold leading-[1.2] max-w-[600px]">
@@ -350,7 +350,7 @@ export default function OrganizacionalPage() {
             <Link
               href="/agendar"
               className="inline-flex items-center px-8 py-3.5 rounded-full text-[15px] font-bold text-white"
-              style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #F545B4 0%, #8537D8 100%)' }}
             >
               Solicitar diagnóstico gratuito
             </Link>
@@ -373,11 +373,11 @@ export default function OrganizacionalPage() {
           style={{ background: 'rgba(255,255,255,0.031)' }}
         >
           <div className="flex items-center gap-4 rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.051)' }}>
-            <Building2 size={24} style={{ color: '#4D7EFF' }} />
+            <Building2 size={24} style={{ color: '#4585FF' }} />
             <span className="text-white text-sm font-medium">Empresas de todos los tamaños</span>
           </div>
           <div className="flex items-center gap-4 rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.051)' }}>
-            <ShieldCheck size={24} style={{ color: '#FF4DA6' }} />
+            <ShieldCheck size={24} style={{ color: '#F545B4' }} />
             <span className="text-white text-sm font-medium">Metodología con evidencia científica</span>
           </div>
         </div>

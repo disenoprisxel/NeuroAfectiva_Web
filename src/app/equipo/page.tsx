@@ -13,9 +13,9 @@ const equipo = [
     nombre: 'Viviana Marcela Trujillo',
     cargo: 'Psicóloga · Especialista en Neuropsicología Educativa',
     badge: 'Neuropsicología Educativa',
-    badgeColor: 'bg-[#EEE8FF] text-[#7C4EC8]',
+    badgeColor: 'bg-[#EDE5FF] text-[#8537D8]',
     badgeCard: 'Neuropsicología Educativa',
-    badgeCardColor: 'bg-[#EEE8FF] text-[#7C4EC8]',
+    badgeCardColor: 'bg-[#EDE5FF] text-[#8537D8]',
     floatingBadge: '8+ años de experiencia',
     img: '/images/viviana-trujillo.jpg',
     imgAlt: 'Viviana Marcela Trujillo',
@@ -28,24 +28,24 @@ const equipo = [
         <p className="text-gray-700 text-sm font-bold mb-3">Herramientas complementarias profesionales:</p>
         <ul className="space-y-3 text-gray-500 text-sm">
           <li className="flex items-start gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#7C4EC8] flex-shrink-0 mt-1.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#8537D8] flex-shrink-0 mt-1.5" />
             <span><strong className="text-gray-700">Certificación Infanto-Juvenil:</strong> A través de sus diplomados en psicología clínica y educativa, ofrece un acompañamiento integral que conecta la salud emocional con el éxito escolar.</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#FF4DA6] flex-shrink-0 mt-1.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F545B4] flex-shrink-0 mt-1.5" />
             <span><strong className="text-gray-700">Innovación Creativa:</strong> Cuenta con certificación en Arte Terapia, lo que le permite diseñar intervenciones lúdicas y significativas que potencian la neuroplasticidad y la expresión emocional.</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4D7EFF] flex-shrink-0 mt-1.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#4585FF] flex-shrink-0 mt-1.5" />
             <span>Complementariamente, Viviana extiende su conocimiento del comportamiento humano al sector corporativo. Cuenta con formación en la aplicación de la Batería de Riesgo Psicosocial del Ministerio de Trabajo, ofreciendo consultoría técnica a empresas interesadas en la evaluación y prevención de factores de riesgo en el clima laboral.</span>
           </li>
         </ul>
       </>
     ),
     tags: ['Dificultades de Aprendizaje', 'Funciones Ejecutivas', 'TDAH'],
-    tagColors: ['bg-[#EEE8FF] text-[#7C4EC8]', 'bg-[#FFF0F9] text-[#FF4DA6]', 'bg-[#E8EEFF] text-[#4D7EFF]'],
+    tagColors: ['bg-[#EDE5FF] text-[#8537D8]', 'bg-[#FFF0F9] text-[#F545B4]', 'bg-[#E5EDFF] text-[#4585FF]'],
     ctaLabel: 'Agendar con Viviana',
-    ctaColor: 'bg-[#7C4EC8] hover:bg-[#6E44BE]',
+    ctaColor: 'bg-[#8537D8] hover:bg-[#7530C5]',
     formacion: 'Fund. Univ. Internacional de la Rioja',
   },
 ]
@@ -59,7 +59,7 @@ const filosofia = [
     ),
     title: 'Enfoque Humano',
     desc: 'Cada persona es única. Nos adaptamos a sus necesidades, ritmo y contexto familiar para brindar un acompañamiento genuinamente personalizado.',
-    gradient: 'from-[#7C4EC8] to-[#8C5ED4]',
+    gradient: 'from-[#8537D8] to-[#9040DC]',
   },
   {
     icon: (
@@ -69,7 +69,7 @@ const filosofia = [
     ),
     title: 'Rigor Científico',
     desc: 'Utilizamos herramientas diagnósticas y terapéuticas avaladas internacionalmente, siempre actualizadas con las últimas evidencias en neurociencias.',
-    gradient: 'from-[#4D7EFF] to-[#4D7EFF]',
+    gradient: 'from-[#4585FF] to-[#4585FF]',
   },
   {
     icon: (
@@ -79,7 +79,7 @@ const filosofia = [
     ),
     title: 'Acompañamiento Familiar',
     desc: 'Involucramos a la familia en cada etapa del proceso. Orientamos a padres, docentes y cuidadores para extender el impacto más allá de la consulta.',
-    gradient: 'from-[#FF4DA6] to-[#f472b6]',
+    gradient: 'from-[#F545B4] to-[#f472b6]',
   },
 ]
 
@@ -88,7 +88,7 @@ function HeroEquipo() {
   return (
     <section className="bg-[#F6F2FF] py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span data-animate className="na-badge inline-flex items-center gap-2 bg-[#FFF0F9] text-[#FF4DA6] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+        <span data-animate className="na-badge inline-flex items-center gap-2 bg-[#FFF0F9] text-[#F545B4] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
           </svg>
@@ -108,7 +108,7 @@ function HeroEquipo() {
             { icon: '⏱️', text: '8+ años de experiencia' },
             { icon: '📍', text: 'Bogotá, Colombia' },
           ].map((b) => (
-            <span key={b.text} className="na-badge bg-[#FF4DA6] text-white text-xs font-bold px-5 py-2 rounded-full flex items-center gap-2">
+            <span key={b.text} className="na-badge bg-[#F545B4] text-white text-xs font-bold px-5 py-2 rounded-full flex items-center gap-2">
               <span>{b.icon}</span>
               {b.text}
             </span>
@@ -138,7 +138,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             data-animate={imgAnimate}
             className={`relative w-full lg:w-[42%] flex-shrink-0 na-img-zoom overflow-hidden rounded-3xl ${reverse ? 'lg:order-2' : 'lg:order-1'}`}
           >
-            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-[#EEE8FF]">
+            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-[#EDE5FF]">
               <img
                 src={esp.img}
                 alt={esp.imgAlt}
@@ -148,7 +148,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             {/* Top-left floating card */}
             {!esp.formacion && (
               <div className="absolute top-5 left-5 bg-white rounded-2xl px-4 py-3 shadow-xl">
-                <div className="font-extrabold text-[#FF4DA6] text-sm leading-tight">{esp.badge}</div>
+                <div className="font-extrabold text-[#F545B4] text-sm leading-tight">{esp.badge}</div>
                 <div className="text-xs text-gray-400 mt-0.5">Especialista certificada</div>
               </div>
             )}
@@ -156,7 +156,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             {esp.formacion && (
               <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
                 <div className="font-bold text-gray-900 text-xs">{esp.nombre.split(' ')[0]}</div>
-                <div className="text-xs font-medium mt-0.5 text-[#7C4EC8]">Neuropsicóloga</div>
+                <div className="text-xs font-medium mt-0.5 text-[#8537D8]">Neuropsicóloga</div>
               </div>
             )}
             {/* Bottom badge */}
@@ -194,7 +194,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
               <Link
                 href="/agendar"
                 className="na-btn na-btn-gradient text-white font-bold px-7 py-3 rounded-full shadow-md text-sm flex items-center gap-2"
-                style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
+                style={{ background: 'linear-gradient(90deg, #F545B4 0%, #8537D8 100%)' }}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
@@ -223,10 +223,10 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
 /* ─── FILOSOFÍA ─────────────────────────────────────────── */
 function FilosofiaSection() {
   return (
-    <section className="bg-[#182038] py-20">
+    <section className="bg-[#0E234F] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span data-animate className="text-xs font-bold tracking-widest text-[#FF4DA6] uppercase mb-3 block">Nuestra Filosofía</span>
+          <span data-animate className="text-xs font-bold tracking-widest text-[#F545B4] uppercase mb-3 block">Nuestra Filosofía</span>
           <h2 data-animate data-delay="1" className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Ciencia, calidez y compromiso
           </h2>
@@ -261,7 +261,7 @@ function CTAEquipo() {
   return (
     <section
       className="py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #7C4EC8 0%, #8C5ED4 50%, #FF4DA6 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #8537D8 0%, #9040DC 50%, #F545B4 100%)' }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h2 data-animate="scale" className="text-3xl sm:text-4xl font-extrabold mb-4">
@@ -273,7 +273,7 @@ function CTAEquipo() {
         <div data-animate data-delay="2" className="flex flex-wrap justify-center gap-4">
           <Link
             href="/agendar"
-            className="na-btn bg-white text-[#7C4EC8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
+            className="na-btn bg-white text-[#8537D8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full shadow-lg text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />

@@ -20,44 +20,44 @@ const stats = [
 const formats = [
   {
     icon: Users,
-    iconBg: '#7C4EC8',
+    iconBg: '#8537D8',
     cardBg: '#F3F0FF',
     cardBorder: '#DDD5FF',
     title: 'Talleres Grupales',
     desc: 'Sesiones interactivas de 3 a 8 horas para grupos: aulas escolares, equipos de salud, familias o comunidades. Dinámicas vivenciales y herramientas prácticas.',
     pill: '3-8 horas · Presencial/Virtual',
-    pillColor: '#7C4EC8',
-    pillBg: '#EBE5FF',
+    pillColor: '#8537D8',
+    pillBg: '#EAE2FF',
   },
   {
     icon: GraduationCap,
-    iconBg: '#4D7EFF',
+    iconBg: '#4585FF',
     cardBg: '#F0F4FF',
     cardBorder: '#D0F0F5',
     title: 'Programas de Formación',
     desc: 'Itinerarios de 4 a 8 semanas para profundizar en neurohabilidades, neurosalud o expresión creativa. Con sesiones progresivas, material de apoyo y acompañamiento.',
     pill: '4-8 semanas · Online',
-    pillColor: '#4D7EFF',
-    pillBg: '#D8E5FF',
+    pillColor: '#4585FF',
+    pillBg: '#D5E2FF',
   },
   {
     icon: Mic,
-    iconBg: '#FF4DA6',
+    iconBg: '#F545B4',
     cardBg: '#FFF5FB',
     cardBorder: '#FFD6EE',
     title: 'Conferencias y Charlas',
     desc: 'Ponencias de 60 a 90 minutos para jornadas pedagógicas, congresos de salud, eventos corporativos o escuelas de padres. Impacto inmediato y motivacional.',
     pill: '60-90 min · Flexible',
-    pillColor: '#FF4DA6',
+    pillColor: '#F545B4',
     pillBg: '#FFE0F5',
   },
 ]
 
 const topics = [
   {
-    barColor: '#FF4DA6',
+    barColor: '#F545B4',
     icon: Brain,
-    iconBg: '#FF4DA6',
+    iconBg: '#F545B4',
     title: 'Neurohabilidades del Aprendizaje',
     imgUrl: 'https://images.unsplash.com/photo-1714646793036-ae03830d3a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800',
     items: [
@@ -66,12 +66,12 @@ const topics = [
       'Lectoescritura, comprensión y procesamiento',
       'Velocidad de procesamiento y autorregulación',
     ],
-    dotColor: '#FF4DA6',
+    dotColor: '#F545B4',
   },
   {
-    barColor: '#7C4EC8',
+    barColor: '#8537D8',
     icon: HeartPulse,
-    iconBg: '#7C4EC8',
+    iconBg: '#8537D8',
     title: 'Neurosalud Cognitiva y Emocional',
     imgUrl: 'https://images.unsplash.com/photo-1623358184637-2ec651a9ea51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800',
     items: [
@@ -80,12 +80,12 @@ const topics = [
       'Mindfulness, atención plena y neuroplasticidad',
       'Sueño, emociones y bienestar cognitivo',
     ],
-    dotColor: '#7C4EC8',
+    dotColor: '#8537D8',
   },
   {
-    barColor: '#4D7EFF',
+    barColor: '#4585FF',
     icon: Palette,
-    iconBg: '#4D7EFF',
+    iconBg: '#4585FF',
     title: 'ExpresaMente Creativa',
     imgUrl: 'https://images.unsplash.com/photo-1758522275144-85aa16c4ae28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800',
     items: [
@@ -94,7 +94,7 @@ const topics = [
       'Escritura terapéutica y narrativa',
       'Creatividad como herramienta de transformación',
     ],
-    dotColor: '#4D7EFF',
+    dotColor: '#4585FF',
   },
   {
     barColor: '#737f80',
@@ -115,19 +115,19 @@ const topics = [
 const processSteps = [
   {
     num: '01',
-    bg: '#7C4EC8',
+    bg: '#8537D8',
     title: 'Diagnóstico',
     desc: 'Conversamos sobre tus objetivos, el perfil del grupo y el contexto donde se realizará la formación.',
   },
   {
     num: '02',
-    bg: '#4D7EFF',
+    bg: '#4585FF',
     title: 'Diseño',
     desc: 'Creamos un programa a medida con dinámicas, recursos y una estructura pensada para tu equipo.',
   },
   {
     num: '03',
-    bg: '#FF4DA6',
+    bg: '#F545B4',
     title: 'Implementación',
     desc: 'Facilitamos el programa y entregamos informe de resultados, materiales y recomendaciones de seguimiento.',
   },
@@ -136,21 +136,21 @@ const processSteps = [
 const pqCards = [
   {
     icon: School,
-    iconBg: '#FF4DA6',
+    iconBg: '#F545B4',
     accent: 'Comunidad educativa',
     imgUrl: 'https://images.unsplash.com/photo-1759456629213-3db5a7bb53ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600',
     desc: 'Docentes, orientadores, directivos, padres de familia y estudiantes que quieren integrar la neurociencia en el aula y en el hogar.',
   },
   {
     icon: Stethoscope,
-    iconBg: '#4D7EFF',
+    iconBg: '#4585FF',
     accent: 'Área clínica y de salud',
     imgUrl: 'https://images.unsplash.com/photo-1573878409120-f66dcde676f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600',
     desc: 'Psicólogos, terapeutas, médicos y personas en proceso de acompañamiento que buscan ampliar sus herramientas desde la neurociencia aplicada.',
   },
   {
     icon: Building2,
-    iconBg: '#7C4EC8',
+    iconBg: '#8537D8',
     accent: 'Sector empresarial y organizacional',
     imgUrl: 'https://images.unsplash.com/photo-1774491816259-8bf12e6dafea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600',
     desc: 'Equipos de trabajo, líderes y áreas de RRHH que buscan fortalecer el bienestar, la productividad y la cultura organizacional.',
@@ -176,8 +176,8 @@ export default function CapacitacionPage() {
 
         <div className="relative z-10 flex flex-col items-center gap-6 px-5 text-center w-full max-w-[800px]">
           <div
-            className="inline-flex items-center px-6 py-2 rounded-full text-[#4D7EFF] text-[13px] font-semibold"
-            style={{ background: 'rgba(50,184,204,0.251)', border: '1px solid #4D7EFF' }}
+            className="inline-flex items-center px-6 py-2 rounded-full text-[#4585FF] text-[13px] font-semibold"
+            style={{ background: 'rgba(50,184,204,0.251)', border: '1px solid #4585FF' }}
           >
             Formación y Desarrollo
           </div>
@@ -193,7 +193,7 @@ export default function CapacitacionPage() {
             <Link
               href="#formatos"
               className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold text-white w-full md:w-auto"
-              style={{ background: '#4D7EFF' }}
+              style={{ background: '#4585FF' }}
             >
               Ver programas
             </Link>
@@ -211,7 +211,7 @@ export default function CapacitacionPage() {
       {/* ── Stats bar ────────────────────────────────────────────────────── */}
       <div
         className="w-full flex items-center justify-between px-5 md:px-[120px]"
-        style={{ height: '100px', background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 50%, #4D7EFF 100%)' }}
+        style={{ height: '100px', background: 'linear-gradient(90deg, #F545B4 0%, #8537D8 50%, #4585FF 100%)' }}
       >
         {stats.map((s, i) => (
           <div key={s.label} className="flex items-center flex-1">
@@ -227,10 +227,10 @@ export default function CapacitacionPage() {
       {/* ── Formatos ─────────────────────────────────────────────────────── */}
       <section id="formatos" className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         <div className="flex flex-col items-center gap-3 text-center">
-          <span className="px-4 py-1.5 rounded-full text-[#4D7EFF] text-[13px] font-semibold" style={{ background: '#EDF9FC' }}>
+          <span className="px-4 py-1.5 rounded-full text-[#4585FF] text-[13px] font-semibold" style={{ background: '#EDF9FC' }}>
             Formatos disponibles
           </span>
-          <h2 className="text-[24px] md:text-[40px] font-extrabold text-[#182038]">
+          <h2 className="text-[24px] md:text-[40px] font-extrabold text-[#0E234F]">
             Formación para todos los contextos
           </h2>
           <p className="text-[#737f80] text-sm md:text-base max-w-[680px]">
@@ -253,7 +253,7 @@ export default function CapacitacionPage() {
                 >
                   <Icon size={28} className="text-white" />
                 </div>
-                <h3 className="text-[#182038] text-[20px] font-bold">{f.title}</h3>
+                <h3 className="text-[#0E234F] text-[20px] font-bold">{f.title}</h3>
                 <p className="text-[#737f80] text-sm leading-[1.6] flex-1">{f.desc}</p>
                 <span
                   className="self-start px-4 py-1.5 rounded-2xl text-xs font-semibold"
@@ -268,7 +268,7 @@ export default function CapacitacionPage() {
       </section>
 
       {/* ── Temas ────────────────────────────────────────────────────────── */}
-      <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col gap-12" style={{ background: '#182038' }}>
+      <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col gap-12" style={{ background: '#0E234F' }}>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-3">
             <span className="px-4 py-1.5 self-start rounded-full text-[#B99FE0] text-[13px] font-semibold" style={{ background: 'rgba(113,62,193,0.4)' }}>
@@ -278,7 +278,7 @@ export default function CapacitacionPage() {
               Nuestros talleres y capacitaciones
             </h2>
           </div>
-          <p className="text-[#9080C8] text-sm md:text-[15px] leading-[1.6] md:text-right max-w-[300px]">
+          <p className="text-[#9070CC] text-sm md:text-[15px] leading-[1.6] md:text-right max-w-[300px]">
             Cuatro grandes áreas de formación.<br className="hidden md:block" />Cada programa, adaptado a tu contexto.
           </p>
         </div>
@@ -366,10 +366,10 @@ export default function CapacitacionPage() {
       {/* ── Proceso ──────────────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-14" style={{ background: '#F3F0FF' }}>
         <div className="flex flex-col items-center gap-3 text-center w-full">
-          <span className="px-4 py-1.5 self-center rounded-full text-[#7C4EC8] text-[13px] font-semibold" style={{ background: '#EBE5FF' }}>
+          <span className="px-4 py-1.5 self-center rounded-full text-[#8537D8] text-[13px] font-semibold" style={{ background: '#EAE2FF' }}>
             Cómo trabajamos
           </span>
-          <h2 className="text-[#182038] text-[26px] md:text-[40px] font-extrabold">Proceso en 3 pasos</h2>
+          <h2 className="text-[#0E234F] text-[26px] md:text-[40px] font-extrabold">Proceso en 3 pasos</h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-0 w-full">
@@ -384,7 +384,7 @@ export default function CapacitacionPage() {
                 >
                   <span className="text-white text-[22px] font-black">{step.num}</span>
                 </div>
-                <h3 className="text-[#182038] text-[20px] font-bold text-center">{step.title}</h3>
+                <h3 className="text-[#0E234F] text-[20px] font-bold text-center">{step.title}</h3>
                 <p className="text-[#737f80] text-sm leading-[1.6] text-center">{step.desc}</p>
               </div>
               {i < processSteps.length - 1 && (
@@ -400,10 +400,10 @@ export default function CapacitacionPage() {
       {/* ── Para quién ───────────────────────────────────────────────────── */}
       <section className="w-full bg-white px-5 md:px-[120px] py-[80px] flex flex-col gap-14">
         <div className="flex flex-col items-center gap-3 text-center">
-          <span className="px-4 py-1.5 self-center rounded-full text-[#FF4DA6] text-[13px] font-semibold" style={{ background: '#FFF0F9' }}>
+          <span className="px-4 py-1.5 self-center rounded-full text-[#F545B4] text-[13px] font-semibold" style={{ background: '#FFF0F9' }}>
             ¿Para quién?
           </span>
-          <h2 className="text-[#182038] text-[26px] md:text-[40px] font-extrabold">¿A quién van dirigidos?</h2>
+          <h2 className="text-[#0E234F] text-[26px] md:text-[40px] font-extrabold">¿A quién van dirigidos?</h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
@@ -413,7 +413,7 @@ export default function CapacitacionPage() {
               <div
                 key={card.accent}
                 className="flex flex-col rounded-[20px] overflow-hidden flex-1"
-                style={{ background: '#182038', height: '380px' }}
+                style={{ background: '#0E234F', height: '380px' }}
               >
                 {/* Image */}
                 <div className="h-[180px] overflow-hidden shrink-0">
@@ -430,7 +430,7 @@ export default function CapacitacionPage() {
                     </div>
                     <span className="text-white text-base font-bold">{card.accent}</span>
                   </div>
-                  <p className="text-[#9080C8] text-[13px] leading-[1.5]">{card.desc}</p>
+                  <p className="text-[#9070CC] text-[13px] leading-[1.5]">{card.desc}</p>
                 </div>
               </div>
             )
@@ -441,7 +441,7 @@ export default function CapacitacionPage() {
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
         className="w-full flex flex-col items-center justify-center gap-8 px-5 md:px-[120px] py-[80px] text-center"
-        style={{ background: 'linear-gradient(135deg, #182038 0%, #7C4EC8 50%, #4D7EFF 100%)', minHeight: '480px' }}
+        style={{ background: 'linear-gradient(135deg, #0E234F 0%, #8537D8 50%, #4585FF 100%)', minHeight: '480px' }}
       >
         <div className="flex flex-col items-center gap-4 max-w-[740px]">
           <span className="px-6 py-2 rounded-full text-white text-[13px] font-semibold" style={{ background: 'rgba(255,255,255,0.149)' }}>
@@ -458,7 +458,7 @@ export default function CapacitacionPage() {
           <Link
             href="/contacto"
             className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold w-full md:w-auto"
-            style={{ background: '#FFFFFF', color: '#7C4EC8' }}
+            style={{ background: '#FFFFFF', color: '#8537D8' }}
           >
             Solicitar propuesta
           </Link>
