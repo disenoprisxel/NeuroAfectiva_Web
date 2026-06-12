@@ -24,7 +24,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Dirección',
-    value: 'Próximamente en Bogotá\nPor ahora atendemos 100% virtual',
+    value: 'Estamos preparando nuestro espacio físico. Por ahora atendemos de manera 100% virtual con la misma calidad y calidez.',
     color: 'text-[#8537D8] bg-[#EDE5FF]',
   },
   {

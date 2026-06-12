@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Próximamente en Bogotá<br /><span className="text-[#F545B4] font-semibold">Atención 100% virtual</span></span>
+                <span>Estamos preparando nuestro espacio físico. Por ahora atendemos de manera <strong className="text-[#F545B4]">100% virtual</strong> con la misma calidad y calidez.</span>
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
