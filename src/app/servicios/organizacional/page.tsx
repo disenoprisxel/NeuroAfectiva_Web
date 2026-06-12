@@ -369,16 +369,26 @@ export default function OrganizacionalPage() {
 
         {/* Right features */}
         <div
-          className="hidden md:flex flex-col justify-center gap-4 p-10 w-[400px] shrink-0"
-          style={{ background: 'rgba(255,255,255,0.031)' }}
+          className="hidden md:flex flex-col justify-center gap-5 p-10 w-[420px] shrink-0"
+          style={{ background: 'rgba(0,0,0,0.18)' }}
         >
-          <div className="flex items-center gap-4 rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.051)' }}>
-            <Building2 size={24} style={{ color: '#4585FF' }} />
-            <span className="text-white text-sm font-medium">Empresas de todos los tamaños</span>
+          <div className="flex items-center gap-4 rounded-2xl p-5 bg-white shadow-lg">
+            <div className="w-10 h-10 rounded-xl bg-[#E5EDFF] flex items-center justify-center shrink-0">
+              <Building2 size={20} style={{ color: '#4585FF' }} />
+            </div>
+            <div>
+              <span className="text-[#0E234F] text-sm font-bold block">Empresas de todos los tamaños</span>
+              <span className="text-gray-400 text-xs">Pymes, startups y corporaciones</span>
+            </div>
           </div>
-          <div className="flex items-center gap-4 rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.051)' }}>
-            <ShieldCheck size={24} style={{ color: '#F545B4' }} />
-            <span className="text-white text-sm font-medium">Metodología con evidencia científica</span>
+          <div className="flex items-center gap-4 rounded-2xl p-5 bg-white shadow-lg">
+            <div className="w-10 h-10 rounded-xl bg-[#FFF0F9] flex items-center justify-center shrink-0">
+              <ShieldCheck size={20} style={{ color: '#F545B4' }} />
+            </div>
+            <div>
+              <span className="text-[#0E234F] text-sm font-bold block">Metodología con evidencia científica</span>
+              <span className="text-gray-400 text-xs">Avalada internacionalmente</span>
+            </div>
           </div>
         </div>
       </section>
