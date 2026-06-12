@@ -11,43 +11,43 @@ export const metadata: Metadata = {
 }
 
 const specialties = [
-  { icon: CloudRain, color: '#fc66b5', borderColor: '#fc66b530', label: 'Ansiedad y estrés' },
-  { icon: Cloud, color: '#713ec1', borderColor: '#713ec130', label: 'Depresión' },
-  { icon: Heart, color: '#32b8cc', borderColor: '#32b8cc30', label: 'Terapia de pareja' },
-  { icon: Flame, color: '#fc66b5', borderColor: '#fc66b530', label: 'Trauma y PTSD' },
-  { icon: Users, color: '#713ec1', borderColor: '#713ec130', label: 'Terapia familiar' },
-  { icon: Leaf, color: '#32b8cc', borderColor: '#32b8cc30', label: 'Duelo y pérdida' },
-  { icon: Scissors, color: '#fc66b5', borderColor: '#fc66b530', label: 'Trastornos alimentarios' },
-  { icon: Moon, color: '#713ec1', borderColor: '#713ec130', label: 'Trastornos del sueño' },
-  { icon: Zap, color: '#32b8cc', borderColor: '#32b8cc30', label: 'Crisis vitales y cambios' },
-  { icon: Shield, color: '#fc66b5', borderColor: '#fc66b530', label: 'Baja autoestima' },
+  { icon: CloudRain, color: '#FF4DA6', borderColor: '#FF4DA630', label: 'Ansiedad y estrés' },
+  { icon: Cloud, color: '#7C4EC8', borderColor: '#7C4EC830', label: 'Depresión' },
+  { icon: Heart, color: '#4D7EFF', borderColor: '#4D7EFF30', label: 'Terapia de pareja' },
+  { icon: Flame, color: '#FF4DA6', borderColor: '#FF4DA630', label: 'Trauma y PTSD' },
+  { icon: Users, color: '#7C4EC8', borderColor: '#7C4EC830', label: 'Terapia familiar' },
+  { icon: Leaf, color: '#4D7EFF', borderColor: '#4D7EFF30', label: 'Duelo y pérdida' },
+  { icon: Scissors, color: '#FF4DA6', borderColor: '#FF4DA630', label: 'Trastornos alimentarios' },
+  { icon: Moon, color: '#7C4EC8', borderColor: '#7C4EC830', label: 'Trastornos del sueño' },
+  { icon: Zap, color: '#4D7EFF', borderColor: '#4D7EFF30', label: 'Crisis vitales y cambios' },
+  { icon: Shield, color: '#FF4DA6', borderColor: '#FF4DA630', label: 'Baja autoestima' },
 ]
 
 const processSteps = [
   {
     num: '01',
-    gradient: 'linear-gradient(135deg, #fc66b5 0%, #e04fa0 100%)',
+    gradient: 'linear-gradient(135deg, #FF4DA6 0%, #E83D96 100%)',
     lineColor: 'rgba(252,102,181,0.125)',
     title: 'Primera consulta — Evaluación inicial',
     desc: 'Conocemos tu historia, tus preocupaciones y lo que esperas del proceso. Definimos conjuntamente los objetivos terapéuticos y el enfoque más adecuado para ti.',
   },
   {
     num: '02',
-    gradient: 'linear-gradient(135deg, #713ec1 0%, #9b6dd6 100%)',
+    gradient: 'linear-gradient(135deg, #7C4EC8 0%, #9060D0 100%)',
     lineColor: 'rgba(113,62,193,0.125)',
     title: 'Plan terapéutico personalizado',
     desc: 'Diseñamos un plan de trabajo adaptado a tu perfil, ritmo y necesidades. Establecemos frecuencia de sesiones, técnicas a utilizar y metas concretas y medibles.',
   },
   {
     num: '03',
-    gradient: 'linear-gradient(135deg, #32b8cc 0%, #1a9aad 100%)',
+    gradient: 'linear-gradient(135deg, #4D7EFF 0%, #3D6AE0 100%)',
     lineColor: 'rgba(50,184,204,0.125)',
     title: 'Proceso de intervención',
     desc: 'Sesiones regulares de acompañamiento donde trabajamos activamente tus objetivos mediante técnicas terapéuticas validadas, ejercicios prácticos y reflexión guiada.',
   },
   {
     num: '04',
-    gradient: 'linear-gradient(135deg, #fc66b5 0%, #713ec1 100%)',
+    gradient: 'linear-gradient(135deg, #FF4DA6 0%, #7C4EC8 100%)',
     lineColor: null,
     title: 'Cierre y seguimiento',
     desc: 'Al alcanzar tus metas, cerramos el proceso de forma consciente y planeamos el seguimiento para consolidar los cambios logrados a largo plazo.',
@@ -80,7 +80,7 @@ export default function PsicologiaClinicalPage() {
             <ChevronRight size={11} className="text-white/31" />
             <Link href="/servicios" className="text-white/43 text-xs hover:text-white/70">Servicios</Link>
             <ChevronRight size={11} className="text-white/31" />
-            <span className="text-[#fc66b5] text-xs font-semibold">Psicología Clínica</span>
+            <span className="text-[#FF4DA6] text-xs font-semibold">Psicología Clínica</span>
           </nav>
 
           {/* Badge */}
@@ -88,7 +88,7 @@ export default function PsicologiaClinicalPage() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full"
             style={{ background: 'rgba(252,102,181,0.082)', border: '1px solid rgba(252,102,181,0.314)' }}
           >
-            <Heart size={15} style={{ color: '#fc66b5' }} />
+            <Heart size={15} style={{ color: '#FF4DA6' }} />
             <span className="text-white text-[13px] font-semibold">Psicología clínica · Individual · Pareja · Familia</span>
           </div>
 
@@ -109,7 +109,7 @@ export default function PsicologiaClinicalPage() {
             <Link
               href="/agendar"
               className="flex items-center justify-center px-8 py-3.5 rounded-full text-[15px] font-bold text-white w-full md:w-auto"
-              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
             >
               Agendar sesión
             </Link>
@@ -139,13 +139,13 @@ export default function PsicologiaClinicalPage() {
               className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2.5 rounded-xl"
               style={{ background: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.094)' }}
             >
-              <ShieldCheck size={16} style={{ color: '#fc66b5' }} />
-              <span className="text-[#2D2D3A] text-[12px] font-semibold">Espacio seguro y confidencial</span>
+              <ShieldCheck size={16} style={{ color: '#FF4DA6' }} />
+              <span className="text-[#2A3048] text-[12px] font-semibold">Espacio seguro y confidencial</span>
             </div>
             {/* Stat overlay */}
             <div
               className="absolute bottom-11 right-0 flex flex-col gap-0.5 px-5 py-3.5 rounded-xl"
-              style={{ background: '#fc66b5' }}
+              style={{ background: '#FF4DA6' }}
             >
               <span className="text-white text-[22px] font-extrabold">+80</span>
               <span className="text-white text-[11px] font-semibold">evaluaciones</span>
@@ -154,10 +154,10 @@ export default function PsicologiaClinicalPage() {
 
           {/* Content */}
           <div className="flex flex-col gap-6 flex-1 min-w-0">
-            <span className="px-4 py-1.5 self-start rounded-full text-[13px] font-semibold text-[#fc66b5]" style={{ background: '#FFF0F9' }}>
+            <span className="px-4 py-1.5 self-start rounded-full text-[13px] font-semibold text-[#FF4DA6]" style={{ background: '#FFF0F9' }}>
               Sobre este servicio
             </span>
-            <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2D2D3A] leading-[1.2]">
+            <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2A3048] leading-[1.2]">
               ¿Qué es la Línea<br className="hidden md:block" />de Psicología Clínica?
             </h2>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
@@ -170,15 +170,15 @@ export default function PsicologiaClinicalPage() {
             {/* Stats */}
             <div className="flex gap-4 md:gap-6 mt-2">
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#FFF0F9' }}>
-                <span className="text-[22px] font-extrabold" style={{ color: '#fc66b5' }}>50 min</span>
+                <span className="text-[22px] font-extrabold" style={{ color: '#FF4DA6' }}>50 min</span>
                 <span className="text-[#737f80] text-xs">por sesión</span>
               </div>
-              <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#F0EAFB' }}>
-                <span className="text-[22px] font-extrabold" style={{ color: '#713ec1' }}>Online</span>
+              <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#EEE8FF' }}>
+                <span className="text-[22px] font-extrabold" style={{ color: '#7C4EC8' }}>Online</span>
                 <span className="text-[#737f80] text-xs">y presencial</span>
               </div>
-              <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#E8F9FD' }}>
-                <span className="text-[22px] font-extrabold" style={{ color: '#32b8cc' }}>13+</span>
+              <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#E8EEFF' }}>
+                <span className="text-[22px] font-extrabold" style={{ color: '#4D7EFF' }}>13+</span>
                 <span className="text-[#737f80] text-xs">años en adelante</span>
               </div>
             </div>
@@ -189,8 +189,8 @@ export default function PsicologiaClinicalPage() {
       {/* ── Especialidades ───────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#FFF0F9' }}>
         <div className="flex flex-col items-center gap-3 text-center">
-          <span className="text-[#fc66b5] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Áreas de atención</span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2D2D3A]">Condiciones que tratamos</h2>
+          <span className="text-[#FF4DA6] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Áreas de atención</span>
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2A3048]">Condiciones que tratamos</h2>
           <p className="text-[#737f80] text-sm md:text-base leading-[1.6] max-w-[640px]">
             Abordamos un amplio espectro de condiciones emocionales, conductuales y relacionales con evidencia clínica.
           </p>
@@ -211,7 +211,7 @@ export default function PsicologiaClinicalPage() {
                   }}
                 >
                   <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#2D2D3A] text-sm font-semibold">{s.label}</span>
+                  <span className="text-[#2A3048] text-sm font-semibold">{s.label}</span>
                 </div>
               )
             })}
@@ -227,7 +227,7 @@ export default function PsicologiaClinicalPage() {
                   style={{ border: `1.5px solid ${s.borderColor}` }}
                 >
                   <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#2D2D3A] text-sm font-semibold">{s.label}</span>
+                  <span className="text-[#2A3048] text-sm font-semibold">{s.label}</span>
                 </div>
               )
             })}
@@ -240,8 +240,8 @@ export default function PsicologiaClinicalPage() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="flex flex-col gap-2.5">
-            <span className="text-[#fc66b5] text-[11px] font-extrabold tracking-[3px] uppercase">El proceso terapéutico</span>
-            <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#2D2D3A] leading-[1.2]">
+            <span className="text-[#FF4DA6] text-[11px] font-extrabold tracking-[3px] uppercase">El proceso terapéutico</span>
+            <h2 className="text-[26px] md:text-[36px] font-extrabold text-[#2A3048] leading-[1.2]">
               Tu camino hacia<br />el bienestar emocional
             </h2>
           </div>
@@ -271,7 +271,7 @@ export default function PsicologiaClinicalPage() {
               </div>
               {/* Content */}
               <div className={`flex flex-col gap-2 flex-1 pl-8 ${i < processSteps.length - 1 ? 'pb-12' : ''}`} style={{ paddingTop: '4px' }}>
-                <h3 className="text-[#2D2D3A] text-lg md:text-[20px] font-bold">{step.title}</h3>
+                <h3 className="text-[#2A3048] text-lg md:text-[20px] font-bold">{step.title}</h3>
                 <p className="text-[#737f80] text-sm leading-[1.65]">{step.desc}</p>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function PsicologiaClinicalPage() {
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
         className="w-full relative flex items-center justify-center py-[80px] md:py-0 text-center"
-        style={{ minHeight: '340px', background: 'linear-gradient(135deg, #fc66b5 0%, #713ec1 60%, #2D1040 100%)' }}
+        style={{ minHeight: '340px', background: 'linear-gradient(135deg, #FF4DA6 0%, #7C4EC8 60%, #2D1040 100%)' }}
       >
         <div className="flex flex-col items-center gap-6 px-5 md:px-[120px] w-full max-w-[860px]">
           {/* Quote pill */}
@@ -300,7 +300,7 @@ export default function PsicologiaClinicalPage() {
             <Link
               href="/agendar"
               className="flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"
-              style={{ color: '#fc66b5' }}
+              style={{ color: '#FF4DA6' }}
             >
               Agendar mi primera sesión
             </Link>

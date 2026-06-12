@@ -50,8 +50,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`relative text-sm font-semibold pb-1.5 transition-colors duration-200 group ${
                     active
-                      ? 'text-[#713ec1]'
-                      : 'text-gray-700 hover:text-[#713ec1]'
+                      ? 'text-[#7C4EC8]'
+                      : 'text-gray-700 hover:text-[#7C4EC8]'
                   }`}
                 >
                   {link.label}
@@ -62,7 +62,7 @@ export default function Navbar() {
                         ? 'w-full opacity-100'
                         : 'w-0 opacity-0 group-hover:w-full group-hover:opacity-40'
                     }`}
-                    style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+                    style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
                   />
                 </Link>
               )
@@ -74,7 +74,7 @@ export default function Navbar() {
             <Link
               href="/agendar"
               className="text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-md hover:opacity-90 transition-opacity"
-              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
             >
               Agendar Cita
             </Link>
@@ -105,8 +105,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-semibold py-3 border-b border-gray-50 transition-all pl-4 rounded-lg ${
                     active
-                      ? 'text-[#713ec1] bg-[#F0EAFB] border-l-[3px] border-l-[#713ec1]'
-                      : 'text-gray-700 hover:text-[#713ec1] hover:bg-gray-50 border-l-[3px] border-l-transparent'
+                      ? 'text-[#7C4EC8] bg-[#EEE8FF] border-l-[3px] border-l-[#7C4EC8]'
+                      : 'text-gray-700 hover:text-[#7C4EC8] hover:bg-gray-50 border-l-[3px] border-l-transparent'
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -117,7 +117,7 @@ export default function Navbar() {
             <Link
               href="/agendar"
               className="mt-4 text-white text-sm font-bold px-6 py-3 rounded-full text-center hover:opacity-90 transition-opacity"
-              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
               onClick={() => setMenuOpen(false)}
             >
               Agendar Cita

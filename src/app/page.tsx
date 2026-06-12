@@ -10,14 +10,14 @@ function HeroSection() {
 
           {/* Left — copy */}
           <div>
-            <span className="inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+            <span className="inline-block bg-[#EEE8FF] text-[#7C4EC8] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
               Centro de Neuropsicología en Bogotá
             </span>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-3">
               Acompañamos tu<br />camino hacia el<br />bienestar
             </h1>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#713ec1] mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#7C4EC8] mb-6">
               Neuropsicológico
             </h2>
 
@@ -29,13 +29,13 @@ function HeroSection() {
             <div className="flex flex-wrap gap-3 mb-7">
               <Link
                 href="/agendar"
-                className="bg-[#713ec1] hover:bg-[#6B46C1] text-white font-bold px-7 py-3 rounded-full transition-colors shadow-md text-sm"
+                className="bg-[#7C4EC8] hover:bg-[#6E44BE] text-white font-bold px-7 py-3 rounded-full transition-colors shadow-md text-sm"
               >
                 Agendar mi cita
               </Link>
               <Link
                 href="/servicios"
-                className="border-2 border-[#713ec1] text-[#713ec1] hover:bg-[#F0EAFB] font-bold px-7 py-3 rounded-full transition-colors text-sm"
+                className="border-2 border-[#7C4EC8] text-[#7C4EC8] hover:bg-[#EEE8FF] font-bold px-7 py-3 rounded-full transition-colors text-sm"
               >
                 Conocer servicios
               </Link>
@@ -45,7 +45,7 @@ function HeroSection() {
             <div className="flex items-center gap-2">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#713ec1]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <svg key={i} className="w-4 h-4 text-[#7C4EC8]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                   </svg>
                 ))}
@@ -56,7 +56,7 @@ function HeroSection() {
 
           {/* Right — image */}
           <div className="relative overflow-hidden rounded-3xl">
-            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
+            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#EEE8FF]">
               <img
                 src="/images/hero.jpg"
                 alt="Sesión de neuropsicología en CognyVita"
@@ -79,7 +79,7 @@ const diferencias = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
       </svg>
     ),
-    color: 'text-[#713ec1] bg-[#F0EAFB]',
+    color: 'text-[#7C4EC8] bg-[#EEE8FF]',
     title: 'Enfoque neuropsicológico integral',
     desc: 'Evaluamos y tratamos desde una perspectiva compleja que integra lo cognitivo, emocional y conductual.',
   },
@@ -89,7 +89,7 @@ const diferencias = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
       </svg>
     ),
-    color: 'text-[#fc66b5] bg-[#FFF0F9]',
+    color: 'text-[#FF4DA6] bg-[#FFF0F9]',
     title: 'Atención cálida y personalizada',
     desc: 'Cada persona es única. Adaptamos cada proceso terapéutico a tus necesidades y las de tu familia.',
   },
@@ -99,7 +99,7 @@ const diferencias = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
       </svg>
     ),
-    color: 'text-[#32b8cc] bg-[#E8F9FD]',
+    color: 'text-[#4D7EFF] bg-[#E8EEFF]',
     title: 'Clínico + Educativo + Organizacional',
     desc: 'Abordamos las necesidades neuropsicológicas en todos los contextos de la vida: familia, colegio y trabajo.',
   },
@@ -110,7 +110,7 @@ const diferencias = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
       </svg>
     ),
-    color: 'text-[#713ec1] bg-[#F0EAFB]',
+    color: 'text-[#7C4EC8] bg-[#EEE8FF]',
     title: 'Con presencia en Bogotá',
     desc: 'Consulta presencial en Bogotá y modalidad virtual disponible para todo el país.',
   },
@@ -118,10 +118,10 @@ const diferencias = [
 
 function DiferenciaSection() {
   return (
-    <section className="bg-[#F8F4FF] py-20">
+    <section className="bg-[#F6F2FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestra Diferencia</span>
+          <span className="text-xs font-bold tracking-widest text-[#7C4EC8] uppercase">Nuestra Diferencia</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">¿Por qué CognyVita?</h2>
           <p className="mt-3 text-gray-500 max-w-xl mx-auto">Un equipo comprometido con tu bienestar desde el primer momento.</p>
         </div>
@@ -152,7 +152,7 @@ const stats = [
 
 function StatsBar() {
   return (
-    <section className="bg-gradient-to-r from-[#2D1B69] via-[#713ec1] to-[#9d4edd] py-10">
+    <section className="bg-gradient-to-r from-[#182038] via-[#7C4EC8] to-[#9d4edd] py-10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
           {stats.map((s, i) => (
@@ -170,32 +170,32 @@ function StatsBar() {
 /* ─── SERVICIOS ─────────────────────────────────────────── */
 const servicios = [
   {
-    icon: Brain, iconColor: '#713ec1', iconBg: '#713ec1', cardBg: '#F0EAFB',
+    icon: Brain, iconColor: '#7C4EC8', iconBg: '#7C4EC8', cardBg: '#EEE8FF',
     title: 'Neuropsicología Clínica',
     desc: 'Evaluación y tratamiento de funciones cognitivas para un desarrollo óptimo.',
   },
   {
-    icon: ClipboardList, iconColor: '#fc66b5', iconBg: '#fc66b5', cardBg: '#FFF0F9',
+    icon: ClipboardList, iconColor: '#FF4DA6', iconBg: '#FF4DA6', cardBg: '#FFF0F9',
     title: 'Evaluación Neuropsicológica',
     desc: 'Diagnóstico preciso de fortalezas y áreas de mejora con pruebas estandarizadas.',
   },
   {
-    icon: Zap, iconColor: '#32b8cc', iconBg: '#32b8cc', cardBg: '#E8F9FD',
+    icon: Zap, iconColor: '#4D7EFF', iconBg: '#4D7EFF', cardBg: '#E8EEFF',
     title: 'TDAH en Niños y Adultos',
     desc: 'Intervención especializada para el manejo del TDAH en todas las etapas de la vida.',
   },
   {
-    icon: Puzzle, iconColor: '#32b8cc', iconBg: '#32b8cc', cardBg: '#E8F9FD',
+    icon: Puzzle, iconColor: '#4D7EFF', iconBg: '#4D7EFF', cardBg: '#E8EEFF',
     title: 'Autismo (TEA)',
     desc: 'Apoyo especializado para personas con trastorno del espectro autista y sus familias.',
   },
   {
-    icon: BookOpen, iconColor: '#713ec1', iconBg: '#713ec1', cardBg: '#F0EAFB',
+    icon: BookOpen, iconColor: '#7C4EC8', iconBg: '#7C4EC8', cardBg: '#EEE8FF',
     title: 'Dificultades de Aprendizaje',
     desc: 'Identificación y tratamiento de dislexia, discalculia y otras dificultades académicas.',
   },
   {
-    icon: Sparkles, iconColor: '#fc66b5', iconBg: '#fc66b5', cardBg: '#FFF0F9',
+    icon: Sparkles, iconColor: '#FF4DA6', iconBg: '#FF4DA6', cardBg: '#FFF0F9',
     title: 'Neurohabilidades',
     desc: 'Entrenamiento cognitivo para potenciar memoria, atención, concentración y funciones ejecutivas.',
   },
@@ -208,7 +208,7 @@ function ServiciosSection() {
         <div className="text-center mb-12">
           <span
             className="inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-3"
-            style={{ background: '#FFF0F9', color: '#fc66b5' }}
+            style={{ background: '#FFF0F9', color: '#FF4DA6' }}
           >
             Nuestros Servicios
           </span>
@@ -241,7 +241,7 @@ function ServiciosSection() {
           <Link
             href="/servicios"
             className="inline-flex items-center gap-2 text-white font-bold px-8 py-3 rounded-full shadow-md text-sm hover:opacity-90 transition-opacity"
-            style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
+            style={{ background: 'linear-gradient(90deg, #7C4EC8 0%, #FF4DA6 100%)' }}
           >
             Ver todos los servicios
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -257,15 +257,15 @@ function ServiciosSection() {
 /* ─── BIENESTAR / POR QUÉ ELEGIRNOS ─────────────────────── */
 const razones = [
   {
-    color: 'text-[#713ec1] bg-[#F0EAFB]',
+    color: 'text-[#7C4EC8] bg-[#EEE8FF]',
     text: 'Enfoque humano y personalizado — Cada plan es único, diseñado para las necesidades específicas de cada paciente y su contexto.',
   },
   {
-    color: 'text-[#32b8cc] bg-[#E8F9FD]',
+    color: 'text-[#4D7EFF] bg-[#E8EEFF]',
     text: 'Basados en evidencia científica — Usamos las mejores herramientas diagnósticas y terapéuticas desde los avances neuropsicológicos.',
   },
   {
-    color: 'text-[#fc66b5] bg-[#FFF0F9]',
+    color: 'text-[#FF4DA6] bg-[#FFF0F9]',
     text: 'Atención para toda la familia — Acompañamos a niños, adolescentes, adultos y padres en cada etapa del proceso.',
   },
 ]
@@ -278,7 +278,7 @@ function BienestarSection() {
 
           {/* Left — image */}
           <div className="relative overflow-hidden rounded-3xl">
-            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#F0EAFB]">
+            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#EEE8FF]">
               <img
                 src="/images/bienestar.jpg"
                 alt="Tu bienestar es nuestra prioridad"
@@ -293,7 +293,7 @@ function BienestarSection() {
 
           {/* Right — copy */}
           <div>
-            <span className="inline-block bg-[#F0EAFB] text-[#713ec1] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-wide">
+            <span className="inline-block bg-[#EEE8FF] text-[#7C4EC8] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-wide">
               ¿Por qué elegirnos?
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
@@ -321,22 +321,22 @@ function BienestarSection() {
 /* ─── PROCESO ───────────────────────────────────────────── */
 const pasos = [
   {
-    num: '1', color: 'bg-[#713ec1]',
+    num: '1', color: 'bg-[#7C4EC8]',
     title: 'Primera Consulta',
     desc: 'Conocemos tu caso, inquietudes y objetivos en una sesión inicial de valoración.',
   },
   {
-    num: '2', color: 'bg-[#32b8cc]',
+    num: '2', color: 'bg-[#4D7EFF]',
     title: 'Evaluación',
     desc: 'Aplicamos pruebas neuropsicológicas estandarizadas para un diagnóstico preciso.',
   },
   {
-    num: '3', color: 'bg-[#fc66b5]',
+    num: '3', color: 'bg-[#FF4DA6]',
     title: 'Plan Personalizado',
     desc: 'Diseñamos un plan de intervención adaptado a tus necesidades y metas específicas.',
   },
   {
-    num: '4', color: 'bg-[#713ec1]',
+    num: '4', color: 'bg-[#7C4EC8]',
     title: 'Seguimiento',
     desc: 'Hacemos seguimiento continuo del progreso y ajustamos el plan según la evolución.',
   },
@@ -344,10 +344,10 @@ const pasos = [
 
 function ProcesoSection() {
   return (
-    <section className="bg-[#F8F4FF] py-20">
+    <section className="bg-[#F6F2FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Nuestro Proceso</span>
+          <span className="text-xs font-bold tracking-widest text-[#7C4EC8] uppercase">Nuestro Proceso</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Tu camino hacia el bienestar</h2>
           <p className="mt-3 text-gray-500 text-sm">Un proceso claro y acompañado en cada paso del camino.</p>
         </div>
@@ -402,24 +402,24 @@ function TestimoniosSection() {
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-bold tracking-widest text-[#713ec1] uppercase">Testimonios</span>
+          <span className="text-xs font-bold tracking-widest text-[#7C4EC8] uppercase">Testimonios</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Lo que dicen nuestras familias</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonios.map((t) => (
-            <div key={t.name} className="bg-[#F8F4FF] rounded-2xl p-8 flex flex-col">
+            <div key={t.name} className="bg-[#F6F2FF] rounded-2xl p-8 flex flex-col">
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#713ec1]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <svg key={i} className="w-4 h-4 text-[#7C4EC8]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-6 italic">{t.quote}</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#E0D4F7] flex items-center justify-center text-[#713ec1] font-bold text-sm flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#E0D4F7] flex items-center justify-center text-[#7C4EC8] font-bold text-sm flex-shrink-0">
                   {t.name[0]}
                 </div>
                 <div>
@@ -440,7 +440,7 @@ function CTASection() {
   return (
     <section
       className="py-20 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #713ec1 0%, #a855f7 50%, #fc66b5 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #7C4EC8 0%, #8C5ED4 50%, #FF4DA6 100%)' }}
       data-parallax="0.036"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -452,7 +452,7 @@ function CTASection() {
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           <Link
             href="/agendar"
-            className="bg-white text-[#713ec1] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm flex items-center gap-2"
+            className="bg-white text-[#7C4EC8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />

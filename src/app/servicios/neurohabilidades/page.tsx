@@ -27,19 +27,19 @@ const includesItems = [
 const benefits = [
   {
     icon: TrendingUp,
-    color: '#713ec1',
+    color: '#7C4EC8',
     title: 'Mejor rendimiento escolar',
     desc: 'Herramientas concretas para avanzar en el aprendizaje de forma segura y efectiva.',
   },
   {
     icon: Smile,
-    color: '#fc66b5',
+    color: '#FF4DA6',
     title: 'Mayor autoestima y confianza',
     desc: 'Recuperar la seguridad en sus capacidades y disfrutar del proceso de aprender.',
   },
   {
     icon: Users,
-    color: '#713ec1',
+    color: '#7C4EC8',
     title: 'Familia y colegio alineados',
     desc: 'Estrategias compartidas entre padres, docentes y terapeutas para resultados duraderos.',
   },
@@ -57,15 +57,15 @@ export default function NeurohabilidadesPage() {
           <div className="flex flex-col gap-5 w-full md:w-[580px] shrink-0">
             {/* Breadcrumb — desktop only */}
             <nav className="hidden md:flex items-center gap-1.5">
-              <Link href="/" className="text-[#6B6B6B] text-xs hover:text-[#713ec1] transition-colors">Inicio</Link>
+              <Link href="/" className="text-[#6B6B6B] text-xs hover:text-[#7C4EC8] transition-colors">Inicio</Link>
               <ChevronRight size={10} className="text-[#6B6B6B]" />
-              <Link href="/servicios" className="text-[#6B6B6B] text-xs hover:text-[#713ec1] transition-colors">Servicios</Link>
+              <Link href="/servicios" className="text-[#6B6B6B] text-xs hover:text-[#7C4EC8] transition-colors">Servicios</Link>
               <ChevronRight size={10} className="text-[#6B6B6B]" />
-              <span className="text-[#fc66b5] text-xs">Neurohabilidades de Aprendizaje</span>
+              <span className="text-[#FF4DA6] text-xs">Neurohabilidades de Aprendizaje</span>
             </nav>
 
             {/* Pill */}
-            <span data-animate className="na-badge inline-flex self-start items-center px-4 py-2 rounded-full text-xs font-semibold text-[#743fc1] bg-[#f8f4ff]">
+            <span data-animate className="na-badge inline-flex self-start items-center px-4 py-2 rounded-full text-xs font-semibold text-[#743fc1] bg-[#F6F2FF]">
               Niños, adolescentes y familias
             </span>
 
@@ -84,7 +84,7 @@ export default function NeurohabilidadesPage() {
               <Link
                 href="/agendar"
                 className="na-btn na-btn-gradient inline-flex self-start items-center px-8 py-4 rounded-full text-sm md:text-[15px] font-semibold text-white"
-                style={{ background: 'linear-gradient(160deg, #fc66b5 0%, #713ec1 100%)' }}
+                style={{ background: 'linear-gradient(160deg, #FF4DA6 0%, #7C4EC8 100%)' }}
               >
                 Agendar evaluación
               </Link>
@@ -103,7 +103,7 @@ export default function NeurohabilidadesPage() {
       </section>
 
       {/* ── Service Description ──────────────────────────────────────────── */}
-      <section className="w-full bg-[#f8f4ff] px-5 md:px-[120px] py-[40px] md:py-[80px]">
+      <section className="w-full bg-[#F6F2FF] px-5 md:px-[120px] py-[40px] md:py-[80px]">
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full">
           {/* Left: description + audience */}
           <div className="flex flex-col gap-5 flex-1 min-w-0">
@@ -123,7 +123,7 @@ export default function NeurohabilidadesPage() {
             <div data-animate data-delay="2" className="flex flex-col gap-3">
               {audienceItems.map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <span className="mt-[6px] shrink-0 w-2 h-2 rounded-full bg-[#fc66b5]" />
+                  <span className="mt-[6px] shrink-0 w-2 h-2 rounded-full bg-[#FF4DA6]" />
                   <p className="text-[#555] text-sm md:text-[14px] leading-snug">{item}</p>
                 </div>
               ))}
@@ -132,7 +132,7 @@ export default function NeurohabilidadesPage() {
 
           {/* Right: includes card */}
           <div data-animate="right" className="w-full md:w-[360px] shrink-0">
-            <div className="flex flex-col gap-4 rounded-[20px] bg-[#713ec1] p-7">
+            <div className="flex flex-col gap-4 rounded-[20px] bg-[#7C4EC8] p-7">
               <h3 className="text-white text-xl font-bold">¿Qué incluye?</h3>
               {includesItems.map((item) => (
                 <div key={item} className="flex items-center gap-2.5">
@@ -149,7 +149,7 @@ export default function NeurohabilidadesPage() {
       <section className="w-full bg-white px-5 md:px-[120px] py-[48px] md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
         {/* Header */}
         <div data-animate="scale" className="flex flex-col items-center gap-3 text-center">
-          <p className="text-[#713ec1] text-[11px] md:text-xs font-bold tracking-[2px] uppercase">Beneficios</p>
+          <p className="text-[#7C4EC8] text-[11px] md:text-xs font-bold tracking-[2px] uppercase">Beneficios</p>
           <h2 className="text-[24px] md:text-[36px] font-bold text-[#1A1A1A]">¿Qué puede lograr tu hijo?</h2>
         </div>
 
@@ -177,7 +177,7 @@ export default function NeurohabilidadesPage() {
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
         className="w-full flex flex-col items-center gap-5 px-5 md:px-[120px] py-[80px] text-center"
-        style={{ background: 'linear-gradient(135deg, #713ec1 0%, #fc66b5 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #7C4EC8 0%, #FF4DA6 100%)' }}
       >
         <h2 data-animate="scale" className="text-white text-[24px] md:text-[40px] font-bold max-w-[700px] leading-[1.2]">
           ¿Quieres saber más sobre este servicio?
@@ -189,9 +189,9 @@ export default function NeurohabilidadesPage() {
           <Link
             href="/agendar"
             className="flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"
-            style={{ color: '#713ec1' }}
+            style={{ color: '#7C4EC8' }}
           >
-            <Calendar size={18} style={{ color: '#713ec1' }} />
+            <Calendar size={18} style={{ color: '#7C4EC8' }} />
             Agendar cita
           </Link>
           <a

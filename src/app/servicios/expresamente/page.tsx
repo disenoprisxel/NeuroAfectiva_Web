@@ -10,35 +10,35 @@ export const metadata: Metadata = {
 const modalities = [
   {
     num: '01',
-    numColor: '#713ec1',
+    numColor: '#7C4EC8',
     title: 'Arteterapia',
     desc: 'Pintura, collage, escultura y medios visuales para procesar emociones que las palabras no alcanzan. Cada obra es una ventana a tu mundo interior.',
     tag: 'Visualización · Autorretrato · Collage',
-    tagColor: '#713ec1',
-    tagBg: '#F0EAFB',
+    tagColor: '#7C4EC8',
+    tagBg: '#EEE8FF',
     contentBg: '#FFFFFF',
     imgUrl: 'https://images.unsplash.com/photo-1758521233203-672379b5072c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: true,
   },
   {
     num: '02',
-    numColor: '#32b8cc',
+    numColor: '#4D7EFF',
     title: 'Musicoterapia',
     desc: 'El sonido y la música como herramientas para regular el sistema nervioso, reducir la ansiedad y conectar con las emociones más profundas.',
     tag: 'Escucha activa · Improvisación · Ritmo',
-    tagColor: '#1a9aad',
-    tagBg: '#E8F9FD',
-    contentBg: '#F8F4FF',
+    tagColor: '#3D6AE0',
+    tagBg: '#E8EEFF',
+    contentBg: '#F6F2FF',
     imgUrl: 'https://images.unsplash.com/photo-1665481129158-286584e171ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: false,
   },
   {
     num: '03',
-    numColor: '#fc66b5',
+    numColor: '#FF4DA6',
     title: 'Terapia de Movimiento',
     desc: 'El cuerpo como mapa emocional. Danza, movimiento expresivo y técnicas somáticas para liberar tensiones acumuladas y reconectar con uno mismo.',
     tag: 'Danza · Expresión corporal · Somática',
-    tagColor: '#fc66b5',
+    tagColor: '#FF4DA6',
     tagBg: '#FFF0F9',
     contentBg: '#FFFFFF',
     imgUrl: 'https://images.unsplash.com/photo-1758598306400-aa82cbf24653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
@@ -46,13 +46,13 @@ const modalities = [
   },
   {
     num: '04',
-    numColor: '#713ec1',
+    numColor: '#7C4EC8',
     title: 'Escritura Terapéutica',
     desc: 'Narrativas, cartas, diarios y poesía como herramientas para ordenar pensamientos, sanar heridas y construir una historia de vida más compasiva.',
     tag: 'Diario · Narrativa · Poesía',
-    tagColor: '#713ec1',
-    tagBg: '#F0EAFB',
-    contentBg: '#F8F4FF',
+    tagColor: '#7C4EC8',
+    tagBg: '#EEE8FF',
+    contentBg: '#F6F2FF',
     imgUrl: 'https://images.unsplash.com/photo-1579840770754-7d9799c452eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: false,
   },
@@ -61,25 +61,25 @@ const modalities = [
 const pqItems = [
   {
     num: '01',
-    numBg: '#fc66b5',
+    numBg: '#FF4DA6',
     title: 'Vives con estrés o ansiedad',
     desc: 'Y buscas una salida creativa para liberar tensiones sin que se sienta como terapia tradicional.',
   },
   {
     num: '02',
-    numBg: '#713ec1',
+    numBg: '#7C4EC8',
     title: 'Sientes que algo se quedó sin expresar',
     desc: 'Emociones reprimidas, bloqueos creativos o la necesidad de reconectar con tu mundo interior.',
   },
   {
     num: '03',
-    numBg: '#32b8cc',
+    numBg: '#4D7EFF',
     title: 'Quieres crecer pero sin sermones',
     desc: 'Personas que buscan desarrollo personal de forma experiencial, lúdica y auténtica.',
   },
   {
     num: '04',
-    numBg: '#fc66b5',
+    numBg: '#FF4DA6',
     title: 'Tu cuerpo siente lo que tus palabras no pueden decir',
     desc: 'Ideal para quienes la terapia verbal no ha sido suficiente y buscan un enfoque más corporal y sensorial.',
   },
@@ -101,23 +101,23 @@ export default function ExpresaMentePage() {
         <div className="flex flex-col justify-center gap-4 px-5 md:px-[60px] py-[32px] w-full md:w-[560px] shrink-0 bg-white">
           {/* Breadcrumb */}
           <nav className="hidden md:flex items-center gap-2">
-            <Link href="/" className="text-[#AAAAAA] text-xs hover:text-[#713ec1]">Inicio</Link>
+            <Link href="/" className="text-[#AAAAAA] text-xs hover:text-[#7C4EC8]">Inicio</Link>
             <ChevronRight size={11} className="text-[#CCCCCC]" />
-            <Link href="/servicios" className="text-[#AAAAAA] text-xs hover:text-[#713ec1]">Servicios</Link>
+            <Link href="/servicios" className="text-[#AAAAAA] text-xs hover:text-[#7C4EC8]">Servicios</Link>
             <ChevronRight size={11} className="text-[#CCCCCC]" />
-            <span className="text-[#32b8cc] text-xs font-semibold">ExpresaMente Creativa</span>
+            <span className="text-[#4D7EFF] text-xs font-semibold">ExpresaMente Creativa</span>
           </nav>
 
           {/* Tag */}
-          <div data-animate className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full na-badge" style={{ background: '#E8F9FD' }}>
-            <Palette size={13} style={{ color: '#32b8cc' }} />
-            <span className="text-[#1a9aad] text-[12px] font-semibold">Terapia a través de la expresión creativa</span>
+          <div data-animate className="inline-flex self-start items-center gap-2 px-4 py-1.5 rounded-full na-badge" style={{ background: '#E8EEFF' }}>
+            <Palette size={13} style={{ color: '#4D7EFF' }} />
+            <span className="text-[#3D6AE0] text-[12px] font-semibold">Terapia a través de la expresión creativa</span>
           </div>
 
           {/* Title */}
           <h1
             data-animate data-delay="1"
-            className="text-[40px] md:text-[52px] font-extrabold text-[#2D2D3A] leading-[0.95]"
+            className="text-[40px] md:text-[52px] font-extrabold text-[#2A3048] leading-[0.95]"
             style={{ letterSpacing: '-2px' }}
           >
             Expresa. Crea. Sana.
@@ -132,13 +132,13 @@ export default function ExpresaMentePage() {
             <Link
               href="/agendar"
               className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-bold text-white"
-              style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+              style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
             >
               Reservar sesión
             </Link>
             <Link
               href="#modalidades"
-              className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#713ec1] bg-white"
+              className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#7C4EC8] bg-white"
               style={{ border: '2px solid #E0E0EE' }}
             >
               Ver modalidades ↓
@@ -149,7 +149,7 @@ export default function ExpresaMentePage() {
         {/* Right: 2x2 image grid */}
         <div
           className="hidden md:grid grid-cols-2 flex-1 p-1 gap-1"
-          style={{ background: '#F0EAFB' }}
+          style={{ background: '#EEE8FF' }}
         >
           <div className="overflow-hidden rounded-xl">
             <img src={heroImages[0]} alt="" className="w-full h-full object-cover" />
@@ -169,7 +169,7 @@ export default function ExpresaMentePage() {
       {/* ── Marquee bar ──────────────────────────────────────────────────── */}
       <div
         className="w-full flex items-center justify-center gap-10 overflow-hidden"
-        style={{ height: '56px', background: 'linear-gradient(90deg, #32b8cc 0%, #713ec1 100%)' }}
+        style={{ height: '56px', background: 'linear-gradient(90deg, #4D7EFF 0%, #7C4EC8 100%)' }}
       >
         {['Arte', 'Música', 'Movimiento', 'Escritura', 'Expresión', 'Creatividad', 'Transformación'].map((word, i) => (
           <div key={word} className="flex items-center gap-10 shrink-0">
@@ -184,11 +184,11 @@ export default function ExpresaMentePage() {
         {/* Header */}
         <div data-animate="scale" className="flex flex-col items-center gap-4 text-center w-full">
           <div className="flex items-center gap-4">
-            <div className="flex-1 h-px" style={{ background: '#32b8cc' }} />
-            <span className="text-[#32b8cc] text-[12px] font-extrabold tracking-[3px] uppercase">El programa</span>
-            <div className="flex-1 h-px" style={{ background: '#32b8cc' }} />
+            <div className="flex-1 h-px" style={{ background: '#4D7EFF' }} />
+            <span className="text-[#4D7EFF] text-[12px] font-extrabold tracking-[3px] uppercase">El programa</span>
+            <div className="flex-1 h-px" style={{ background: '#4D7EFF' }} />
           </div>
-          <h2 className="text-[26px] md:text-[42px] font-extrabold text-[#2D2D3A] leading-[1.2] max-w-[840px]">
+          <h2 className="text-[26px] md:text-[42px] font-extrabold text-[#2A3048] leading-[1.2] max-w-[840px]">
             ¿Qué es ExpresaMente Creativa?
           </h2>
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 w-full max-w-[1000px] mt-2">
@@ -202,12 +202,12 @@ export default function ExpresaMentePage() {
         </div>
 
         {/* Stats block */}
-        <div className="flex rounded-[20px] overflow-hidden w-full" style={{ background: '#F8F4FF' }}>
+        <div className="flex rounded-[20px] overflow-hidden w-full" style={{ background: '#F6F2FF' }}>
           {[
-            { val: '60 min', label: 'por sesión', color: '#713ec1' },
-            { val: '4', label: 'modalidades creativas', color: '#32b8cc' },
-            { val: 'Todas', label: 'las edades', color: '#fc66b5' },
-            { val: 'Online', label: 'y presencial', color: '#713ec1' },
+            { val: '60 min', label: 'por sesión', color: '#7C4EC8' },
+            { val: '4', label: 'modalidades creativas', color: '#4D7EFF' },
+            { val: 'Todas', label: 'las edades', color: '#FF4DA6' },
+            { val: 'Online', label: 'y presencial', color: '#7C4EC8' },
           ].map((b, i) => (
             <div key={b.val} className="flex flex-1 items-center">
               <div className="flex flex-col items-center gap-1.5 flex-1 py-7 px-2">
@@ -223,8 +223,8 @@ export default function ExpresaMentePage() {
       {/* ── Modalidades ──────────────────────────────────────────────────── */}
       <section id="modalidades" className="w-full" style={{ background: '#FAFAFA' }}>
         <div data-animate className="px-5 md:px-[120px] py-[64px] pb-10 flex flex-col gap-2.5">
-          <span className="text-[#713ec1] text-[11px] font-extrabold tracking-[3px] uppercase">Las modalidades</span>
-          <h2 className="text-[26px] md:text-[38px] font-extrabold text-[#2D2D3A]">Cuatro caminos hacia la expresión</h2>
+          <span className="text-[#7C4EC8] text-[11px] font-extrabold tracking-[3px] uppercase">Las modalidades</span>
+          <h2 className="text-[26px] md:text-[38px] font-extrabold text-[#2A3048]">Cuatro caminos hacia la expresión</h2>
         </div>
 
         {/* Modality rows */}
@@ -244,7 +244,7 @@ export default function ExpresaMentePage() {
                     style={{ background: mod.contentBg }}
                   >
                     <span className="text-[13px] font-extrabold tracking-[2px]" style={{ color: mod.numColor }}>{mod.num}</span>
-                    <h3 className="text-[#2D2D3A] text-[24px] md:text-[28px] font-extrabold">{mod.title}</h3>
+                    <h3 className="text-[#2A3048] text-[24px] md:text-[28px] font-extrabold">{mod.title}</h3>
                     <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.6] max-w-[480px]">{mod.desc}</p>
                     <span
                       className="self-start px-3.5 py-1.5 rounded-full text-xs font-semibold"
@@ -270,7 +270,7 @@ export default function ExpresaMentePage() {
                     style={{ background: mod.contentBg }}
                   >
                     <span className="text-[13px] font-extrabold tracking-[2px]" style={{ color: mod.numColor }}>{mod.num}</span>
-                    <h3 className="text-[#2D2D3A] text-[24px] md:text-[28px] font-extrabold">{mod.title}</h3>
+                    <h3 className="text-[#2A3048] text-[24px] md:text-[28px] font-extrabold">{mod.title}</h3>
                     <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.6] max-w-[480px]">{mod.desc}</p>
                     <span
                       className="self-start px-3.5 py-1.5 rounded-full text-xs font-semibold"
@@ -304,7 +304,7 @@ export default function ExpresaMentePage() {
             className="flex flex-col justify-center gap-8 flex-1 px-5 md:px-[80px] py-[60px]"
             style={{ background: '#100A22' }}
           >
-            <span className="px-5 py-2 self-start rounded-full text-[#fc66b5] text-[13px] font-semibold" style={{ background: '#2A1040' }}>
+            <span className="px-5 py-2 self-start rounded-full text-[#FF4DA6] text-[13px] font-semibold" style={{ background: '#2A1040' }}>
               ¿Para quién es?
             </span>
             <h2 className="text-white text-[28px] md:text-[38px] font-extrabold leading-[1.15]">
@@ -352,7 +352,7 @@ export default function ExpresaMentePage() {
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
         className="w-full flex flex-col items-center justify-center gap-8 px-5 md:px-[120px] py-[80px] text-center"
-        style={{ background: 'linear-gradient(135deg, #fc66b5 0%, #713ec1 50%, #32b8cc 100%)', minHeight: '480px' }}
+        style={{ background: 'linear-gradient(135deg, #FF4DA6 0%, #7C4EC8 50%, #4D7EFF 100%)', minHeight: '480px' }}
       >
         <div data-animate="scale" className="flex flex-col items-center gap-4 w-full max-w-[780px]">
           <span className="px-6 py-2 rounded-full text-white text-[13px] font-semibold" style={{ background: 'rgba(255,255,255,0.2)' }}>
@@ -369,7 +369,7 @@ export default function ExpresaMentePage() {
           <Link
             href="/agendar"
             className="flex items-center justify-center px-10 py-4 rounded-full text-base font-bold w-full md:w-auto"
-            style={{ background: '#FFFFFF', color: '#713ec1' }}
+            style={{ background: '#FFFFFF', color: '#7C4EC8' }}
           >
             Reservar sesión
           </Link>

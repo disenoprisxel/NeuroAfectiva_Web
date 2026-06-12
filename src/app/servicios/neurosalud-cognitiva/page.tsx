@@ -12,25 +12,25 @@ export const metadata: Metadata = {
 const audienceCards = [
   {
     icon: Frown,
-    gradient: 'linear-gradient(135deg, #713ec1 0%, #9b6dd6 100%)',
+    gradient: 'linear-gradient(135deg, #7C4EC8 0%, #9060D0 100%)',
     title: 'Ansiedad y depresión',
     desc: 'Adultos y adolescentes que experimentan ansiedad, depresión o episodios de estrés crónico que interfieren con su vida diaria.',
   },
   {
     icon: Brain,
-    gradient: 'linear-gradient(135deg, #32b8cc 0%, #1a9aad 100%)',
+    gradient: 'linear-gradient(135deg, #4D7EFF 0%, #3D6AE0 100%)',
     title: 'Dificultades cognitivas',
     desc: 'Personas con problemas de atención, memoria o funciones ejecutivas que afectan su desempeño académico, profesional o cotidiano.',
   },
   {
     icon: Flame,
-    gradient: 'linear-gradient(135deg, #fc66b5 0%, #ff99d0 100%)',
+    gradient: 'linear-gradient(135deg, #FF4DA6 0%, #ff99d0 100%)',
     title: 'Trauma y agotamiento mental',
     desc: 'Quienes han sufrido situaciones de trauma emocional, burnout o agotamiento mental y necesitan un proceso de recuperación neurológica.',
   },
   {
     icon: Leaf,
-    gradient: 'linear-gradient(135deg, #5fbe8f 0%, #32b8cc 100%)',
+    gradient: 'linear-gradient(135deg, #5fbe8f 0%, #4D7EFF 100%)',
     title: 'Bienestar preventivo',
     desc: 'Personas que buscan optimizar proactivamente su rendimiento cognitivo y bienestar emocional antes de que aparezcan síntomas.',
   },
@@ -39,39 +39,39 @@ const audienceCards = [
 const benefitRows = [
   {
     num: '01',
-    numGradient: 'linear-gradient(180deg, #713ec1 0%, #9b6dd6 100%)',
+    numGradient: 'linear-gradient(180deg, #7C4EC8 0%, #9060D0 100%)',
     title: 'Regulación emocional efectiva',
     desc: 'Aprende a gestionar tus emociones con estrategias neuropsicológicas que reducen la ansiedad, la impulsividad y el estrés de forma sostenida y medible.',
     tag: 'Ansiedad · Impulsividad · Estrés',
-    tagColor: '#713ec1',
-    tagBg: '#F0EAFB',
-    rowBg: '#F8F4FF',
+    tagColor: '#7C4EC8',
+    tagBg: '#EEE8FF',
+    rowBg: '#F6F2FF',
     imgUrl: 'https://images.unsplash.com/photo-1709124290787-5bffd50ee24f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: true,
     cornerRadius: 'rounded-t-[20px]',
   },
   {
     num: '02',
-    numGradient: 'linear-gradient(180deg, #32b8cc 0%, #1a9aad 100%)',
+    numGradient: 'linear-gradient(180deg, #4D7EFF 0%, #3D6AE0 100%)',
     title: 'Mayor atención y memoria',
     desc: 'Recupera y potencia tu capacidad de concentración y memoria a largo plazo mediante ejercicios de neuroplasticidad diseñados para tu perfil cognitivo.',
     tag: 'Atención · Memoria · Concentración',
-    tagColor: '#32b8cc',
-    tagBg: '#E8F9FD',
-    rowBg: '#F0EAFB',
+    tagColor: '#4D7EFF',
+    tagBg: '#E8EEFF',
+    rowBg: '#EEE8FF',
     imgUrl: 'https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: false,
     cornerRadius: '',
   },
   {
     num: '03',
-    numGradient: 'linear-gradient(180deg, #fc66b5 0%, #e04fa0 100%)',
+    numGradient: 'linear-gradient(180deg, #FF4DA6 0%, #E83D96 100%)',
     title: 'Bienestar mental integral',
     desc: 'Alcanza un estado de bienestar neurológico y emocional duradero que impacta positivamente en tu vida personal, laboral y social.',
     tag: 'Calidad de vida · Relaciones · Trabajo',
-    tagColor: '#fc66b5',
+    tagColor: '#FF4DA6',
     tagBg: '#FFF0F9',
-    rowBg: '#F8F4FF',
+    rowBg: '#F6F2FF',
     imgUrl: 'https://images.unsplash.com/photo-1758874384683-0accd9fb26ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     imgRight: true,
     cornerRadius: 'rounded-b-[20px]',
@@ -91,8 +91,8 @@ export default function NeurosaudPage() {
           className="na-badge flex items-center gap-2 px-5 py-2 rounded-full"
           style={{ background: 'rgba(113,62,193,0.06)' }}
         >
-          <Brain size={15} style={{ color: '#32b8cc' }} />
-          <span className="text-[#fc66b5] text-[12px] md:text-[13px] font-semibold">
+          <Brain size={15} style={{ color: '#4D7EFF' }} />
+          <span className="text-[#FF4DA6] text-[12px] md:text-[13px] font-semibold">
             Neuropsicología Clínica · Adultos y adolescentes
           </span>
         </div>
@@ -116,7 +116,7 @@ export default function NeurosaudPage() {
           <Link
             href="/agendar"
             className="na-btn na-btn-gradient inline-flex items-center px-9 py-4 rounded-full text-[15px] md:text-base font-bold text-white"
-            style={{ background: 'linear-gradient(90deg, #713ec1 0%, #fc66b5 100%)' }}
+            style={{ background: 'linear-gradient(90deg, #7C4EC8 0%, #FF4DA6 100%)' }}
           >
             Agendar Consulta
           </Link>
@@ -144,13 +144,13 @@ export default function NeurosaudPage() {
           <div className="flex flex-col gap-2 md:w-[200px] shrink-0">
             <span
               className="text-[64px] md:text-[100px] font-black leading-none select-none"
-              style={{ color: '#F0EAFB' }}
+              style={{ color: '#EEE8FF' }}
             >
               01
             </span>
             <span
               className="text-xs md:text-[14px] font-bold uppercase tracking-[2px]"
-              style={{ color: '#713ec1' }}
+              style={{ color: '#7C4EC8' }}
             >
               El servicio
             </span>
@@ -158,7 +158,7 @@ export default function NeurosaudPage() {
 
           {/* Content col */}
           <div className="flex flex-col gap-8 flex-1 min-w-0">
-            <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2D2D3A] leading-[1.2]">
+            <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#2A3048] leading-[1.2]">
               ¿Qué es la Neurosalud<br className="hidden md:block" /> Cognitiva y Emocional?
             </h2>
 
@@ -173,24 +173,24 @@ export default function NeurosaudPage() {
             </div>
 
             {/* Stats row */}
-            <div className="flex rounded-2xl overflow-hidden" style={{ background: '#F8F4FF' }}>
+            <div className="flex rounded-2xl overflow-hidden" style={{ background: '#F6F2FF' }}>
               {/* Stat 1 */}
               <div className="flex flex-col items-center gap-1 flex-1 py-5 md:py-6 px-2 md:px-8">
-                <span className="text-sm md:text-[22px] font-extrabold text-[#713ec1] text-center">50–60 min</span>
+                <span className="text-sm md:text-[22px] font-extrabold text-[#7C4EC8] text-center">50–60 min</span>
                 <span className="text-[11px] md:text-xs text-[#737f80] text-center">por sesión</span>
               </div>
               {/* Divider */}
               <div className="w-px my-5 md:my-6" style={{ background: 'rgba(113,62,193,0.19)' }} />
               {/* Stat 2 */}
               <div className="flex flex-col items-center gap-1 flex-1 py-5 md:py-6 px-2 md:px-8">
-                <span className="text-sm md:text-[22px] font-extrabold text-[#713ec1] text-center">Semanal</span>
+                <span className="text-sm md:text-[22px] font-extrabold text-[#7C4EC8] text-center">Semanal</span>
                 <span className="text-[11px] md:text-xs text-[#737f80] text-center">frecuencia recomendada</span>
               </div>
               {/* Divider */}
               <div className="w-px my-5 md:my-6" style={{ background: 'rgba(113,62,193,0.19)' }} />
               {/* Stat 3 */}
               <div className="flex flex-col items-center gap-1 flex-1 py-5 md:py-6 px-2 md:px-8">
-                <span className="text-sm md:text-[22px] font-extrabold text-[#32b8cc] text-center">Virtual</span>
+                <span className="text-sm md:text-[22px] font-extrabold text-[#4D7EFF] text-center">Virtual</span>
                 <span className="text-[11px] md:text-xs text-[#737f80] text-center">y presencial Bogotá</span>
               </div>
             </div>
@@ -199,12 +199,12 @@ export default function NeurosaudPage() {
       </section>
 
       {/* ── Audiencia ────────────────────────────────────────────────────── */}
-      <section className="w-full bg-[#1A1A2E] px-5 md:px-[120px] py-12 md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
+      <section className="w-full bg-[#182038] px-5 md:px-[120px] py-12 md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
         {/* Header */}
         <div className="flex flex-col items-center gap-3 text-center">
           <span
             className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
-            style={{ color: '#32b8cc' }}
+            style={{ color: '#4D7EFF' }}
           >
             02
           </span>
@@ -251,11 +251,11 @@ export default function NeurosaudPage() {
           <div className="flex flex-col gap-2.5">
             <span
               className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
-              style={{ color: '#fc66b5' }}
+              style={{ color: '#FF4DA6' }}
             >
               03
             </span>
-            <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#2D2D3A]">¿Qué puedes lograr?</h2>
+            <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#2A3048]">¿Qué puedes lograr?</h2>
           </div>
           <p className="text-[#737f80] text-sm md:text-lg leading-[1.5] md:text-right max-w-[300px]">
             Resultados concretos,<br className="hidden md:block" /> medibles y duraderos.
@@ -285,7 +285,7 @@ export default function NeurosaudPage() {
                     </div>
                     {/* Content */}
                     <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
-                      <h3 className="text-[#2D2D3A] text-[22px] font-bold">{row.title}</h3>
+                      <h3 className="text-[#2A3048] text-[22px] font-bold">{row.title}</h3>
                       <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
                       <span
                         className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
@@ -307,7 +307,7 @@ export default function NeurosaudPage() {
                     </div>
                     {/* Content */}
                     <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
-                      <h3 className="text-[#2D2D3A] text-[22px] font-bold">{row.title}</h3>
+                      <h3 className="text-[#2A3048] text-[22px] font-bold">{row.title}</h3>
                       <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
                       <span
                         className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
@@ -340,7 +340,7 @@ export default function NeurosaudPage() {
                   >
                     <span className="text-white text-base font-extrabold">{row.num}</span>
                   </div>
-                  <h3 className="text-[#2D2D3A] text-[17px] font-bold mt-1">{row.title}</h3>
+                  <h3 className="text-[#2A3048] text-[17px] font-bold mt-1">{row.title}</h3>
                   <p className="text-[#737f80] text-[13px] leading-[1.6]">{row.desc}</p>
                   <span
                     className="self-start px-3.5 py-1 rounded-xl text-[11px] font-semibold"
@@ -358,7 +358,7 @@ export default function NeurosaudPage() {
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
         className="w-full flex flex-col items-center gap-5 md:gap-6 px-5 md:px-[120px] py-14 md:py-[80px] text-center"
-        style={{ background: 'linear-gradient(150deg, #713ec1 0%, #fc66b5 100%)' }}
+        style={{ background: 'linear-gradient(150deg, #7C4EC8 0%, #FF4DA6 100%)' }}
       >
         <h2 data-animate="scale" className="text-white text-[24px] md:text-[38px] font-extrabold max-w-[700px] leading-[1.2]">
           ¿Listo para transformar tu bienestar?
@@ -370,9 +370,9 @@ export default function NeurosaudPage() {
           <Link
             href="/agendar"
             className="na-btn flex items-center justify-center gap-2 bg-white rounded-full px-9 py-4 text-[15px] font-bold w-full md:w-auto"
-            style={{ color: '#713ec1' }}
+            style={{ color: '#7C4EC8' }}
           >
-            <Calendar size={18} style={{ color: '#713ec1' }} />
+            <Calendar size={18} style={{ color: '#7C4EC8' }} />
             Agendar cita
           </Link>
           <a

@@ -23,18 +23,18 @@ export async function POST(req: Request) {
       subject = `📬 Nuevo mensaje de contacto — ${data.nombre}`
       html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9f6ff; border-radius: 12px;">
-          <h2 style="color: #713ec1; margin-bottom: 4px;">Nuevo mensaje de contacto</h2>
+          <h2 style="color: #7C4EC8; margin-bottom: 4px;">Nuevo mensaje de contacto</h2>
           <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de CognyVita.com</p>
-          <hr style="border: none; border-top: 1px solid #e0d4f7; margin: 20px 0;" />
+          <hr style="border: none; border-top: 1px solid #D4C8F5; margin: 20px 0;" />
           <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #333;">
             <tr><td style="padding: 8px 0; font-weight: bold; width: 140px;">Nombre:</td><td>${data.nombre}</td></tr>
-            <tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td><a href="mailto:${data.email}" style="color: #713ec1;">${data.email}</a></td></tr>
+            <tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td><a href="mailto:${data.email}" style="color: #7C4EC8;">${data.email}</a></td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Teléfono:</td><td>${data.telefono}</td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Servicio:</td><td>${data.servicio}</td></tr>
           </table>
-          <hr style="border: none; border-top: 1px solid #e0d4f7; margin: 20px 0;" />
+          <hr style="border: none; border-top: 1px solid #D4C8F5; margin: 20px 0;" />
           <p style="font-weight: bold; font-size: 14px; color: #333; margin-bottom: 8px;">Motivo de consulta:</p>
-          <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #713ec1;">${data.motivo || '—'}</p>
+          <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #7C4EC8;">${data.motivo || '—'}</p>
           <p style="font-size: 12px; color: #aaa; margin-top: 20px;">Puedes responder directamente a este correo para contactar al remitente.</p>
         </div>
       `
@@ -42,12 +42,12 @@ export async function POST(req: Request) {
       subject = `📅 Nueva solicitud de cita — ${data.nombre}`
       html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #fff5fb; border-radius: 12px;">
-          <h2 style="color: #fc66b5; margin-bottom: 4px;">Nueva solicitud de cita</h2>
+          <h2 style="color: #FF4DA6; margin-bottom: 4px;">Nueva solicitud de cita</h2>
           <p style="color: #888; font-size: 13px; margin-top: 0;">Desde el formulario de Agendar Cita — CognyVita.com</p>
-          <hr style="border: none; border-top: 1px solid #f5c0e0; margin: 20px 0;" />
+          <hr style="border: none; border-top: 1px solid #FFB5D5; margin: 20px 0;" />
           <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #333;">
             <tr><td style="padding: 8px 0; font-weight: bold; width: 160px;">Nombre:</td><td>${data.nombre}</td></tr>
-            <tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td><a href="mailto:${data.email}" style="color: #713ec1;">${data.email}</a></td></tr>
+            <tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td><a href="mailto:${data.email}" style="color: #7C4EC8;">${data.email}</a></td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Teléfono:</td><td>${data.telefono}</td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Edad:</td><td>${data.edad}</td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Ciudad:</td><td>${data.ciudad}</td></tr>
@@ -57,9 +57,9 @@ export async function POST(req: Request) {
             <tr><td style="padding: 8px 0; font-weight: bold;">Horario:</td><td style="text-transform: capitalize;">${data.horario}</td></tr>
             <tr><td style="padding: 8px 0; font-weight: bold;">Cómo nos conoció:</td><td>${data.como || '—'}</td></tr>
           </table>
-          <hr style="border: none; border-top: 1px solid #f5c0e0; margin: 20px 0;" />
+          <hr style="border: none; border-top: 1px solid #FFB5D5; margin: 20px 0;" />
           <p style="font-weight: bold; font-size: 14px; color: #333; margin-bottom: 8px;">Motivo de consulta:</p>
-          <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #fc66b5;">${data.motivo || '—'}</p>
+          <p style="font-size: 14px; color: #555; background: #fff; padding: 14px; border-radius: 8px; border-left: 4px solid #FF4DA6;">${data.motivo || '—'}</p>
           <p style="font-size: 12px; color: #aaa; margin-top: 20px;">Puedes responder directamente a este correo para contactar al solicitante.</p>
         </div>
       `

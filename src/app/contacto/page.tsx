@@ -25,7 +25,7 @@ const contactInfo = [
     ),
     label: 'Dirección',
     value: 'Próximamente en Bogotá\nPor ahora atendemos 100% virtual',
-    color: 'text-[#713ec1] bg-[#F0EAFB]',
+    color: 'text-[#7C4EC8] bg-[#EEE8FF]',
   },
   {
     icon: (
@@ -35,7 +35,7 @@ const contactInfo = [
     ),
     label: 'Teléfono / WhatsApp',
     value: '319 351 7239',
-    color: 'text-[#fc66b5] bg-[#FFF0F9]',
+    color: 'text-[#FF4DA6] bg-[#FFF0F9]',
   },
   {
     icon: (
@@ -45,7 +45,7 @@ const contactInfo = [
     ),
     label: 'Email',
     value: 'cognyvita@gmail.com',
-    color: 'text-[#32b8cc] bg-[#E8F9FD]',
+    color: 'text-[#4D7EFF] bg-[#E8EEFF]',
   },
   {
     icon: (
@@ -55,7 +55,7 @@ const contactInfo = [
     ),
     label: 'Horarios',
     value: 'Lun–Vie: 8am – 6pm\nSáb: 8am – 4pm',
-    color: 'text-[#713ec1] bg-[#F0EAFB]',
+    color: 'text-[#7C4EC8] bg-[#EEE8FF]',
   },
 ]
 
@@ -104,8 +104,8 @@ function ContactForm() {
   if (sent) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
-        <div className="w-16 h-16 rounded-full bg-[#F0EAFB] flex items-center justify-center mb-5">
-          <svg className="w-8 h-8 text-[#713ec1]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <div className="w-16 h-16 rounded-full bg-[#EEE8FF] flex items-center justify-center mb-5">
+          <svg className="w-8 h-8 text-[#7C4EC8]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </div>
@@ -121,7 +121,7 @@ function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-bold text-gray-700 mb-1.5">
-            Nombre completo <span className="text-[#fc66b5]">*</span>
+            Nombre completo <span className="text-[#FF4DA6]">*</span>
           </label>
           <input
             type="text"
@@ -130,12 +130,12 @@ function ContactForm() {
             value={form.nombre}
             onChange={handleChange}
             placeholder="Tu nombre"
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#713ec1] focus:border-transparent transition"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7C4EC8] focus:border-transparent transition"
           />
         </div>
         <div>
           <label className="block text-xs font-bold text-gray-700 mb-1.5">
-            Correo electrónico <span className="text-[#fc66b5]">*</span>
+            Correo electrónico <span className="text-[#FF4DA6]">*</span>
           </label>
           <input
             type="email"
@@ -144,7 +144,7 @@ function ContactForm() {
             value={form.email}
             onChange={handleChange}
             placeholder="tu@email.com"
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#713ec1] focus:border-transparent transition"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7C4EC8] focus:border-transparent transition"
           />
         </div>
       </div>
@@ -153,7 +153,7 @@ function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-bold text-gray-700 mb-1.5">
-            Teléfono / WhatsApp <span className="text-[#fc66b5]">*</span>
+            Teléfono / WhatsApp <span className="text-[#FF4DA6]">*</span>
           </label>
           <input
             type="tel"
@@ -162,7 +162,7 @@ function ContactForm() {
             value={form.telefono}
             onChange={handleChange}
             placeholder="+57 300 000 0000"
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#713ec1] focus:border-transparent transition"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7C4EC8] focus:border-transparent transition"
           />
         </div>
         <div>
@@ -173,7 +173,7 @@ function ContactForm() {
             name="servicio"
             value={form.servicio}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#713ec1] focus:border-transparent transition bg-white appearance-none"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#7C4EC8] focus:border-transparent transition bg-white appearance-none"
           >
             {serviciosOptions.map((s) => (
               <option key={s} value={s}>{s}</option>
@@ -193,7 +193,7 @@ function ContactForm() {
           onChange={handleChange}
           rows={4}
           placeholder="Cuéntanos brevemente tu situación o consulta..."
-          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#713ec1] focus:border-transparent transition resize-none"
+          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7C4EC8] focus:border-transparent transition resize-none"
         />
       </div>
 
@@ -208,7 +208,7 @@ function ContactForm() {
             onChange={handleCheck}
             className="sr-only peer"
           />
-          <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-[#713ec1] peer-checked:border-[#713ec1] transition-colors flex items-center justify-center">
+          <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-[#7C4EC8] peer-checked:border-[#7C4EC8] transition-colors flex items-center justify-center">
             {form.politica && (
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -218,7 +218,7 @@ function ContactForm() {
         </div>
         <span className="text-xs text-gray-500 leading-relaxed">
           Acepto la{' '}
-          <Link href="/privacidad" className="text-[#713ec1] underline">
+          <Link href="/privacidad" className="text-[#7C4EC8] underline">
             política de privacidad
           </Link>{' '}
           y tratamiento de datos personales
@@ -234,7 +234,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full bg-gradient-to-r from-[#713ec1] to-[#fc66b5] hover:from-[#6B46C1] hover:to-[#f054a8] text-white font-bold py-4 rounded-full transition-all shadow-lg text-sm flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+        className="w-full bg-gradient-to-r from-[#7C4EC8] to-[#FF4DA6] hover:from-[#6E44BE] hover:to-[#E83D96] text-white font-bold py-4 rounded-full transition-all shadow-lg text-sm flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
       >
         {sending ? (
           <>
@@ -262,9 +262,9 @@ export default function ContactoPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#F8F4FF] py-14 lg:py-16">
+      <section className="bg-[#F6F2FF] py-14 lg:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#fc66b5] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
+          <span data-animate className="na-badge inline-block bg-[#FFF0F9] text-[#FF4DA6] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
             Contáctanos
           </span>
           <h1 data-animate data-delay="1" className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">¿Hablamos?</h1>
@@ -320,7 +320,7 @@ export default function ContactoPage() {
               <div>
                 <p className="text-xs font-bold text-gray-400 uppercase tracking-wide mb-3">Síguenos en redes sociales</p>
                 <div className="flex gap-3">
-                  <a href="https://www.instagram.com/neuroafectiva/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#713ec1] to-[#fc66b5] flex items-center justify-center hover:opacity-90 transition-opacity">
+                  <a href="https://www.instagram.com/neuroafectiva/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#7C4EC8] to-[#FF4DA6] flex items-center justify-center hover:opacity-90 transition-opacity">
                     <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
@@ -333,7 +333,7 @@ export default function ContactoPage() {
       </section>
 
       {/* Footer dark bar */}
-      <section className="bg-[#1A1035] py-6">
+      <section className="bg-[#182038] py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <span>© {new Date().getFullYear()} CognyVita. Todos los derechos reservados.</span>
           <div className="flex gap-4">

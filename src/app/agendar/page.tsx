@@ -34,27 +34,27 @@ const howOptions = [
 ]
 
 const steps = [
-  { num: '1', bg: '#fc66b5', title: 'Envías tu solicitud', desc: 'Completa el formulario con tus datos y preferencias.' },
-  { num: '2', bg: '#713ec1', title: 'Te confirmamos en 24h', desc: 'Nuestro equipo revisará tu solicitud y confirmará el horario.' },
-  { num: '3', bg: '#32b8cc', title: '¡Nos vemos en la sesión!', desc: 'Presencial en Bogotá o virtual por videollamada.' },
+  { num: '1', bg: '#FF4DA6', title: 'Envías tu solicitud', desc: 'Completa el formulario con tus datos y preferencias.' },
+  { num: '2', bg: '#7C4EC8', title: 'Te confirmamos en 24h', desc: 'Nuestro equipo revisará tu solicitud y confirmará el horario.' },
+  { num: '3', bg: '#4D7EFF', title: '¡Nos vemos en la sesión!', desc: 'Presencial en Bogotá o virtual por videollamada.' },
 ]
 
 const contactInfo = [
   {
     icon: MapPin,
-    iconColor: '#713ec1', iconBg: '#EDE8FF',
+    iconColor: '#7C4EC8', iconBg: '#EBE5FF',
     label: 'Ubicación',
     value: 'Próximamente en Bogotá\nPor ahora atendemos 100% virtual',
   },
   {
     icon: Phone,
-    iconColor: '#32b8cc', iconBg: '#D8F5F9',
+    iconColor: '#4D7EFF', iconBg: '#D8E5FF',
     label: 'WhatsApp',
     value: '319 351 7239',
   },
   {
     icon: Mail,
-    iconColor: '#fc66b5', iconBg: '#FFE8F5',
+    iconColor: '#FF4DA6', iconBg: '#FFE0F5',
     label: 'Correo',
     value: 'cognyvita@gmail.com',
   },
@@ -67,9 +67,9 @@ const schedule = [
 ]
 
 const reassure = [
-  { icon: ShieldCheck, color: '#713ec1', text: 'Datos 100% confidenciales' },
-  { icon: Timer, color: '#32b8cc', text: 'Respuesta en menos de 24 horas' },
-  { icon: CircleX, color: '#fc66b5', text: 'Sin compromisos ni costos ocultos' },
+  { icon: ShieldCheck, color: '#7C4EC8', text: 'Datos 100% confidenciales' },
+  { icon: Timer, color: '#4D7EFF', text: 'Respuesta en menos de 24 horas' },
+  { icon: CircleX, color: '#FF4DA6', text: 'Sin compromisos ni costos ocultos' },
 ]
 
 // ─── Page ────────────────────────────────────────────────────────────────────
@@ -107,7 +107,7 @@ export default function AgendarPage() {
     }
   }
 
-  const inputClass = "w-full h-12 px-4 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm text-[#1A1A2E] outline-none focus:border-[#713ec1] focus:ring-2 focus:ring-[#713ec1]/10 transition placeholder-[#9CA3AF]"
+  const inputClass = "w-full h-12 px-4 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm text-[#182038] outline-none focus:border-[#7C4EC8] focus:ring-2 focus:ring-[#7C4EC8]/10 transition placeholder-[#9CA3AF]"
 
   return (
     <>
@@ -116,10 +116,10 @@ export default function AgendarPage() {
         className="w-full flex flex-col items-center justify-center gap-3.5 px-5 text-center"
         style={{ height: '200px', background: 'linear-gradient(180deg, #FDF5FF 0%, #FFFFFF 100%)' }}
       >
-        <span data-animate className="na-badge px-5 py-1.5 rounded-full text-[#713ec1] text-[13px] font-semibold" style={{ background: '#F0E6FF' }}>
+        <span data-animate className="na-badge px-5 py-1.5 rounded-full text-[#7C4EC8] text-[13px] font-semibold" style={{ background: '#F0E6FF' }}>
           Atención especializada · Tu bienestar en manos expertas
         </span>
-        <h1 data-animate data-delay="1" className="text-[36px] md:text-[52px] font-black text-[#1A1A2E]">Agenda tu cita</h1>
+        <h1 data-animate data-delay="1" className="text-[36px] md:text-[52px] font-black text-[#182038]">Agenda tu cita</h1>
         <p data-animate data-delay="2" className="text-[#737f80] text-sm md:text-base">
           Reserva tu sesión en minutos. Confirmaremos tu cita en menos de 24 horas.
         </p>
@@ -135,11 +135,11 @@ export default function AgendarPage() {
               <div className="flex flex-col items-center gap-6 py-20 text-center">
                 <div
                   className="w-20 h-20 rounded-full flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #fc66b5 0%, #713ec1 100%)' }}
+                  style={{ background: 'linear-gradient(135deg, #FF4DA6 0%, #7C4EC8 100%)' }}
                 >
                   <CalendarCheck size={36} className="text-white" />
                 </div>
-                <h2 className="text-[#1A1A2E] text-2xl font-bold">¡Solicitud enviada!</h2>
+                <h2 className="text-[#182038] text-2xl font-bold">¡Solicitud enviada!</h2>
                 <p className="text-[#737f80] text-sm max-w-sm leading-relaxed">
                   Hemos recibido tu solicitud. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas para confirmar tu cita.
                 </p>
@@ -150,10 +150,10 @@ export default function AgendarPage() {
                 {/* ── Sección 1: Datos personales ─────────────────────── */}
                 <div className="flex flex-col gap-5">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#fc66b5' }}>
+                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#FF4DA6' }}>
                       <span className="text-white text-[13px] font-extrabold">1</span>
                     </div>
-                    <h2 className="text-[#1A1A2E] text-[18px] font-bold">Datos personales</h2>
+                    <h2 className="text-[#182038] text-[18px] font-bold">Datos personales</h2>
                   </div>
 
                   {/* Nombre */}
@@ -224,10 +224,10 @@ export default function AgendarPage() {
                 {/* ── Sección 2: Tipo de servicio ─────────────────────── */}
                 <div className="flex flex-col gap-5">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#713ec1' }}>
+                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#7C4EC8' }}>
                       <span className="text-white text-[13px] font-extrabold">2</span>
                     </div>
-                    <h2 className="text-[#1A1A2E] text-[18px] font-bold">Tipo de servicio</h2>
+                    <h2 className="text-[#182038] text-[18px] font-bold">Tipo de servicio</h2>
                   </div>
 
                   {/* Service grid */}
@@ -245,12 +245,12 @@ export default function AgendarPage() {
                               onClick={() => set('servicio', s.id)}
                               className="flex items-center gap-2.5 h-[52px] px-5 rounded-[10px] flex-1 transition"
                               style={{
-                                background: active ? '#F5F3FF' : '#FFFFFF',
-                                border: `1.5px solid ${active ? '#713ec1' : '#E5E7EB'}`,
+                                background: active ? '#F3F0FF' : '#FFFFFF',
+                                border: `1.5px solid ${active ? '#7C4EC8' : '#E5E7EB'}`,
                               }}
                             >
-                              <Icon size={18} style={{ color: active ? '#713ec1' : '#9CA3AF' }} />
-                              <span className="text-[13px] font-semibold" style={{ color: active ? '#713ec1' : '#6B7280' }}>
+                              <Icon size={18} style={{ color: active ? '#7C4EC8' : '#9CA3AF' }} />
+                              <span className="text-[13px] font-semibold" style={{ color: active ? '#7C4EC8' : '#6B7280' }}>
                                 {s.label}
                               </span>
                             </button>
@@ -268,12 +268,12 @@ export default function AgendarPage() {
                               onClick={() => set('servicio', s.id)}
                               className="flex items-center gap-2.5 h-[52px] px-5 rounded-[10px] flex-1 transition"
                               style={{
-                                background: active ? '#F5F3FF' : '#FFFFFF',
-                                border: `1.5px solid ${active ? '#713ec1' : '#E5E7EB'}`,
+                                background: active ? '#F3F0FF' : '#FFFFFF',
+                                border: `1.5px solid ${active ? '#7C4EC8' : '#E5E7EB'}`,
                               }}
                             >
-                              <Icon size={18} style={{ color: active ? '#713ec1' : '#9CA3AF' }} />
-                              <span className="text-[13px] font-semibold" style={{ color: active ? '#713ec1' : '#6B7280' }}>
+                              <Icon size={18} style={{ color: active ? '#7C4EC8' : '#9CA3AF' }} />
+                              <span className="text-[13px] font-semibold" style={{ color: active ? '#7C4EC8' : '#6B7280' }}>
                                 {s.label}
                               </span>
                             </button>
@@ -293,18 +293,18 @@ export default function AgendarPage() {
                         onClick={() => set('modalidad', 'presencial')}
                         className="flex items-center gap-2.5 flex-1 px-7 py-3.5 rounded-[10px] transition"
                         style={{
-                          background: form.modalidad === 'presencial' ? '#F0FAFB' : '#FFFFFF',
-                          border: `2px solid ${form.modalidad === 'presencial' ? '#32b8cc' : '#E5E7EB'}`,
+                          background: form.modalidad === 'presencial' ? '#F0F4FF' : '#FFFFFF',
+                          border: `2px solid ${form.modalidad === 'presencial' ? '#4D7EFF' : '#E5E7EB'}`,
                         }}
                       >
                         <div
                           className="w-9 h-9 rounded-[18px] flex items-center justify-center shrink-0"
-                          style={{ background: form.modalidad === 'presencial' ? '#32b8cc' : '#E5E7EB' }}
+                          style={{ background: form.modalidad === 'presencial' ? '#4D7EFF' : '#E5E7EB' }}
                         >
                           <MapPin size={18} style={{ color: '#fff' }} />
                         </div>
                         <div className="flex flex-col gap-0.5 text-left">
-                          <span className="text-[14px] font-bold" style={{ color: form.modalidad === 'presencial' ? '#32b8cc' : '#6B7280' }}>Presencial</span>
+                          <span className="text-[14px] font-bold" style={{ color: form.modalidad === 'presencial' ? '#4D7EFF' : '#6B7280' }}>Presencial</span>
                           <span className="text-[12px]" style={{ color: form.modalidad === 'presencial' ? '#737f80' : '#9CA3AF' }}>Bogotá, Colombia</span>
                         </div>
                       </button>
@@ -314,18 +314,18 @@ export default function AgendarPage() {
                         onClick={() => set('modalidad', 'virtual')}
                         className="flex items-center gap-2.5 flex-1 px-7 py-3.5 rounded-[10px] transition"
                         style={{
-                          background: form.modalidad === 'virtual' ? '#F0FAFB' : '#FFFFFF',
-                          border: `2px solid ${form.modalidad === 'virtual' ? '#32b8cc' : '#E5E7EB'}`,
+                          background: form.modalidad === 'virtual' ? '#F0F4FF' : '#FFFFFF',
+                          border: `2px solid ${form.modalidad === 'virtual' ? '#4D7EFF' : '#E5E7EB'}`,
                         }}
                       >
                         <div
                           className="w-9 h-9 rounded-[18px] flex items-center justify-center shrink-0"
-                          style={{ background: form.modalidad === 'virtual' ? '#32b8cc' : '#E5E7EB' }}
+                          style={{ background: form.modalidad === 'virtual' ? '#4D7EFF' : '#E5E7EB' }}
                         >
                           <Video size={18} style={{ color: '#fff' }} />
                         </div>
                         <div className="flex flex-col gap-0.5 text-left">
-                          <span className="text-[14px] font-bold" style={{ color: form.modalidad === 'virtual' ? '#32b8cc' : '#6B7280' }}>Virtual</span>
+                          <span className="text-[14px] font-bold" style={{ color: form.modalidad === 'virtual' ? '#4D7EFF' : '#6B7280' }}>Virtual</span>
                           <span className="text-[12px]" style={{ color: form.modalidad === 'virtual' ? '#737f80' : '#9CA3AF' }}>Videollamada / Online</span>
                         </div>
                       </button>
@@ -361,8 +361,8 @@ export default function AgendarPage() {
                               className="flex-1 h-12 rounded-[10px] text-[13px] font-semibold transition"
                               style={{
                                 background: active ? '#FFF5FB' : '#FFFFFF',
-                                border: `1.5px solid ${active ? '#fc66b5' : '#D1D5DB'}`,
-                                color: active ? '#fc66b5' : '#9CA3AF',
+                                border: `1.5px solid ${active ? '#FF4DA6' : '#D1D5DB'}`,
+                                color: active ? '#FF4DA6' : '#9CA3AF',
                               }}
                             >
                               {h.label}
@@ -377,10 +377,10 @@ export default function AgendarPage() {
                 {/* ── Sección 3: Cuéntanos más ────────────────────────── */}
                 <div className="flex flex-col gap-5">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#32b8cc' }}>
+                    <div className="w-7 h-7 rounded-[14px] flex items-center justify-center" style={{ background: '#4D7EFF' }}>
                       <span className="text-white text-[13px] font-extrabold">3</span>
                     </div>
-                    <h2 className="text-[#1A1A2E] text-[18px] font-bold">Cuéntanos más</h2>
+                    <h2 className="text-[#182038] text-[18px] font-bold">Cuéntanos más</h2>
                   </div>
 
                   {/* Motivo */}
@@ -392,7 +392,7 @@ export default function AgendarPage() {
                       value={form.motivo}
                       onChange={e => set('motivo', e.target.value)}
                       placeholder="Cuéntanos brevemente qué te trae a consulta, cómo te has sentido últimamente o qué esperas lograr con el proceso..."
-                      className="w-full px-4 py-3 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm text-[#1A1A2E] outline-none focus:border-[#713ec1] focus:ring-2 focus:ring-[#713ec1]/10 transition placeholder-[#9CA3AF] resize-none leading-[1.6]"
+                      className="w-full px-4 py-3 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm text-[#182038] outline-none focus:border-[#7C4EC8] focus:ring-2 focus:ring-[#7C4EC8]/10 transition placeholder-[#9CA3AF] resize-none leading-[1.6]"
                     />
                   </div>
 
@@ -403,7 +403,7 @@ export default function AgendarPage() {
                       <select
                         value={form.como}
                         onChange={e => set('como', e.target.value)}
-                        className="w-full h-12 pl-4 pr-10 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm outline-none focus:border-[#713ec1] transition appearance-none text-[#9CA3AF]"
+                        className="w-full h-12 pl-4 pr-10 rounded-[10px] border-[1.5px] border-[#D1D5DB] bg-white text-sm outline-none focus:border-[#7C4EC8] transition appearance-none text-[#9CA3AF]"
                       >
                         <option value="">Selecciona una opción</option>
                         {howOptions.map(o => <option key={o} value={o}>{o}</option>)}
@@ -416,7 +416,7 @@ export default function AgendarPage() {
                   <label className="flex items-start gap-3 cursor-pointer">
                     <div
                       className="w-[18px] h-[18px] rounded-[4px] flex items-center justify-center shrink-0 mt-0.5 transition"
-                      style={{ background: form.privacidad ? '#713ec1' : 'transparent', border: form.privacidad ? 'none' : '2px solid #D1D5DB' }}
+                      style={{ background: form.privacidad ? '#7C4EC8' : 'transparent', border: form.privacidad ? 'none' : '2px solid #D1D5DB' }}
                       onClick={() => set('privacidad', !form.privacidad)}
                     >
                       {form.privacidad && <Check size={12} className="text-white" />}
@@ -437,7 +437,7 @@ export default function AgendarPage() {
                   type="submit"
                   disabled={sending}
                   className="flex items-center justify-center gap-3 w-full h-14 rounded-[14px] text-white text-base font-bold transition hover:opacity-90 disabled:opacity-70 disabled:cursor-not-allowed"
-                  style={{ background: 'linear-gradient(90deg, #fc66b5 0%, #713ec1 100%)' }}
+                  style={{ background: 'linear-gradient(90deg, #FF4DA6 0%, #7C4EC8 100%)' }}
                 >
                   {sending ? (
                     <>
@@ -463,10 +463,10 @@ export default function AgendarPage() {
           <div className="flex flex-col gap-6 w-full md:w-[380px] shrink-0">
 
             {/* Cómo funciona */}
-            <div data-animate="right" className="flex flex-col gap-6 rounded-[20px] p-8" style={{ background: '#1A0A2E' }}>
+            <div data-animate="right" className="flex flex-col gap-6 rounded-[20px] p-8" style={{ background: '#182038' }}>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-white text-[18px] font-bold">¿Cómo funciona?</h3>
-                <p className="text-[#9988C0] text-[14px]">Reservar tu cita es fácil y rápido.</p>
+                <p className="text-[#9080C8] text-[14px]">Reservar tu cita es fácil y rápido.</p>
               </div>
               {steps.map(step => (
                 <div key={step.num} className="flex gap-4 items-start">
@@ -478,7 +478,7 @@ export default function AgendarPage() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-white text-[14px] font-bold">{step.title}</span>
-                    <span className="text-[#9988C0] text-[13px] leading-[1.5]">{step.desc}</span>
+                    <span className="text-[#9080C8] text-[13px] leading-[1.5]">{step.desc}</span>
                   </div>
                 </div>
               ))}
@@ -489,9 +489,9 @@ export default function AgendarPage() {
               data-animate="right"
               data-delay="1"
               className="flex flex-col gap-5 rounded-[20px] p-7"
-              style={{ background: '#F8F5FF', border: '1px solid #E8E0FF' }}
+              style={{ background: '#F8F5FF', border: '1px solid #DDD5FF' }}
             >
-              <h3 className="text-[#1A1A2E] text-[15px] font-bold">Información de contacto</h3>
+              <h3 className="text-[#182038] text-[15px] font-bold">Información de contacto</h3>
               {contactInfo.map(item => {
                 const Icon = item.icon
                 return (
@@ -504,7 +504,7 @@ export default function AgendarPage() {
                     </div>
                     <div className="flex flex-col gap-0.5">
                       <span className="text-[#737f80] text-[12px]">{item.label}</span>
-                      <span className="text-[#1A1A2E] text-[14px] font-semibold whitespace-pre-line leading-snug">{item.value}</span>
+                      <span className="text-[#182038] text-[14px] font-semibold whitespace-pre-line leading-snug">{item.value}</span>
                     </div>
                   </div>
                 )
@@ -516,15 +516,15 @@ export default function AgendarPage() {
               data-animate="right"
               data-delay="2"
               className="flex flex-col gap-4 rounded-[20px] p-7"
-              style={{ background: '#F0FAFB', border: '1px solid #C8EDF5' }}
+              style={{ background: '#F0F4FF', border: '1px solid #C8EDF5' }}
             >
-              <h3 className="text-[#1A1A2E] text-[15px] font-bold">Horarios de atención</h3>
+              <h3 className="text-[#182038] text-[15px] font-bold">Horarios de atención</h3>
               {schedule.map(s => (
                 <div key={s.day} className="flex items-center justify-between">
                   <span className="text-[#737f80] text-[13px]">{s.day}</span>
                   <span
                     className="text-[13px] font-semibold"
-                    style={{ color: s.available ? '#32b8cc' : '#9CA3AF' }}
+                    style={{ color: s.available ? '#4D7EFF' : '#9CA3AF' }}
                   >
                     {s.hours}
                   </span>
@@ -538,7 +538,7 @@ export default function AgendarPage() {
       {/* ── Reassurance bar ──────────────────────────────────────────────── */}
       <section
         className="w-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 px-5 md:px-[120px] py-7"
-        style={{ background: '#F5F3FF' }}
+        style={{ background: '#F3F0FF' }}
       >
         {reassure.map((r, i) => {
           const Icon = r.icon
