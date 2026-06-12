@@ -71,6 +71,54 @@ function HeroSection() {
   )
 }
 
+/* ─── SLOGAN ────────────────────────────────────────────── */
+function SloganSection() {
+  return (
+    <section className="bg-[#0E234F] py-16 lg:py-20 overflow-hidden relative">
+      {/* Decorative blobs */}
+      <div className="absolute -top-16 left-1/4 w-72 h-72 rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(133,55,216,0.18), transparent 70%)' }} />
+      <div className="absolute -bottom-12 right-1/4 w-56 h-56 rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(245,69,180,0.16), transparent 70%)' }} />
+      <div className="absolute top-1/2 left-8 w-2 h-2 rounded-full bg-white/20" />
+      <div className="absolute top-6 right-16 w-1.5 h-1.5 rounded-full bg-[#F545B4]/40" />
+      <div className="absolute bottom-8 left-1/3 w-1 h-1 rounded-full bg-[#4585FF]/50" />
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        {/* Eyebrow */}
+        <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="h-px flex-1 max-w-[80px] bg-white/15 rounded-full" />
+          <span className="text-white/50 text-[11px] font-bold tracking-[0.25em] uppercase">
+            Nuestro propósito
+          </span>
+          <div className="h-px flex-1 max-w-[80px] bg-white/15 rounded-full" />
+        </div>
+
+        {/* Slogan */}
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+          Mentes claras,{' '}
+          <span
+            className="inline-block"
+            style={{
+              background: 'linear-gradient(90deg, #F545B4 0%, #8537D8 60%, #4585FF 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            corazones seguros.
+          </span>
+        </h2>
+
+        {/* Subtle tagline */}
+        <p className="text-white/45 text-sm sm:text-base font-medium max-w-md mx-auto">
+          CognyVita · Neuropsicología clínica y educativa
+        </p>
+      </div>
+    </section>
+  )
+}
+
 /* ─── ¿POR QUÉ NEUROAFECTIVA? ───────────────────────────── */
 const diferencias = [
   {
@@ -504,6 +552,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <SloganSection />
       <DiferenciaSection />
       <StatsBar />
       <ServiciosSection />
