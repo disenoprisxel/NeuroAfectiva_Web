@@ -44,7 +44,7 @@ const contactInfo = [
     icon: MapPin,
     iconColor: '#713ec1', iconBg: '#EDE8FF',
     label: 'Ubicación',
-    value: 'Carrera 25 # 51-37\nOf.201\nEdificio Lamprea',
+    value: 'Próximamente en Bogotá\nPor ahora atendemos 100% virtual',
   },
   {
     icon: Phone,

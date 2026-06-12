@@ -24,7 +24,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Dirección',
-    value: 'Carrera 25 # 51-37 Of.201\nEdificio Lamprea',
+    value: 'Próximamente en Bogotá\nPor ahora atendemos 100% virtual',
     color: 'text-[#713ec1] bg-[#F0EAFB]',
   },
   {

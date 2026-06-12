@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Carrera 25 # 51-37 Of.201<br />Edificio Lamprea</span>
+                <span>Próximamente en Bogotá<br /><span className="text-[#fc66b5] font-semibold">Atención 100% virtual</span></span>
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
