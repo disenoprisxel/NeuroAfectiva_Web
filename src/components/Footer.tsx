@@ -31,7 +31,7 @@ export default function Footer() {
               alt="CognyVita"
               width={240}
               height={66}
-              className="h-[66px] w-auto mb-3"
+              className="h-[83px] w-auto mb-3"
             />
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
               Centro especializado en neuropsicología clínica y educativa en Bogotá. Acompañamos a niños, adolescentes y adultos hacia su bienestar cognitivo y emocional.
