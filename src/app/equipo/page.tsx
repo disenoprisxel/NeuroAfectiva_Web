@@ -156,7 +156,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             {esp.formacion && (
               <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
                 <div className="font-bold text-gray-900 text-xs">{esp.nombre.split(' ')[0]}</div>
-                <div className="text-xs font-medium mt-0.5 text-[#8537D8]">Neuropsicóloga</div>
+                <div className="text-xs font-medium mt-0.5 text-[#8537D8]">Neuropsicóloga Educativa</div>
               </div>
             )}
             {/* Bottom badge */}
