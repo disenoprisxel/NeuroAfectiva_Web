@@ -56,7 +56,7 @@ function HeroSection() {
 
           {/* Right — image */}
           <div className="relative overflow-hidden rounded-3xl">
-            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#EDE5FF]">
+            <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-[#EDE5FF]">
               <img
                 src="/images/hero.jpg"
                 alt="Sesión de neuropsicología en CognyVita"
@@ -326,7 +326,7 @@ function BienestarSection() {
 
           {/* Left — image */}
           <div className="relative overflow-hidden rounded-3xl">
-            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#EDE5FF]">
+            <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-[#EDE5FF]">
               <img
                 src="/images/bienestar.jpg"
                 alt="Tu bienestar es nuestra prioridad"
