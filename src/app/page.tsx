@@ -330,7 +330,7 @@ function BienestarSection() {
               <img
                 src="/images/bienestar.jpg"
                 alt="Tu bienestar es nuestra prioridad"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
                 data-parallax="0.02"
               />
             </div>
