@@ -30,6 +30,28 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/icon.png',
   },
+  openGraph: {
+    title: 'CognyVita — Neuropsicología Clínica y Educativa en Bogotá',
+    description: 'Centro especializado en neuropsicología clínica y educativa. Evaluación, diagnóstico e intervención para TDAH, Autismo, Dislexia y más. Bogotá, Colombia.',
+    url: 'https://cognyvita.com',
+    siteName: 'CognyVita',
+    images: [
+      {
+        url: 'https://cognyvita.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'CognyVita — Neuropsicología Clínica y Educativa',
+      },
+    ],
+    locale: 'es_CO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CognyVita — Neuropsicología Clínica y Educativa en Bogotá',
+    description: 'Centro especializado en neuropsicología clínica y educativa. Evaluación, diagnóstico e intervención para TDAH, Autismo, Dislexia y más. Bogotá, Colombia.',
+    images: ['https://cognyvita.com/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({
