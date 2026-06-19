@@ -60,7 +60,7 @@ function HeroSection() {
               <img
                 src="/images/hero.jpg"
                 alt="Sesión de neuropsicología en CognyVita"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
                 data-parallax="0.06"
               />
             </div>
