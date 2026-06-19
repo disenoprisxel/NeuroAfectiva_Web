@@ -334,9 +334,6 @@ function BienestarSection() {
                 data-parallax="0.02"
               />
             </div>
-            <div className="absolute bottom-5 left-5 bg-white rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700">
-              📍 Bogotá, Colombia &nbsp;•&nbsp; Desde 2016
-            </div>
           </div>
 
           {/* Right — copy */}
