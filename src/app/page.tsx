@@ -328,7 +328,7 @@ function BienestarSection() {
           <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden bg-[#EDE5FF]" style={{ aspectRatio: '3/2' }}>
               <img
-                src="/images/CV_004.jpg"
+                src="/images/CV_002.jpg"
                 alt="Tu bienestar es nuestra prioridad"
                 className="w-full h-full object-cover object-center"
                 data-parallax="0.02"
