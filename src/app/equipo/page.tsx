@@ -17,7 +17,7 @@ const equipo = [
     badgeCard: 'Neuropsicología Educativa',
     badgeCardColor: 'bg-[#EDE5FF] text-[#8537D8]',
     floatingBadge: '8+ años de experiencia',
-    img: '/images/viviana-trujillo.jpg',
+    img: '/images/CV_002.jpg',
     imgAlt: 'Viviana Marcela Trujillo',
     imgSide: 'right' as const,
     bio: (
@@ -142,7 +142,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
               <img
                 src={esp.img}
                 alt={esp.imgAlt}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             {/* Top-left floating card */}
