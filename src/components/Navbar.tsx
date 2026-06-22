@@ -35,7 +35,7 @@ export default function Navbar() {
               alt="CognyVita"
               width={338}
               height={90}
-              className="w-auto h-[5.625rem] lg:h-[8.436rem]"
+              className="w-auto h-14 lg:h-16"
               priority
             />
           </Link>
