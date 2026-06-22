@@ -138,7 +138,7 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
             data-animate={imgAnimate}
             className={`relative w-full lg:w-[42%] flex-shrink-0 na-img-zoom overflow-hidden rounded-3xl ${reverse ? 'lg:order-2' : 'lg:order-1'}`}
           >
-            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-[#EDE5FF]">
+            <div className="rounded-3xl overflow-hidden aspect-[3/2] bg-[#EDE5FF]">
               <img
                 src={esp.img}
                 alt={esp.imgAlt}
