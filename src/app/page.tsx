@@ -58,7 +58,7 @@ function HeroSection() {
           <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-[#EDE5FF]">
               <img
-                src="/images/hero.jpg"
+                src="/images/CV_001.jpg"
                 alt="Sesión de neuropsicología en CognyVita"
                 className="w-full h-full object-cover object-top"
                 data-parallax="0.06"
@@ -328,7 +328,7 @@ function BienestarSection() {
           <div className="relative overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-[#EDE5FF]">
               <img
-                src="/images/bienestar.jpg"
+                src="/images/CV_004.jpg"
                 alt="Tu bienestar es nuestra prioridad"
                 className="w-full h-full object-cover object-top"
                 data-parallax="0.02"
