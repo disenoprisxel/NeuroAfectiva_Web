@@ -191,13 +191,9 @@ function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: bo
               </div>
             )}
             {/* Bottom badge */}
-            {esp.formacion ? (
+            {esp.formacion && (
               <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700">
                 🎓 {esp.formacion}
-              </div>
-            ) : (
-              <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg text-xs font-bold text-gray-700">
-                🎓 Universidad de San Buenaventura
               </div>
             )}
           </div>
