@@ -164,7 +164,7 @@ const especialistas = [
     especialidad: 'Neuropsicología Educativa',
     formacion: 'Fundación Universitaria Internacional de la Rioja',
     exp: '',
-    badge: { label: 'Educativa', color: 'bg-[#EDE5FF] text-[#8537D8]' },
+    badge: { label: 'Neuropsicología Educativa', color: 'bg-[#EDE5FF] text-[#8537D8]' },
     img: '/images/viviana-quienes.jpg',
   },
   {
@@ -172,7 +172,7 @@ const especialistas = [
     especialidad: 'Evaluación y Diagnóstico Neuropsicológico',
     formacion: '5 años de experiencia clínica',
     exp: '',
-    badge: { label: 'Diagnóstico', color: 'bg-[#FFF0F9] text-[#F545B4]' },
+    badge: { label: 'Neuropsicología Clínica', color: 'bg-[#FFF0F9] text-[#F545B4]' },
     img: '/images/jessica-pineres.jpg',
   },
 ]
