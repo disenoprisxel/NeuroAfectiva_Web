@@ -21,7 +21,7 @@ function HeroQuienesSomos() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left — image */}
-          <div className="relative order-2 lg:order-1 overflow-hidden rounded-3xl">
+          <div data-animate="left" className="relative order-2 lg:order-1 overflow-hidden rounded-3xl">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-[#0E234F]">
               <img
                 src="/images/clinic.jpg"
@@ -36,7 +36,7 @@ function HeroQuienesSomos() {
           </div>
 
           {/* Right — copy */}
-          <div className="order-1 lg:order-2">
+          <div data-animate="right" className="order-1 lg:order-2">
             <span className="inline-block bg-[#EDE5FF] text-[#8537D8] text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-wide">
               Nuestra misión
             </span>
@@ -82,7 +82,7 @@ function MisionVisionValores() {
   return (
     <section className="bg-[#F6F2FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div data-animate="up" className="text-center mb-12">
           <span className="text-xs font-bold tracking-widest text-[#8537D8] uppercase">Nuestra Propuesta</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Lo que nos mueve cada día</h2>
           <p className="mt-3 text-gray-500 text-sm max-w-xl mx-auto">
@@ -93,7 +93,7 @@ function MisionVisionValores() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           {/* Misión */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div data-animate="up" data-delay="1" className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#8537D8] uppercase mb-3 block">Misión</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestra Misión</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
@@ -103,7 +103,7 @@ function MisionVisionValores() {
           </div>
 
           {/* Visión */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div data-animate="up" data-delay="2" className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#F545B4] uppercase mb-3 block">Visión</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestra Visión</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
@@ -114,7 +114,7 @@ function MisionVisionValores() {
           </div>
 
           {/* Valores */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div data-animate="up" data-delay="3" className="bg-white rounded-2xl p-8 shadow-lg">
             <span className="text-xs font-bold tracking-widest text-[#4585FF] uppercase mb-3 block">Valores</span>
             <h3 className="text-xl font-extrabold text-gray-900 mb-4">Nuestros Valores</h3>
             <ul className="space-y-2 text-sm text-gray-500">
@@ -144,7 +144,7 @@ function StatsDark() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 gap-4 text-center">
           {stats.map((s, i) => (
-            <div key={s.value} className={`${i < stats.length - 1 ? 'border-r border-white/10' : ''} px-4`}>
+            <div data-animate="up" data-delay={i + 1} key={s.value} className={`${i < stats.length - 1 ? 'border-r border-white/10' : ''} px-4`}>
               <div className={`text-2xl sm:text-3xl font-extrabold mb-1 ${s.highlight ? 'text-[#F545B4]' : 'text-white'}`}>
                 {s.value}
               </div>
@@ -167,6 +167,14 @@ const especialistas = [
     badge: { label: 'Educativa', color: 'bg-[#EDE5FF] text-[#8537D8]' },
     img: '/images/viviana-quienes.jpg',
   },
+  {
+    nombre: 'Jessica Piñeres',
+    especialidad: 'Evaluación y Diagnóstico Neuropsicológico',
+    formacion: '5 años de experiencia clínica',
+    exp: '',
+    badge: { label: 'Diagnóstico', color: 'bg-[#FFF0F9] text-[#F545B4]' },
+    img: '/images/jessica-pineres.jpg',
+  },
 ]
 
 function EquipoSection() {
@@ -176,7 +184,7 @@ function EquipoSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left — copy */}
-          <div>
+          <div data-animate="left">
             <span className="text-xs font-bold tracking-widest text-[#8537D8] uppercase mb-4 block">Nuestro Equipo</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5">
               Especialistas apasionados<br />por la neurociencia
@@ -211,7 +219,7 @@ function EquipoSection() {
           </div>
 
           {/* Right — specialist cards */}
-          <div className="space-y-4">
+          <div data-animate="right" className="space-y-4">
             {especialistas.map((e) => (
               <div key={e.nombre} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm flex items-center gap-5 hover:shadow-md transition-shadow">
                 <div className="w-16 h-16 rounded-2xl bg-[#EDE5FF] flex-shrink-0 overflow-hidden">
@@ -247,12 +255,12 @@ function CTAQuienesSomos() {
       style={{ background: 'linear-gradient(135deg, #0E234F 0%, #8537D8 60%, #F545B4 100%)' }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <span className="text-xs font-bold tracking-widest text-white/70 uppercase mb-4 block">¿Lista para empezar?</span>
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Tu bienestar neurológico comienza aquí</h2>
-        <p className="text-white/80 text-base mb-8 max-w-xl mx-auto">
+        <span data-animate="up" className="text-xs font-bold tracking-widest text-white/70 uppercase mb-4 block">¿Lista para empezar?</span>
+        <h2 data-animate="up" data-delay="1" className="text-3xl sm:text-4xl font-extrabold mb-4">Tu bienestar neurológico comienza aquí</h2>
+        <p data-animate="up" data-delay="2" className="text-white/80 text-base mb-8 max-w-xl mx-auto">
           Agenda tu primera consulta y descubre cómo podemos transformar tu vida.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div data-animate="up" data-delay="3" className="flex flex-wrap justify-center gap-4">
           <Link
             href="/agendar"
             className="bg-white text-[#8537D8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm"
@@ -275,7 +283,7 @@ function CTAQuienesSomos() {
 const impacto = [
   { value: '+80', label: 'Evaluaciones realizadas', color: 'text-[#8537D8]' },
   { value: '3+', label: 'Años de experiencia', color: 'text-[#4585FF]' },
-  { value: '2', label: 'Especialidades clínicas', color: 'text-[#F545B4]' },
+  { value: '2', label: 'Especialistas en el equipo', color: 'text-[#F545B4]' },
   { value: '98%', label: 'Satisfacción de familias', color: 'text-[#8537D8]' },
 ]
 
@@ -283,12 +291,12 @@ function ImpactoSection() {
   return (
     <section className="bg-[#F6F2FF] py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 text-center mb-10">
+        <h2 data-animate="up" className="text-2xl sm:text-3xl font-extrabold text-gray-900 text-center mb-10">
           Nuestro impacto en números
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {impacto.map((item) => (
-            <div key={item.label} className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+          {impacto.map((item, i) => (
+            <div data-animate="scale" data-delay={i + 1} key={item.label} className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
               <div className={`text-4xl font-extrabold mb-2 ${item.color}`}>{item.value}</div>
               <div className="text-gray-500 text-xs">{item.label}</div>
             </div>

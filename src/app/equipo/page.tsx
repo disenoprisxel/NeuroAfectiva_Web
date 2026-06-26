@@ -49,6 +49,35 @@ const equipo = [
     ctaColor: 'bg-[#8537D8] hover:bg-[#7530C5]',
     formacion: 'Fund. Univ. Internacional de la Rioja',
   },
+  {
+    id: 'jessica',
+    nombre: 'Jessica Piñeres',
+    cargo: 'Psicóloga · Especialista en Evaluación y Diagnóstico Neuropsicológico',
+    badge: 'Evaluación Neuropsicológica',
+    badgeColor: 'bg-[#FFF0F9] text-[#F545B4]',
+    badgeCard: 'Evaluación Neuropsicológica',
+    badgeCardColor: 'bg-[#FFF0F9] text-[#F545B4]',
+    floatingBadge: '5 años de experiencia',
+    img: '/images/jessica-pineres.jpg',
+    imgAlt: 'Jessica Piñeres',
+    imgRatio: '3/4',
+    imgSide: 'left' as const,
+    bio: (
+      <>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4">
+          Jessica es psicóloga especialista en evaluación y diagnóstico neuropsicológico, con cinco años de experiencia en el área clínica y neuropsicológica. Ha desarrollado procesos de evaluación, diagnóstico e intervención neuropsicológica, así como programas de estimulación cognitiva, acompañamiento terapéutico y actividades de formación y capacitación.
+        </p>
+        <p className="text-gray-500 text-sm leading-relaxed">
+          Su trabajo está orientado a promover el bienestar y el desarrollo cognitivo en población infantil, adolescentes y adultos, con un enfoque integral que combina el rigor científico con la calidez humana en cada proceso de atención.
+        </p>
+      </>
+    ),
+    tags: ['Evaluación Neuropsicológica', 'Estimulación Cognitiva', 'Intervención Clínica'],
+    tagColors: ['bg-[#FFF0F9] text-[#F545B4]', 'bg-[#EDE5FF] text-[#8537D8]', 'bg-[#E5EDFF] text-[#4585FF]'],
+    ctaLabel: 'Agendar con Jessica',
+    ctaColor: 'bg-[#F545B4] hover:bg-[#DC3AA8]',
+    formacion: undefined,
+  },
 ]
 
 const filosofia = [
@@ -105,8 +134,8 @@ function HeroEquipo() {
         {/* Badges */}
         <div data-animate data-delay="3" className="flex flex-wrap justify-center gap-3">
           {[
-            { icon: '👩‍⚕️', text: '1 Especialista certificada' },
-            { icon: '⏱️', text: '8+ años de experiencia' },
+            { icon: '👩‍⚕️', text: '2 Especialistas certificadas' },
+            { icon: '⏱️', text: '13+ años de experiencia combinada' },
             { icon: '📍', text: 'Bogotá, Colombia' },
           ].map((b) => (
             <span key={b.text} className="na-badge bg-[#F545B4] text-white text-xs font-bold px-5 py-2 rounded-full flex items-center gap-2">
@@ -123,6 +152,7 @@ function HeroEquipo() {
 /* ─── TARJETA DE ESPECIALISTA ───────────────────────────── */
 const waNumbers: Record<string, string> = {
   viviana: '573193517239',
+  jessica: '573005711191',
 }
 
 function EspecialistaCard({ esp, reverse }: { esp: typeof equipo[0]; reverse: boolean }) {
