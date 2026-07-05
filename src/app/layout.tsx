@@ -101,7 +101,7 @@ const jsonLd = {
     { '@type': 'MedicalTherapy', name: 'Capacitación y Talleres' },
   ],
   sameAs: [
-    'https://www.instagram.com/neuroafectiva/',
+    'https://www.instagram.com/cognyvita/',
   ],
 }
 
