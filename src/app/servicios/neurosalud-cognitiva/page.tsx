@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Brain, Frown, Flame, Leaf, MessageCircle, Calendar } from 'lucide-react'
+import { Brain, Frown, Flame, Leaf, MessageCircle, Calendar, ScanSearch, Activity, HeartPulse, Zap, Target, Network, BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Neurosalud Cognitiva y Emocional — CognyVita',
@@ -16,28 +16,46 @@ const clinicalAreas = [
     areaBg: '#EDE5FF',
     items: [
       {
+        icon: Brain,
+        iconGradient: 'linear-gradient(135deg, #8537D8 0%, #a855f7 100%)',
         title: 'Enfermedad de Alzheimer',
         desc: 'Evaluación y manejo de la pérdida progresiva de memoria y autonomía.',
+        tag: 'Memoria · Autonomía',
       },
       {
+        icon: Network,
+        iconGradient: 'linear-gradient(135deg, #7c3aed 0%, #8537D8 100%)',
         title: 'Otras Demencias',
         desc: 'Abordaje de alteraciones cognitivas en demencia vascular, frontotemporal o por cuerpos de Lewy.',
+        tag: 'Vascular · Frontotemporal',
       },
       {
+        icon: ScanSearch,
+        iconGradient: 'linear-gradient(135deg, #9333ea 0%, #c026d3 100%)',
         title: 'Deterioro Cognitivo Leve',
         desc: 'Detección temprana de fallas de memoria que superan lo normal para la edad.',
+        tag: 'Detección temprana',
       },
       {
+        icon: Activity,
+        iconGradient: 'linear-gradient(135deg, #6d28d9 0%, #8537D8 100%)',
         title: 'Enfermedad de Parkinson',
         desc: 'Intervención en el enlentecimiento mental y fallas de planificación asociadas.',
+        tag: 'Planificación · Cognición',
       },
       {
+        icon: HeartPulse,
+        iconGradient: 'linear-gradient(135deg, #F545B4 0%, #8537D8 100%)',
         title: 'Secuelas de ACV',
         desc: 'Rehabilitación cognitiva (habla, atención, memoria) tras un derrame o infarto cerebral.',
+        tag: 'Habla · Atención · Memoria',
       },
       {
+        icon: Zap,
+        iconGradient: 'linear-gradient(135deg, #a855f7 0%, #F545B4 100%)',
         title: 'Epilepsia y Síndromes Epilépticos',
         desc: 'Medición del impacto de las crisis y la medicación sobre el rendimiento mental.',
+        tag: 'Crisis · Medicación',
       },
     ],
   },
@@ -47,16 +65,25 @@ const clinicalAreas = [
     areaBg: '#E5EDFF',
     items: [
       {
+        icon: Target,
+        iconGradient: 'linear-gradient(135deg, #4585FF 0%, #3A75E8 100%)',
         title: 'TDAH en el Adulto',
         desc: 'Diagnóstico y estrategias de organización para la vida laboral y personal.',
+        tag: 'Atención · Organización',
       },
       {
+        icon: Network,
+        iconGradient: 'linear-gradient(135deg, #3A75E8 0%, #4585FF 100%)',
         title: 'Trastorno del Espectro Autista (TEA)',
         desc: 'Perfilado cognitivo enfocado en interacción social, flexibilidad y procesamiento sensorial.',
+        tag: 'Social · Sensorial',
       },
       {
+        icon: BookOpen,
+        iconGradient: 'linear-gradient(135deg, #2563eb 0%, #4585FF 100%)',
         title: 'Discapacidad Intelectual',
         desc: 'Medición del coeficiente intelectual y habilidades adaptativas para determinar apoyos necesarios.',
+        tag: 'CI · Habilidades adaptativas',
       },
     ],
   },
@@ -423,31 +450,49 @@ export default function NeurosaudPage() {
           </p>
         </div>
 
-        {/* Areas grid */}
-        <div className="flex flex-col gap-8">
+        {/* Areas */}
+        <div className="flex flex-col gap-12">
           {clinicalAreas.map((area) => (
-            <div key={area.areaTitle} className="bg-white rounded-2xl overflow-hidden shadow-sm">
-              {/* Area header */}
-              <div className="px-6 md:px-8 py-4 flex items-center gap-3" style={{ background: area.areaBg }}>
-                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: area.areaColor }} />
+            <div key={area.areaTitle}>
+              {/* Area label */}
+              <div className="flex items-center gap-3 mb-6">
+                <span className="w-3 h-3 rounded-full shrink-0" style={{ background: area.areaColor }} />
                 <span className="text-sm md:text-base font-extrabold" style={{ color: area.areaColor }}>
                   {area.areaTitle}
                 </span>
+                <div className="flex-1 h-px" style={{ background: area.areaBg }} />
               </div>
-              {/* Items grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-                {area.items.map((item, i) => (
-                  <div
-                    key={item.title}
-                    className={`flex flex-col gap-2 p-6 md:p-7 ${i >= 3 ? 'md:border-t md:border-gray-100' : ''}`}
-                  >
-                    <div className="flex items-start gap-2.5">
-                      <span className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0" style={{ background: area.areaColor }} />
-                      <h4 className="text-[#162845] text-sm md:text-[15px] font-bold leading-snug">{item.title}</h4>
+              {/* Cards grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {area.items.map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <div
+                      key={item.title}
+                      className="bg-white rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow"
+                    >
+                      {/* Icon */}
+                      <div
+                        className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
+                        style={{ background: item.iconGradient }}
+                      >
+                        <Icon size={20} className="text-white" />
+                      </div>
+                      {/* Text */}
+                      <div className="flex flex-col gap-1.5">
+                        <h4 className="text-[#162845] text-sm md:text-[15px] font-bold leading-snug">{item.title}</h4>
+                        <p className="text-[#737f80] text-xs md:text-[13px] leading-[1.65]">{item.desc}</p>
+                      </div>
+                      {/* Tag */}
+                      <span
+                        className="self-start px-3 py-1 rounded-full text-[11px] font-semibold mt-auto"
+                        style={{ background: area.areaBg, color: area.areaColor }}
+                      >
+                        {item.tag}
+                      </span>
                     </div>
-                    <p className="text-[#737f80] text-xs md:text-[13px] leading-[1.65] pl-4">{item.desc}</p>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           ))}
