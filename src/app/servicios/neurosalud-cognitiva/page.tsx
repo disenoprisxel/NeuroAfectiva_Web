@@ -503,7 +503,6 @@ export default function NeurosaudPage() {
           ))}
         </div>
       </section>
-      </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section
