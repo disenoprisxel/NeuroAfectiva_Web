@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const clinicalAreas = [
   {
-    areaTitle: 'Área Adultos y Envejecimiento',
+    areaTitle: 'Área Adultos',
     areaColor: '#8537D8',
     areaBg: '#EDE5FF',
     items: [
