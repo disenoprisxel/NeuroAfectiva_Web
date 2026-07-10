@@ -9,6 +9,59 @@ export const metadata: Metadata = {
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
+const clinicalAreas = [
+  {
+    areaTitle: 'Área Adultos y Envejecimiento',
+    areaColor: '#8537D8',
+    areaBg: '#EDE5FF',
+    items: [
+      {
+        title: 'Enfermedad de Alzheimer',
+        desc: 'Evaluación y manejo de la pérdida progresiva de memoria y autonomía.',
+      },
+      {
+        title: 'Otras Demencias',
+        desc: 'Abordaje de alteraciones cognitivas en demencia vascular, frontotemporal o por cuerpos de Lewy.',
+      },
+      {
+        title: 'Deterioro Cognitivo Leve',
+        desc: 'Detección temprana de fallas de memoria que superan lo normal para la edad.',
+      },
+      {
+        title: 'Enfermedad de Parkinson',
+        desc: 'Intervención en el enlentecimiento mental y fallas de planificación asociadas.',
+      },
+      {
+        title: 'Secuelas de ACV',
+        desc: 'Rehabilitación cognitiva (habla, atención, memoria) tras un derrame o infarto cerebral.',
+      },
+      {
+        title: 'Epilepsia y Síndromes Epilépticos',
+        desc: 'Medición del impacto de las crisis y la medicación sobre el rendimiento mental.',
+      },
+    ],
+  },
+  {
+    areaTitle: 'Área Neurodesarrollo y Casos Complejos',
+    areaColor: '#4585FF',
+    areaBg: '#E5EDFF',
+    items: [
+      {
+        title: 'TDAH en el Adulto',
+        desc: 'Diagnóstico y estrategias de organización para la vida laboral y personal.',
+      },
+      {
+        title: 'Trastorno del Espectro Autista (TEA)',
+        desc: 'Perfilado cognitivo enfocado en interacción social, flexibilidad y procesamiento sensorial.',
+      },
+      {
+        title: 'Discapacidad Intelectual',
+        desc: 'Medición del coeficiente intelectual y habilidades adaptativas para determinar apoyos necesarios.',
+      },
+    ],
+  },
+]
+
 const audienceCards = [
   {
     icon: Frown,
@@ -352,6 +405,68 @@ export default function NeurosaudPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Servicios de Neuropsicología Clínica ─────────────────────────── */}
+      <section className="w-full bg-[#F6F2FF] px-5 md:px-[120px] py-12 md:py-[80px]">
+        {/* Header */}
+        <div className="flex flex-col gap-3 mb-10 md:mb-14">
+          <span className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase" style={{ color: '#8537D8' }}>
+            04
+          </span>
+          <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#162845] leading-[1.2]">
+            Servicios de Neuropsicología Clínica
+          </h2>
+          <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75] max-w-[700px]">
+            Evaluación, diagnóstico y rehabilitación de alteraciones cognitivas y conductuales derivadas de condiciones neurológicas, médicas o del neurodesarrollo.
+          </p>
+        </div>
+
+        {/* Areas grid */}
+        <div className="flex flex-col gap-8">
+          {clinicalAreas.map((area) => (
+            <div key={area.areaTitle} className="bg-white rounded-2xl overflow-hidden shadow-sm">
+              {/* Area header */}
+              <div className="px-6 md:px-8 py-4 flex items-center gap-3" style={{ background: area.areaBg }}>
+                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: area.areaColor }} />
+                <span className="text-sm md:text-base font-extrabold" style={{ color: area.areaColor }}>
+                  {area.areaTitle}
+                </span>
+              </div>
+              {/* Items grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                {area.items.map((item, i) => (
+                  <div
+                    key={item.title}
+                    className={`flex flex-col gap-2 p-6 md:p-7 ${i >= 3 ? 'md:border-t md:border-gray-100' : ''}`}
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <span className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0" style={{ background: area.areaColor }} />
+                      <h4 className="text-[#162845] text-sm md:text-[15px] font-bold leading-snug">{item.title}</h4>
+                    </div>
+                    <p className="text-[#737f80] text-xs md:text-[13px] leading-[1.65] pl-4">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ¿Cuándo acudir? */}
+        <div
+          className="mt-10 rounded-2xl p-7 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+          style={{ background: 'linear-gradient(135deg, #0E234F 0%, #162845 100%)' }}
+        >
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'rgba(133,55,216,0.35)' }}>
+            <Brain size={24} className="text-white" />
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <span className="text-[#F545B4] text-xs font-extrabold tracking-widest uppercase">¿Cuándo acudir a Neuropsicología Clínica?</span>
+            <p className="text-white/80 text-sm md:text-[15px] leading-[1.7]">
+              Cuando existe sospecha de patología médica, daño cerebral, demencia o trastornos del neurodesarrollo que impactan la funcionalidad global de la persona.
+            </p>
+          </div>
         </div>
       </section>
 
