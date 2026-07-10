@@ -278,169 +278,12 @@ export default function NeurosaudPage() {
         </div>
       </section>
 
-      {/* ── Audiencia ────────────────────────────────────────────────────── */}
-      <section className="w-full bg-[#0E234F] px-5 md:px-[120px] py-12 md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
-        {/* Header */}
-        <div className="flex flex-col items-center gap-3 text-center">
-          <span
-            className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
-            style={{ color: '#4585FF' }}
-          >
-            02
-          </span>
-          <h2 className="text-[26px] md:text-[40px] font-extrabold text-white">¿A quién va dirigido?</h2>
-          <p className="text-white/50 text-sm md:text-base leading-[1.6] max-w-[620px]">
-            Este servicio está pensado para quienes buscan mejorar su salud mental y cognitiva desde la neurociencia.
-          </p>
-        </div>
-
-        {/* 2×2 Grid */}
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full">
-          {audienceCards.map((card, i) => {
-            const Icon = card.icon
-            return (
-              <div
-                key={card.title}
-                data-animate
-                data-delay={String(i + 1)}
-                className="na-card flex flex-col gap-4 p-7 rounded-[20px]"
-                style={{
-                  background: 'rgba(255,255,255,0.051)',
-                  border: '1px solid rgba(255,255,255,0.082)',
-                }}
-              >
-                {/* Icon */}
-                <div
-                  className="w-12 h-12 flex items-center justify-center rounded-xl shrink-0"
-                  style={{ background: card.gradient }}
-                >
-                  <Icon size={24} className="text-white" />
-                </div>
-                <h3 className="text-white text-[18px] font-bold">{card.title}</h3>
-                <p className="text-white/50 text-[14px] leading-[1.6]">{card.desc}</p>
-              </div>
-            )
-          })}
-        </div>
-      </section>
-
-      {/* ── Beneficios ───────────────────────────────────────────────────── */}
-      <section className="w-full bg-white px-5 md:px-[120px] py-12 md:py-[80px]">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
-          <div className="flex flex-col gap-2.5">
-            <span
-              className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
-              style={{ color: '#F545B4' }}
-            >
-              03
-            </span>
-            <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#162845]">¿Qué puedes lograr?</h2>
-          </div>
-          <p className="text-[#737f80] text-sm md:text-lg leading-[1.5] md:text-right max-w-[300px]">
-            Resultados concretos,<br className="hidden md:block" /> medibles y duraderos.
-          </p>
-        </div>
-
-        {/* Benefit rows — desktop: horizontal strips; mobile: cards */}
-        <div className="flex flex-col gap-0.5">
-          {benefitRows.map((row, i) => (
-            <div
-              key={row.num}
-              data-animate
-              data-delay={String(i + 1)}
-              className={`w-full ${row.cornerRadius}`}
-              style={{ background: row.rowBg }}
-            >
-              {/* Desktop layout */}
-              <div className="hidden md:flex items-stretch h-[200px]">
-                {row.imgRight ? (
-                  <>
-                    {/* Num strip left */}
-                    <div
-                      className="w-[100px] flex items-center justify-center shrink-0"
-                      style={{ background: row.numGradient }}
-                    >
-                      <span className="text-[40px] font-extrabold text-white">{row.num}</span>
-                    </div>
-                    {/* Content */}
-                    <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
-                      <h3 className="text-[#162845] text-[22px] font-bold">{row.title}</h3>
-                      <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
-                      <span
-                        className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
-                        style={{ background: row.tagBg, color: row.tagColor }}
-                      >
-                        {row.tag}
-                      </span>
-                    </div>
-                    {/* Image right */}
-                    <div className="w-[280px] shrink-0 overflow-hidden">
-                      <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    {/* Image left */}
-                    <div className="w-[280px] shrink-0 overflow-hidden">
-                      <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
-                    </div>
-                    {/* Content */}
-                    <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
-                      <h3 className="text-[#162845] text-[22px] font-bold">{row.title}</h3>
-                      <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
-                      <span
-                        className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
-                        style={{ background: row.tagBg, color: row.tagColor }}
-                      >
-                        {row.tag}
-                      </span>
-                    </div>
-                    {/* Num strip right */}
-                    <div
-                      className="w-[100px] flex items-center justify-center shrink-0"
-                      style={{ background: row.numGradient }}
-                    >
-                      <span className="text-[40px] font-extrabold text-white">{row.num}</span>
-                    </div>
-                  </>
-                )}
-              </div>
-
-              {/* Mobile layout — card with image on top */}
-              <div className="flex flex-col md:hidden rounded-2xl overflow-hidden">
-                <div className="h-[160px] overflow-hidden">
-                  <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
-                </div>
-                <div className="flex flex-col gap-2 p-5">
-                  {/* Mobile num badge */}
-                  <div
-                    className="w-11 h-11 flex items-center justify-center rounded-[10px] shrink-0"
-                    style={{ background: row.numGradient }}
-                  >
-                    <span className="text-white text-base font-extrabold">{row.num}</span>
-                  </div>
-                  <h3 className="text-[#162845] text-[17px] font-bold mt-1">{row.title}</h3>
-                  <p className="text-[#737f80] text-[13px] leading-[1.6]">{row.desc}</p>
-                  <span
-                    className="self-start px-3.5 py-1 rounded-xl text-[11px] font-semibold"
-                    style={{ background: row.tagBg, color: row.tagColor }}
-                  >
-                    {row.tag}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── Servicios de Neuropsicología Clínica ─────────────────────────── */}
       <section className="w-full bg-[#F6F2FF] px-5 md:px-[120px] py-12 md:py-[80px]">
         {/* Header */}
         <div className="flex flex-col gap-3 mb-10 md:mb-14">
           <span className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase" style={{ color: '#8537D8' }}>
-            04
+            02
           </span>
           <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#162845] leading-[1.2]">
             Servicios de Neuropsicología Clínica
@@ -471,19 +314,16 @@ export default function NeurosaudPage() {
                       key={item.title}
                       className="bg-white rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow"
                     >
-                      {/* Icon */}
                       <div
                         className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
                         style={{ background: item.iconGradient }}
                       >
                         <Icon size={20} className="text-white" />
                       </div>
-                      {/* Text */}
                       <div className="flex flex-col gap-1.5">
                         <h4 className="text-[#162845] text-sm md:text-[15px] font-bold leading-snug">{item.title}</h4>
                         <p className="text-[#737f80] text-xs md:text-[13px] leading-[1.65]">{item.desc}</p>
                       </div>
-                      {/* Tag */}
                       <span
                         className="self-start px-3 py-1 rounded-full text-[11px] font-semibold mt-auto"
                         style={{ background: area.areaBg, color: area.areaColor }}
@@ -513,6 +353,156 @@ export default function NeurosaudPage() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* ── Audiencia ────────────────────────────────────────────────────── */}
+      <section className="w-full bg-[#0E234F] px-5 md:px-[120px] py-12 md:py-[80px] flex flex-col items-center gap-10 md:gap-12">
+        {/* Header */}
+        <div className="flex flex-col items-center gap-3 text-center">
+          <span
+            className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
+            style={{ color: '#4585FF' }}
+          >
+            03
+          </span>
+          <h2 className="text-[26px] md:text-[40px] font-extrabold text-white">¿A quién va dirigido?</h2>
+          <p className="text-white/50 text-sm md:text-base leading-[1.6] max-w-[620px]">
+            Este servicio está pensado para quienes buscan mejorar su salud mental y cognitiva desde la neurociencia.
+          </p>
+        </div>
+
+        {/* 2×2 Grid */}
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full">
+          {audienceCards.map((card, i) => {
+            const Icon = card.icon
+            return (
+              <div
+                key={card.title}
+                data-animate
+                data-delay={String(i + 1)}
+                className="na-card flex flex-col gap-4 p-7 rounded-[20px]"
+                style={{
+                  background: 'rgba(255,255,255,0.051)',
+                  border: '1px solid rgba(255,255,255,0.082)',
+                }}
+              >
+                <div
+                  className="w-12 h-12 flex items-center justify-center rounded-xl shrink-0"
+                  style={{ background: card.gradient }}
+                >
+                  <Icon size={24} className="text-white" />
+                </div>
+                <h3 className="text-white text-[18px] font-bold">{card.title}</h3>
+                <p className="text-white/50 text-[14px] leading-[1.6]">{card.desc}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* ── Beneficios ───────────────────────────────────────────────────── */}
+      <section className="w-full bg-white px-5 md:px-[120px] py-12 md:py-[80px]">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+          <div className="flex flex-col gap-2.5">
+            <span
+              className="text-[12px] md:text-[13px] font-extrabold tracking-[3px] uppercase"
+              style={{ color: '#F545B4' }}
+            >
+              04
+            </span>
+            <h2 className="text-[26px] md:text-[40px] font-extrabold text-[#162845]">¿Qué puedes lograr?</h2>
+          </div>
+          <p className="text-[#737f80] text-sm md:text-lg leading-[1.5] md:text-right max-w-[300px]">
+            Resultados concretos,<br className="hidden md:block" /> medibles y duraderos.
+          </p>
+        </div>
+
+        {/* Benefit rows — desktop: horizontal strips; mobile: cards */}
+        <div className="flex flex-col gap-0.5">
+          {benefitRows.map((row, i) => (
+            <div
+              key={row.num}
+              data-animate
+              data-delay={String(i + 1)}
+              className={`w-full ${row.cornerRadius}`}
+              style={{ background: row.rowBg }}
+            >
+              {/* Desktop layout */}
+              <div className="hidden md:flex items-stretch h-[200px]">
+                {row.imgRight ? (
+                  <>
+                    <div
+                      className="w-[100px] flex items-center justify-center shrink-0"
+                      style={{ background: row.numGradient }}
+                    >
+                      <span className="text-[40px] font-extrabold text-white">{row.num}</span>
+                    </div>
+                    <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
+                      <h3 className="text-[#162845] text-[22px] font-bold">{row.title}</h3>
+                      <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
+                      <span
+                        className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
+                        style={{ background: row.tagBg, color: row.tagColor }}
+                      >
+                        {row.tag}
+                      </span>
+                    </div>
+                    <div className="w-[280px] shrink-0 overflow-hidden">
+                      <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-[280px] shrink-0 overflow-hidden">
+                      <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex flex-col justify-center gap-2.5 flex-1 px-10">
+                      <h3 className="text-[#162845] text-[22px] font-bold">{row.title}</h3>
+                      <p className="text-[#737f80] text-[15px] leading-[1.6]">{row.desc}</p>
+                      <span
+                        className="self-start px-3.5 py-1 rounded-xl text-xs font-semibold"
+                        style={{ background: row.tagBg, color: row.tagColor }}
+                      >
+                        {row.tag}
+                      </span>
+                    </div>
+                    <div
+                      className="w-[100px] flex items-center justify-center shrink-0"
+                      style={{ background: row.numGradient }}
+                    >
+                      <span className="text-[40px] font-extrabold text-white">{row.num}</span>
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* Mobile layout */}
+              <div className="flex flex-col md:hidden rounded-2xl overflow-hidden">
+                <div className="h-[160px] overflow-hidden">
+                  <img src={row.imgUrl} alt={row.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="flex flex-col gap-2 p-5">
+                  <div
+                    className="w-11 h-11 flex items-center justify-center rounded-[10px] shrink-0"
+                    style={{ background: row.numGradient }}
+                  >
+                    <span className="text-white text-base font-extrabold">{row.num}</span>
+                  </div>
+                  <h3 className="text-[#162845] text-[17px] font-bold mt-1">{row.title}</h3>
+                  <p className="text-[#737f80] text-[13px] leading-[1.6]">{row.desc}</p>
+                  <span
+                    className="self-start px-3.5 py-1 rounded-xl text-[11px] font-semibold"
+                    style={{ background: row.tagBg, color: row.tagColor }}
+                  >
+                    {row.tag}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
