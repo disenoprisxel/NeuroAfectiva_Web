@@ -59,8 +59,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Tipo de formulario inválido' }, { status: 400 })
     }
 
+    const fromAddress = process.env.RESEND_FROM_EMAIL ?? 'onboarding@resend.dev'
+
     const { error } = await resend.emails.send({
-      from: 'CognyVita Web <onboarding@resend.dev>',
+      from: `CognyVita Web <${fromAddress}>`,
       to: 'cognyvita@gmail.com',
       replyTo: data.email,
       subject,
