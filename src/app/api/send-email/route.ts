@@ -1,15 +1,7 @@
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
   try {
@@ -67,13 +59,18 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Tipo de formulario inválido' }, { status: 400 })
     }
 
-    await transporter.sendMail({
-      from: `"CognyVita Web" <${process.env.GMAIL_USER}>`,
+    const { error } = await resend.emails.send({
+      from: 'CognyVita Web <onboarding@resend.dev>',
       to: 'cognyvita@gmail.com',
       replyTo: data.email,
       subject,
       html,
     })
+
+    if (error) {
+      console.error('Resend error:', error)
+      return NextResponse.json({ error: error.message }, { status: 500 })
+    }
 
     return NextResponse.json({ ok: true })
   } catch (err: unknown) {
