@@ -95,7 +95,7 @@ const especialidades = [
   {
     badge: 'Interdisciplinario',
     badgeColor: 'bg-[#FFF0F9] text-[#F545B4]',
-    img: '/images/serv-organizacional.jpg',
+    img: '/images/serv-terapia-integral.jpg',
     title: 'Terapia Integral e Interdisciplinaria',
     desc: 'Un equipo coordinado de especialistas para perfiles complejos: neuropsicología, fonoaudiología, terapia ocupacional y psicología trabajando juntos.',
     href: '/servicios/terapia-integral',

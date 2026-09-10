@@ -12,6 +12,9 @@ const serviciosOptions = [
   'Línea de Psicología Clínica',
   'ExpresaMente Creativa',
   'Capacitación y Talleres',
+  'Fonoaudiología',
+  'Terapia Ocupacional',
+  'Terapia Integral e Interdisciplinaria',
   'Otro / No sé aún',
 ]
 

@@ -48,7 +48,7 @@ export default function TerapiaIntegralPage() {
       <section className="w-full relative flex items-center justify-center" style={{ height: '580px' }}>
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/hero-terapia-integral.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
