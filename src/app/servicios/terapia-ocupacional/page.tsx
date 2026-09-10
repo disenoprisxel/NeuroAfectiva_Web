@@ -48,7 +48,7 @@ export default function TerapiaOcupacionalPage() {
       <section className="w-full relative flex items-center justify-center" style={{ height: '580px' }}>
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/hero-terapia-ocupacional.jpg"
             alt=""
             className="w-full h-full object-cover"
           />

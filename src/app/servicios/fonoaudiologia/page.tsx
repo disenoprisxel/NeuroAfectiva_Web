@@ -48,7 +48,7 @@ export default function FonoaudiologiaPage() {
       <section className="w-full relative flex items-center justify-center" style={{ height: '580px' }}>
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1588776814546-1ffbb3e950c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/hero-fonoaudiologia.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
