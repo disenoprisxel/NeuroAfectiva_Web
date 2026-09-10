@@ -7,20 +7,8 @@ import {
 
 export const metadata: Metadata = {
   title: 'Terapia Ocupacional — CognyVita',
-  description: 'Intervención terapéutica para mejorar la autonomía, las habilidades funcionales y la participación en las actividades de la vida diaria.',
+  description: 'Servicios de Terapia Ocupacional para favorecer la participación, autonomía y desempeño en el hogar, colegio, trabajo y comunidad.',
 }
-
-const specialties = [
-  { icon: Baby, color: '#4585FF', borderColor: '#4585FF30', label: 'Integración sensorial' },
-  { icon: Puzzle, color: '#8537D8', borderColor: '#8537D830', label: 'Habilidades de autonomía' },
-  { icon: Hand, color: '#F545B4', borderColor: '#F545B430', label: 'Motricidad fina' },
-  { icon: Brain, color: '#4585FF', borderColor: '#4585FF30', label: 'Funciones ejecutivas' },
-  { icon: Activity, color: '#8537D8', borderColor: '#8537D830', label: 'Coordinación y praxis' },
-  { icon: Users, color: '#F545B4', borderColor: '#F545B430', label: 'Habilidades sociales' },
-  { icon: Puzzle, color: '#4585FF', borderColor: '#4585FF30', label: 'TDAH — intervención funcional' },
-  { icon: Baby, color: '#8537D8', borderColor: '#8537D830', label: 'TEA — actividades cotidianas' },
-  { icon: Hand, color: '#F545B4', borderColor: '#F545B430', label: 'Secuelas neurológicas' },
-]
 
 const processSteps = [
   {
@@ -147,13 +135,13 @@ export default function TerapiaOcupacionalPage() {
               Sobre este servicio
             </span>
             <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845] leading-[1.2]">
-              ¿Qué es la<br className="hidden md:block" />Terapia Ocupacional?
+              Terapia Ocupacional
             </h2>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              La Terapia Ocupacional es una disciplina de la salud que promueve la participación significativa de las personas en las actividades que dan sentido a su vida: autocuidado, juego, escuela, trabajo y ocio.
+              En CognyVita ofrecemos servicios de Terapia Ocupacional enfocados en favorecer la participación, autonomía y desempeño de la persona en sus diferentes contextos: hogar, colegio, trabajo y comunidad.
             </p>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              En CognyVita trabajamos con un enfoque integral que incluye integración sensorial, entrenamiento en habilidades funcionales y adaptación del entorno, favoreciendo la autonomía en niños, adolescentes y adultos con diversas condiciones del neurodesarrollo o secuelas neurológicas.
+              La intervención parte de las necesidades y características individuales, fortaleciendo habilidades que permitan desenvolverse de manera más funcional y satisfactoria en las actividades de la vida cotidiana.
             </p>
 
             <div className="flex gap-4 md:gap-6 mt-2">
@@ -178,43 +166,39 @@ export default function TerapiaOcupacionalPage() {
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#E5EDFF' }}>
         <div className="flex flex-col items-center gap-3 text-center">
           <span className="text-[#4585FF] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Áreas de atención</span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Condiciones que tratamos</h2>
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Áreas de atención</h2>
           <p className="text-[#737f80] text-sm md:text-base leading-[1.6] max-w-[640px]">
-            Intervenimos en condiciones que afectan la funcionalidad y la participación en la vida cotidiana.
+            Fortalecemos las habilidades que permiten a cada persona participar plenamente en su vida cotidiana.
           </p>
         </div>
 
-        <div className="flex flex-col gap-3 w-full">
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(0, 5).map((s) => {
-              const Icon = s.icon
-              return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
+          {[
+            { icon: Activity, color: '#4585FF', bg: '#E5EDFF', label: 'Habilidades motoras y coordinación' },
+            { icon: Hand, color: '#8537D8', bg: '#EDE5FF', label: 'Motricidad fina y grafomotricidad' },
+            { icon: Puzzle, color: '#F545B4', bg: '#FFF0F9', label: 'Procesamiento e integración sensorial' },
+            { icon: Brain, color: '#4585FF', bg: '#E5EDFF', label: 'Habilidades necesarias para el desempeño escolar' },
+            { icon: Baby, color: '#8537D8', bg: '#EDE5FF', label: 'Actividades de la vida diaria y autonomía (vestirse, alimentarse, organizarse)' },
+            { icon: Users, color: '#F545B4', bg: '#FFF0F9', label: 'Organización, planificación y desempeño ocupacional' },
+            { icon: Puzzle, color: '#4585FF', bg: '#E5EDFF', label: 'Participación en los diferentes contextos de la vida cotidiana' },
+          ].map((s) => {
+            const Icon = s.icon
+            return (
+              <div
+                key={s.label}
+                className="flex items-start gap-4 p-5 rounded-2xl bg-white shadow-sm"
+                style={{ border: `1.5px solid ${s.color}20` }}
+              >
                 <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}`, boxShadow: `0 2px 8px ${s.color}10` }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                  style={{ background: s.bg }}
                 >
                   <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
                 </div>
-              )
-            })}
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(5).map((s) => {
-              const Icon = s.icon
-              return (
-                <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}` }}
-                >
-                  <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
-                </div>
-              )
-            })}
-          </div>
+                <span className="text-[#162845] text-sm font-semibold leading-snug pt-1">{s.label}</span>
+              </div>
+            )
+          })}
         </div>
       </section>
 
