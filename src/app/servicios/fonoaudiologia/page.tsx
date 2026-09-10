@@ -135,7 +135,7 @@ export default function FonoaudiologiaPage() {
               Sobre este servicio
             </span>
             <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845] leading-[1.2]">
-              ¿Qué es la<br className="hidden md:block" />Fonoaudiología?
+              Fonoaudiología
             </h2>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
               En CognyVita ofrecemos servicios de Fonoaudiología orientados a la prevención, evaluación e intervención de dificultades relacionadas con la comunicación, el lenguaje, el habla, la voz, la audición y las funciones orofaciales.
