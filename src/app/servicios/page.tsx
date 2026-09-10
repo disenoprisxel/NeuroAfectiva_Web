@@ -14,6 +14,9 @@ const categorias = [
   'Psicología Clínica',
   'ExpresaMente',
   'Capacitación y Talleres',
+  'Fonoaudiología',
+  'Terapia Ocupacional',
+  'Terapia Integral',
 ]
 
 const especialidades = [
@@ -71,6 +74,33 @@ const especialidades = [
     href: '/servicios/capacitacion',
     linkColor: 'text-[#F545B4]',
   },
+  {
+    badge: 'Fonoaudiología',
+    badgeColor: 'bg-[#EDE5FF] text-[#8537D8]',
+    img: '/images/serv-neurosalud.jpg',
+    title: 'Fonoaudiología',
+    desc: 'Evaluación e intervención en lenguaje, habla, voz, fluencia y comunicación en niños, adolescentes y adultos.',
+    href: '/servicios/fonoaudiologia',
+    linkColor: 'text-[#8537D8]',
+  },
+  {
+    badge: 'Terapia Ocupacional',
+    badgeColor: 'bg-[#E5EDFF] text-[#4585FF]',
+    img: '/images/serv-neurohabilidades.jpg',
+    title: 'Terapia Ocupacional',
+    desc: 'Mejoramos la autonomía, la integración sensorial y la participación en las actividades de la vida diaria.',
+    href: '/servicios/terapia-ocupacional',
+    linkColor: 'text-[#4585FF]',
+  },
+  {
+    badge: 'Interdisciplinario',
+    badgeColor: 'bg-[#FFF0F9] text-[#F545B4]',
+    img: '/images/serv-organizacional.jpg',
+    title: 'Terapia Integral e Interdisciplinaria',
+    desc: 'Un equipo coordinado de especialistas para perfiles complejos: neuropsicología, fonoaudiología, terapia ocupacional y psicología trabajando juntos.',
+    href: '/servicios/terapia-integral',
+    linkColor: 'text-[#F545B4]',
+  },
 ]
 
 const stats = [
@@ -85,21 +115,21 @@ function HeroServicios() {
   return (
     <section className="bg-white py-16 lg:py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-flex items-center gap-2 bg-[#FFF0F9] text-[#F545B4] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+        <span data-animate="up" className="inline-flex items-center gap-2 bg-[#FFF0F9] text-[#F545B4] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z" />
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           NUESTROS SERVICIOS
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5">
+        <h1 data-animate="up" data-delay="1" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5">
           Un servicio para<br className="hidden sm:block" /> cada necesidad
         </h1>
-        <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+        <p data-animate="up" data-delay="2" className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
           Desde la evaluación hasta la intervención, nuestro equipo multidisciplinar te acompaña en cada etapa del camino.
         </p>
         {/* Category pills */}
-        <div className="flex flex-wrap justify-center gap-2">
+        <div data-animate="up" data-delay="3" className="flex flex-wrap justify-center gap-2">
           {categorias.map((c) => (
             <span
               key={c}
@@ -119,22 +149,24 @@ function EspecialidadesSection() {
   return (
     <section className="bg-[#F6F2FF] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div data-animate="up" className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Nuestras especialidades</h2>
           <p className="mt-3 text-gray-500 text-sm">Servicios diseñados para cada etapa del desarrollo cognitivo y emocional.</p>
         </div>
 
-        {/* First row — 3 cards with image */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          {especialidades.slice(0, 3).map((s) => (
-            <ServiceCard key={s.title} service={s} />
+          {especialidades.slice(0, 3).map((s, i) => (
+            <ServiceCard key={s.title} service={s} delay={i + 1} />
           ))}
         </div>
-
-        {/* Second row — 3 cards with image */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          {especialidades.slice(3, 6).map((s, i) => (
+            <ServiceCard key={s.title} service={s} delay={i + 1} />
+          ))}
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {especialidades.slice(3).map((s) => (
-            <ServiceCard key={s.title} service={s} />
+          {especialidades.slice(6).map((s, i) => (
+            <ServiceCard key={s.title} service={s} delay={i + 1} />
           ))}
         </div>
       </div>
@@ -142,9 +174,9 @@ function EspecialidadesSection() {
   )
 }
 
-function ServiceCard({ service }: { service: typeof especialidades[0] }) {
+function ServiceCard({ service, delay }: { service: typeof especialidades[0]; delay?: number }) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+    <div data-animate="up" data-delay={delay} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
       {/* Image */}
       <div className="aspect-[16/9] bg-[#EDE5FF] overflow-hidden">
         <img
@@ -181,7 +213,7 @@ function StatsBar() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
           {stats.map((s, i) => (
-            <div key={s.value} className={`${i < stats.length - 1 ? 'lg:border-r lg:border-white/20' : ''} px-4`}>
+            <div data-animate="up" data-delay={i + 1} key={s.value} className={`${i < stats.length - 1 ? 'lg:border-r lg:border-white/20' : ''} px-4`}>
               <div className="text-3xl sm:text-4xl font-extrabold mb-1">{s.value}</div>
               <div className="text-xs text-white/80">{s.label}</div>
             </div>
@@ -200,11 +232,11 @@ function CTAServicios() {
       style={{ background: 'linear-gradient(135deg, #8537D8 0%, #9040DC 50%, #F545B4 100%)' }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">¿No sabes por dónde empezar?</h2>
-        <p className="text-white/80 text-base mb-8 max-w-xl mx-auto">
+        <h2 data-animate="up" className="text-3xl sm:text-4xl font-extrabold mb-4">¿No sabes por dónde empezar?</h2>
+        <p data-animate="up" data-delay="1" className="text-white/80 text-base mb-8 max-w-xl mx-auto">
           Cuéntanos tu situación y te orientamos hacia el servicio que mejor se adapta a tus necesidades.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div data-animate="up" data-delay="2" className="flex flex-wrap justify-center gap-4">
           <Link
             href="/agendar"
             className="bg-white text-[#8537D8] hover:bg-gray-50 font-bold px-8 py-3 rounded-full transition-colors shadow-lg text-sm flex items-center gap-2"
