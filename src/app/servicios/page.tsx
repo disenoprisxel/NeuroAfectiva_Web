@@ -77,7 +77,7 @@ const especialidades = [
   {
     badge: 'Fonoaudiología',
     badgeColor: 'bg-[#EDE5FF] text-[#8537D8]',
-    img: '/images/serv-neurosalud.jpg',
+    img: '/images/serv-fonoaudiologia.jpg',
     title: 'Fonoaudiología',
     desc: 'Evaluación e intervención en lenguaje, habla, voz, fluencia y comunicación en niños, adolescentes y adultos.',
     href: '/servicios/fonoaudiologia',
@@ -86,7 +86,7 @@ const especialidades = [
   {
     badge: 'Terapia Ocupacional',
     badgeColor: 'bg-[#E5EDFF] text-[#4585FF]',
-    img: '/images/serv-neurohabilidades.jpg',
+    img: '/images/serv-terapia-ocupacional.jpg',
     title: 'Terapia Ocupacional',
     desc: 'Mejoramos la autonomía, la integración sensorial y la participación en las actividades de la vida diaria.',
     href: '/servicios/terapia-ocupacional',
