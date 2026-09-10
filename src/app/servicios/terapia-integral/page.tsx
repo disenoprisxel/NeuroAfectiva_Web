@@ -7,20 +7,8 @@ import {
 
 export const metadata: Metadata = {
   title: 'Terapia Integral e Interdisciplinaria — CognyVita',
-  description: 'Modelo de atención integral donde neuropsicología, fonoaudiología, terapia ocupacional y psicología trabajan de forma coordinada para resultados más completos.',
+  description: 'Proceso interdisciplinario donde neuropsicología, fonoaudiología y terapia ocupacional trabajan de forma articulada con objetivos compartidos centrados en la persona.',
 }
-
-const specialties = [
-  { icon: Brain, color: '#8537D8', borderColor: '#8537D830', label: 'Neurodesarrollo complejo' },
-  { icon: Puzzle, color: '#4585FF', borderColor: '#4585FF30', label: 'TEA con perfil mixto' },
-  { icon: Activity, color: '#F545B4', borderColor: '#F545B430', label: 'TDAH severo' },
-  { icon: Network, color: '#8537D8', borderColor: '#8537D830', label: 'Discapacidad intelectual' },
-  { icon: Heart, color: '#4585FF', borderColor: '#4585FF30', label: 'Síndromes genéticos' },
-  { icon: Users, color: '#F545B4', borderColor: '#F545B430', label: 'Parálisis cerebral' },
-  { icon: Brain, color: '#8537D8', borderColor: '#8537D830', label: 'Secuelas neurológicas múltiples' },
-  { icon: Puzzle, color: '#4585FF', borderColor: '#4585FF30', label: 'Dificultades de aprendizaje complejas' },
-  { icon: Activity, color: '#F545B4', borderColor: '#F545B430', label: 'Trastornos del desarrollo global' },
-]
 
 const processSteps = [
   {
@@ -144,26 +132,29 @@ export default function TerapiaIntegralPage() {
 
           <div className="flex flex-col gap-6 flex-1 min-w-0">
             <span className="px-4 py-1.5 self-start rounded-full text-[13px] font-semibold text-[#F545B4]" style={{ background: '#FFF0F9' }}>
-              Sobre este servicio
+              ¿Necesitas un acompañamiento más completo?
             </span>
             <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845] leading-[1.2]">
-              ¿Qué es la Terapia<br className="hidden md:block" />Integral e Interdisciplinaria?
+              Terapia Integral e Interdisciplinaria
             </h2>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              Es un modelo de atención donde múltiples profesionales de la salud — neuropsicólogos, fonoaudiólogos, terapeutas ocupacionales y psicólogos — trabajan de forma coordinada y con objetivos compartidos para abordar perfiles de alta complejidad.
+              En CognyVita entendemos que algunas dificultades pueden involucrar diferentes áreas del desarrollo y requerir una mirada más amplia. Por ello, ofrecemos procesos de terapia integral, en los que diferentes profesionales trabajan de manera articulada de acuerdo con las necesidades identificadas.
             </p>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              A diferencia de los tratamientos paralelos e independientes, nuestra propuesta interdisciplinaria garantiza coherencia en la intervención, comunicación constante entre especialistas y un plan unificado centrado en la persona y su familia.
+              La terapia integral puede estar conectada con Neuropsicología/Psicología, Fonoaudiología y Terapia Ocupacional, estableciendo objetivos compartidos y estrategias complementarias para favorecer el desarrollo y el funcionamiento de la persona.
+            </p>
+            <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
+              La conformación del equipo interdisciplinario se determina de acuerdo con la valoración inicial y los objetivos de intervención. No todas las personas requieren la participación de todas las áreas.
             </p>
 
             <div className="flex gap-4 md:gap-6 mt-2">
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#FFF0F9' }}>
-                <span className="text-[22px] font-extrabold" style={{ color: '#F545B4' }}>4+</span>
+                <span className="text-[22px] font-extrabold" style={{ color: '#F545B4' }}>3+</span>
                 <span className="text-[#737f80] text-xs">disciplinas</span>
               </div>
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#EDE5FF' }}>
                 <span className="text-[22px] font-extrabold" style={{ color: '#8537D8' }}>Plan</span>
-                <span className="text-[#737f80] text-xs">unificado</span>
+                <span className="text-[#737f80] text-xs">compartido</span>
               </div>
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#E5EDFF' }}>
                 <span className="text-[22px] font-extrabold" style={{ color: '#4585FF' }}>0–65+</span>
@@ -174,47 +165,45 @@ export default function TerapiaIntegralPage() {
         </div>
       </section>
 
-      {/* ── Áreas de atención ────────────────────────────────────────────── */}
+      {/* ── Qué trabajamos ───────────────────────────────────────────────── */}
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#FFF0F9' }}>
-        <div className="flex flex-col items-center gap-3 text-center">
-          <span className="text-[#F545B4] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Perfiles que atendemos</span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Condiciones que tratamos</h2>
-          <p className="text-[#737f80] text-sm md:text-base leading-[1.6] max-w-[640px]">
-            Casos de alta complejidad que se benefician de un abordaje multidisciplinar coordinado.
+        <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
+          <span className="text-[#F545B4] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Abordaje coordinado</span>
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Un acompañamiento integral, centrado en cada persona</h2>
+          <p className="text-[#737f80] text-sm md:text-base leading-[1.7] max-w-[720px]">
+            Este abordaje permite trabajar de manera coordinada aspectos relacionados con el aprendizaje, la comunicación, las funciones cognitivas, la regulación emocional, las habilidades motoras, el procesamiento sensorial y la autonomía, según las necesidades particulares de cada caso.
+          </p>
+          <p className="text-[#737f80] text-sm md:text-base leading-[1.7] max-w-[720px]">
+            Nuestro propósito es brindar un proceso individualizado, en el que las diferentes disciplinas puedan complementarse para acompañar de manera coherente las necesidades de cada persona y su familia.
           </p>
         </div>
 
-        <div className="flex flex-col gap-3 w-full">
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(0, 5).map((s) => {
-              const Icon = s.icon
-              return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
+          {[
+            { icon: Brain, color: '#8537D8', bg: '#EDE5FF', label: 'Neuropsicología y Psicología' },
+            { icon: Network, color: '#F545B4', bg: '#FFF0F9', label: 'Fonoaudiología' },
+            { icon: Activity, color: '#4585FF', bg: '#E5EDFF', label: 'Terapia Ocupacional' },
+            { icon: Puzzle, color: '#8537D8', bg: '#EDE5FF', label: 'Aprendizaje y funciones cognitivas' },
+            { icon: Heart, color: '#F545B4', bg: '#FFF0F9', label: 'Regulación emocional y comunicación' },
+            { icon: Users, color: '#4585FF', bg: '#E5EDFF', label: 'Habilidades motoras, sensoriales y autonomía' },
+          ].map((s) => {
+            const Icon = s.icon
+            return (
+              <div
+                key={s.label}
+                className="flex items-start gap-4 p-5 rounded-2xl bg-white shadow-sm"
+                style={{ border: `1.5px solid ${s.color}20` }}
+              >
                 <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}`, boxShadow: `0 2px 8px ${s.color}10` }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                  style={{ background: s.bg }}
                 >
                   <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
                 </div>
-              )
-            })}
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(5).map((s) => {
-              const Icon = s.icon
-              return (
-                <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}` }}
-                >
-                  <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
-                </div>
-              )
-            })}
-          </div>
+                <span className="text-[#162845] text-sm font-semibold leading-snug pt-1">{s.label}</span>
+              </div>
+            )
+          })}
         </div>
       </section>
 
