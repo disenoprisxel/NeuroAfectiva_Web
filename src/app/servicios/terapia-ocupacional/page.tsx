@@ -146,7 +146,7 @@ export default function TerapiaOcupacionalPage() {
 
             <div className="flex gap-4 md:gap-6 mt-2">
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#E5EDFF' }}>
-                <span className="text-[22px] font-extrabold" style={{ color: '#4585FF' }}>45 min</span>
+                <span className="text-[22px] font-extrabold" style={{ color: '#4585FF' }}>50 min</span>
                 <span className="text-[#737f80] text-xs">por sesión</span>
               </div>
               <div className="flex flex-col items-start gap-1 rounded-2xl px-5 md:px-6 py-5 flex-1" style={{ background: '#EDE5FF' }}>
