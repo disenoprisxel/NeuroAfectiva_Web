@@ -7,20 +7,8 @@ import {
 
 export const metadata: Metadata = {
   title: 'Fonoaudiología — CognyVita',
-  description: 'Evaluación e intervención fonoaudiológica en lenguaje, habla, voz, deglución y comunicación en niños, adolescentes y adultos.',
+  description: 'Prevención, evaluación e intervención de dificultades en comunicación, lenguaje, habla, voz, audición y funciones orofaciales en niños, adolescentes y adultos.',
 }
-
-const specialties = [
-  { icon: BookOpen, color: '#8537D8', borderColor: '#8537D830', label: 'Retraso del lenguaje' },
-  { icon: Mic, color: '#F545B4', borderColor: '#F545B430', label: 'Trastornos del habla' },
-  { icon: Volume2, color: '#4585FF', borderColor: '#4585FF30', label: 'Alteraciones de voz' },
-  { icon: Baby, color: '#8537D8', borderColor: '#8537D830', label: 'Comunicación en TEA' },
-  { icon: Brain, color: '#F545B4', borderColor: '#F545B430', label: 'Afasia y disfasia' },
-  { icon: Users, color: '#4585FF', borderColor: '#4585FF30', label: 'Habilidades sociales verbales' },
-  { icon: BookOpen, color: '#8537D8', borderColor: '#8537D830', label: 'Dislexia y lectoescritura' },
-  { icon: Mic, color: '#F545B4', borderColor: '#F545B430', label: 'Tartamudez y fluidez' },
-  { icon: Volume2, color: '#4585FF', borderColor: '#4585FF30', label: 'Deglución atípica' },
-]
 
 const processSteps = [
   {
@@ -150,10 +138,13 @@ export default function FonoaudiologiaPage() {
               ¿Qué es la<br className="hidden md:block" />Fonoaudiología?
             </h2>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              La fonoaudiología es la disciplina que evalúa, diagnostica e interviene en los trastornos relacionados con la comunicación humana: lenguaje oral y escrito, habla, voz, fluencia y deglución.
+              En CognyVita ofrecemos servicios de Fonoaudiología orientados a la prevención, evaluación e intervención de dificultades relacionadas con la comunicación, el lenguaje, el habla, la voz, la audición y las funciones orofaciales.
             </p>
             <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
-              En CognyVita trabajamos con niños, adolescentes y adultos, abordando desde retrasos del lenguaje y trastornos del habla hasta secuelas comunicativas de condiciones neurológicas, con un enfoque funcional y centrado en la persona.
+              Nuestro acompañamiento busca favorecer el desarrollo de habilidades comunicativas y funcionales en niños, adolescentes y adultos, de acuerdo con las necesidades particulares de cada persona.
+            </p>
+            <p className="text-[#737f80] text-sm md:text-[15px] leading-[1.75]">
+              La intervención en fonoaudiología puede realizarse de manera independiente o integrarse con otras áreas profesionales cuando se requiere un abordaje más amplio.
             </p>
 
             <div className="flex gap-4 md:gap-6 mt-2">
@@ -178,43 +169,39 @@ export default function FonoaudiologiaPage() {
       <section className="w-full px-5 md:px-[120px] py-[80px] flex flex-col items-center gap-12" style={{ background: '#EDE5FF' }}>
         <div className="flex flex-col items-center gap-3 text-center">
           <span className="text-[#8537D8] text-[11px] md:text-xs font-extrabold tracking-[3px] uppercase">Áreas de atención</span>
-          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Condiciones que tratamos</h2>
+          <h2 className="text-[24px] md:text-[38px] font-extrabold text-[#162845]">Áreas de atención</h2>
           <p className="text-[#737f80] text-sm md:text-base leading-[1.6] max-w-[640px]">
-            Abordamos un amplio espectro de condiciones comunicativas con enfoque funcional y basado en evidencia.
+            Abordamos las principales dimensiones de la comunicación humana con un enfoque integral y centrado en la persona.
           </p>
         </div>
 
-        <div className="flex flex-col gap-3 w-full">
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(0, 5).map((s) => {
-              const Icon = s.icon
-              return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
+          {[
+            { icon: BookOpen, color: '#8537D8', bg: '#EDE5FF', label: 'Desarrollo y dificultades del lenguaje' },
+            { icon: Mic, color: '#F545B4', bg: '#FFF0F9', label: 'Habla y articulación' },
+            { icon: Users, color: '#4585FF', bg: '#E5EDFF', label: 'Comunicación y habilidades comunicativas' },
+            { icon: Volume2, color: '#8537D8', bg: '#EDE5FF', label: 'Voz' },
+            { icon: Brain, color: '#F545B4', bg: '#FFF0F9', label: 'Audición' },
+            { icon: Baby, color: '#4585FF', bg: '#E5EDFF', label: 'Funciones orofaciales' },
+            { icon: BookOpen, color: '#8537D8', bg: '#EDE5FF', label: 'Acompañamiento en dificultades que pueden impactar el aprendizaje y la comunicación' },
+          ].map((s) => {
+            const Icon = s.icon
+            return (
+              <div
+                key={s.label}
+                className="flex items-start gap-4 p-5 rounded-2xl bg-white shadow-sm"
+                style={{ border: `1.5px solid ${s.color}20` }}
+              >
                 <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}`, boxShadow: `0 2px 8px ${s.color}10` }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                  style={{ background: s.bg }}
                 >
                   <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
                 </div>
-              )
-            })}
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {specialties.slice(5).map((s) => {
-              const Icon = s.icon
-              return (
-                <div
-                  key={s.label}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white"
-                  style={{ border: `1.5px solid ${s.borderColor}` }}
-                >
-                  <Icon size={18} style={{ color: s.color }} />
-                  <span className="text-[#162845] text-sm font-semibold">{s.label}</span>
-                </div>
-              )
-            })}
-          </div>
+                <span className="text-[#162845] text-sm font-semibold leading-snug pt-1">{s.label}</span>
+              </div>
+            )
+          })}
         </div>
       </section>
 
