@@ -110,7 +110,7 @@ export default function TerapiaOcupacionalPage() {
         <div className="flex flex-col md:flex-row items-center gap-16 md:gap-20 w-full">
           <div className="relative w-full md:w-[520px] h-[360px] md:h-[520px] shrink-0 rounded-[24px] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+              src="/images/serv-to-detail.jpg"
               alt="Terapia Ocupacional"
               className="w-full h-full object-cover"
             />
