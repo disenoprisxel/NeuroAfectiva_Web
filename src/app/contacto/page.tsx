@@ -27,7 +27,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Dirección',
-    value: 'Estamos preparando nuestro espacio físico. Por ahora atendemos de manera 100% virtual con la misma calidad y calidez.',
+    value: 'Barrio Galerías - Bogotá',
     color: 'text-[#8537D8] bg-[#EDE5FF]',
   },
   {

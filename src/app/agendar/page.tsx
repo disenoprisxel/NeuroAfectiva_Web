@@ -44,7 +44,7 @@ const contactInfo = [
     icon: MapPin,
     iconColor: '#8537D8', iconBg: '#EAE2FF',
     label: 'Ubicación',
-    value: 'Estamos preparando nuestro espacio físico. Por ahora atendemos de manera 100% virtual con la misma calidad y calidez.',
+    value: 'Barrio Galerías - Bogotá',
   },
   {
     icon: Phone,

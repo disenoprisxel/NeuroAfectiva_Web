@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Estamos preparando nuestro espacio físico. Por ahora atendemos de manera <strong className="text-[#F545B4]">100% virtual</strong> con la misma calidad y calidez.</span>
+                <span>Barrio Galerías - Bogotá</span>
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
