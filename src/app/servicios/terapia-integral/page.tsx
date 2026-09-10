@@ -110,7 +110,7 @@ export default function TerapiaIntegralPage() {
         <div className="flex flex-col md:flex-row items-center gap-16 md:gap-20 w-full">
           <div className="relative w-full md:w-[520px] h-[360px] md:h-[520px] shrink-0 rounded-[24px] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+              src="/images/detail-terapia-integral.jpg"
               alt="Terapia Integral e Interdisciplinaria"
               className="w-full h-full object-cover"
             />
