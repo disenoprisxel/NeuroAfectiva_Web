@@ -27,7 +27,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Dirección',
-    value: 'Barrio Galerías - Bogotá',
+    value: 'Calle 58 # 19 - 12, Oficina 201 - 4, Edificio Campín - Barrio San Luis, Bogotá',
     color: 'text-[#8537D8] bg-[#EDE5FF]',
   },
   {

@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Barrio Galerías - Bogotá</span>
+                <span>Calle 58 # 19 - 12, Oficina 201 - 4, Edificio Campín - Barrio San Luis, Bogotá</span>
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
