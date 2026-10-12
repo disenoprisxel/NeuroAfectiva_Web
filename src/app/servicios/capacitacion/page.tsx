@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/capacitacion' },
   title: 'Capacitación & Talleres — CognyVita',
   description: 'Programas formativos vivenciales para equipos, instituciones y personas que quieren aprender diferente.',
 }

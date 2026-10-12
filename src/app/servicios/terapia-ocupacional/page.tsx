@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/terapia-ocupacional' },
   title: 'Terapia Ocupacional — CognyVita',
   description: 'Servicios de Terapia Ocupacional para favorecer la participación, autonomía y desempeño en el hogar, colegio, trabajo y comunidad.',
 }

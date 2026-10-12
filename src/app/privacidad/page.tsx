@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacidad' },
   title: 'Política de Privacidad y Tratamiento de Datos Personales — CognyVita',
   description:
     'Política de privacidad y tratamiento de datos personales de CognyVita, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.',

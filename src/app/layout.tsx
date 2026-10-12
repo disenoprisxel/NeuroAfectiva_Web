@@ -20,6 +20,8 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cognyvita.com'),
+  alternates: { canonical: '/' },
   title: 'CognyVita — Neuropsicología Clínica y Educativa en Bogotá',
   description: 'Centro especializado en neuropsicología clínica y educativa. Evaluación, diagnóstico e intervención para TDAH, Autismo, Dislexia y más. Bogotá, Colombia.',
   icons: {

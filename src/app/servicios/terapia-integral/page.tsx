@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/terapia-integral' },
   title: 'Terapia Integral e Interdisciplinaria — CognyVita',
   description: 'Proceso interdisciplinario donde neuropsicología, fonoaudiología y terapia ocupacional trabajan de forma articulada con objetivos compartidos centrados en la persona.',
 }

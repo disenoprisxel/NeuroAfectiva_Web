@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/quienes-somos' },
   title: 'Quiénes Somos — CognyVita',
   description: 'Somos una clínica especializada en neuropsicología ubicada en el corazón de Bogotá. Conoce nuestra misión, visión, valores y equipo de especialistas.',
 }

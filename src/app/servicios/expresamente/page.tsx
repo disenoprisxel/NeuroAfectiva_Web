@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Palette, Sparkles, MessageCircle, ChevronRight } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/expresamente' },
   title: 'ExpresaMente Creativa — CognyVita',
   description: 'Un espacio terapéutico donde el arte, la música, el movimiento y la escritura se convierten en el lenguaje del alma.',
 }

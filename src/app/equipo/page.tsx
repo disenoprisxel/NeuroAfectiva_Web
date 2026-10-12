@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/equipo' },
   title: 'Nuestro Equipo — CognyVita',
   description: 'Especialistas apasionadas por tu bienestar. Psicólogas especializadas en neuropsicología con formación de alto nivel y un profundo compromiso humano.',
 }

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Building2, Search, Users, TrendingUp, Crown, HeartHandshake, CircleCheck, ChevronRight, MessageCircle, ShieldCheck } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/organizacional' },
   title: 'Neuropsicología Organizacional — CognyVita',
   description: 'Optimizamos el rendimiento cognitivo, reducimos el burnout y fortalecemos la salud mental de los equipos para crear organizaciones más humanas y productivas.',
 }

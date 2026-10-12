@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/servicios/fonoaudiologia' },
   title: 'Fonoaudiología — CognyVita',
   description: 'Prevención, evaluación e intervención de dificultades en comunicación, lenguaje, habla, voz, audición y funciones orofaciales en niños, adolescentes y adultos.',
 }
